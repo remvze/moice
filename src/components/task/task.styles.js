@@ -23,7 +23,7 @@ export const Text = styled(TextareaAutosize)`
   transition: color 0.4s;
 
   ${props =>
-    props.done &&
+    props.$done &&
     css`
       color: ${({ theme }) => theme.colors.text.secondary};
       text-decoration: line-through;

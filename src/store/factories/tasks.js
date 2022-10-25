@@ -2,7 +2,7 @@ import create from 'zustand';
 import { v4 as uuid } from 'uuid';
 
 const createTasks = () =>
-  create(set => ({
+  create((set, get) => ({
     tasks: [
       {
         id: uuid(),
@@ -38,6 +38,29 @@ const createTasks = () =>
           return task;
         }),
       }));
+    },
+
+    add(id) {
+      const state = get();
+      const index = state.tasks.findIndex(task => task.id === id);
+      const next = state.tasks[index + 1];
+      const newID = uuid();
+
+      if (next?.text?.length === 0) return next.id;
+
+      set(state => {
+        const tasks = [...state.tasks];
+
+        tasks.splice(index + 1, 0, {
+          id: newID,
+          text: '',
+          done: false,
+        });
+
+        return { tasks };
+      });
+
+      return newID;
     },
   }));
 
