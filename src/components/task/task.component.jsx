@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 
-import Checkbox from '@/components/checkbox';
+import * as S from './task.styles';
 
 const Task = ({ text, done, onCheck }) => {
   return (
-    <li>
-      <Checkbox checked={done} onCheck={onCheck} /> <p>{text}</p>
-    </li>
+    <S.Wrapper>
+      <S.Checkbox checked={done} onCheck={onCheck} />
+      <S.Text value={text} done={done} />
+    </S.Wrapper>
   );
 };
 

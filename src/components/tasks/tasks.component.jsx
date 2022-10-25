@@ -1,4 +1,5 @@
 import Task from '@/components/task';
+import * as S from './tasks.styles';
 import { useTasks } from '@/store';
 
 const Tasks = () => {
@@ -8,7 +9,7 @@ const Tasks = () => {
   const handleCheck = id => () => check(id);
 
   return (
-    <ul>
+    <S.List>
       {tasks.map(task => (
         <Task
           text={task.text}
@@ -17,7 +18,7 @@ const Tasks = () => {
           key={task.id}
         />
       ))}
-    </ul>
+    </S.List>
   );
 };
 
