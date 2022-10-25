@@ -21,6 +21,23 @@ export const Wrapper = styled(Reorder.Item)`
   }
 `;
 
+export const Options = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Pinned = styled.div`
+  margin-right: 10px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.colors.text.dark};
+  cursor: pointer;
+  transition: color 0.4s;
+
+  &.pinned {
+    color: #fecd6d;
+  }
+`;
+
 export const Checkbox = styled(UnstyledCheckbox)`
   margin-right: 10px;
 `;

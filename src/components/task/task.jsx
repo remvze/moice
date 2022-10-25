@@ -1,10 +1,25 @@
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import { FaStar } from 'react-icons/fa';
 
 import * as S from './task.styles';
 
 const Task = forwardRef(
-  ({ mounted, task, text, done, onCheck, onChange, onAdd, onRemove }, ref) => {
+  (
+    {
+      mounted,
+      task,
+      text,
+      done,
+      isPinned = false,
+      onTogglePin,
+      onCheck,
+      onChange,
+      onAdd,
+      onRemove,
+    },
+    ref
+  ) => {
     const handleCheck = () => {
       if (text.length !== 0) onCheck();
     };
@@ -37,7 +52,12 @@ const Task = forwardRef(
         }}
         whileDrag={{ scale: 1.05 }}
       >
-        <S.Checkbox checked={done} onCheck={handleCheck} />
+        <S.Options>
+          <S.Pinned onClick={onTogglePin} className={isPinned ? 'pinned' : ''}>
+            <FaStar />
+          </S.Pinned>
+          <S.Checkbox checked={done} onCheck={handleCheck} />
+        </S.Options>
         <S.Text
           $done={done}
           value={text}
@@ -53,9 +73,12 @@ const Task = forwardRef(
 
 Task.propTypes = {
   mounted: PropTypes.bool,
+  id: PropTypes.string,
   text: PropTypes.string,
   done: PropTypes.bool,
   task: PropTypes.object,
+  isPinned: PropTypes.bool,
+  onTogglePin: PropTypes.func,
   onCheck: PropTypes.func,
   onChange: PropTypes.func,
   onAdd: PropTypes.func,
