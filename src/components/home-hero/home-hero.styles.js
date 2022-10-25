@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 `;
 
 export const Title = styled.h1`
