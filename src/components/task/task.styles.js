@@ -20,6 +20,7 @@ export const Text = styled(TextareaAutosize)`
   resize: none;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text.primary};
+  transition: color 0.4s;
 
   ${props =>
     props.done &&

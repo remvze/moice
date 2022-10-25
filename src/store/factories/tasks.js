@@ -16,12 +16,24 @@ const createTasks = () =>
       },
     ],
 
-    check: id => {
+    check(id) {
       set(state => ({
         tasks: state.tasks.map(task => {
           if (task.id !== id) return task;
 
           task.done = !task.done;
+
+          return task;
+        }),
+      }));
+    },
+
+    write(id, text) {
+      set(state => ({
+        tasks: state.tasks.map(task => {
+          if (task.id !== id) return task;
+
+          task.text = text;
 
           return task;
         }),
