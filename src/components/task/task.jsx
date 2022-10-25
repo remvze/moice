@@ -5,6 +5,10 @@ import * as S from './task.styles';
 
 const Task = forwardRef(
   ({ text, done, onCheck, onChange, onAdd, onRemove }, ref) => {
+    const handleCheck = () => {
+      if (text.length !== 0) onCheck();
+    };
+
     const handleChange = e => onChange(e.target.value);
 
     const handleKeyUp = e => {
@@ -17,7 +21,7 @@ const Task = forwardRef(
 
     return (
       <S.Wrapper>
-        <S.Checkbox checked={done} onCheck={onCheck} />
+        <S.Checkbox checked={done} onCheck={handleCheck} />
         <S.Text
           $done={done}
           value={text}

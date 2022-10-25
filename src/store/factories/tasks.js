@@ -34,6 +34,7 @@ const createTasks = () =>
           if (task.id !== id) return task;
 
           task.text = text;
+          task.done = text.length === 0 ? false : task.done;
 
           return task;
         }),
