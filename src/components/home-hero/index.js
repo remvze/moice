@@ -1,3 +1,3 @@
-import HomeHero from './home-hero.component';
+import HomeHero from './home-hero';
 
 export default HomeHero;

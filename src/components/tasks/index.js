@@ -1,3 +1,3 @@
-import Tasks from './tasks.component';
+import Tasks from './tasks';
 
 export default Tasks;
