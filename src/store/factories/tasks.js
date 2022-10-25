@@ -2,12 +2,12 @@ import create from 'zustand';
 import { v4 as uuid } from 'uuid';
 
 const createTasks = () =>
-  create(() => ({
+  create(set => ({
     tasks: [
       {
         id: uuid(),
         text: 'Buy some milk',
-        done: false,
+        done: true,
       },
       {
         id: uuid(),
@@ -15,6 +15,18 @@ const createTasks = () =>
         done: false,
       },
     ],
+
+    check: id => {
+      set(state => ({
+        tasks: state.tasks.map(task => {
+          if (task.id !== id) return task;
+
+          task.done = !task.done;
+
+          return task;
+        }),
+      }));
+    },
   }));
 
 export default createTasks;
