@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
 
   html, body {
     height: 100%;
+    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.text.primary};
   }
 
   body {
