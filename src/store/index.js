@@ -1,1 +1,3 @@
-export * from './stores/todos';
+import createTodos from './factories/todos';
+
+export const useTodos = createTodos();
