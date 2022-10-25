@@ -32,6 +32,10 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx"]
+      },
+      "alias": {
+        "extensions": [".js", ".jsx"],
+        "map": [["@", "./src"]]
       }
     }
   }
