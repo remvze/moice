@@ -11,6 +11,7 @@ export const Box = styled.div`
   border: 2px solid #888;
   border-radius: 5px;
   cursor: pointer;
+  background-color: ${({ theme }) => theme.colors.background};
 
   &.checked {
     border: 0;

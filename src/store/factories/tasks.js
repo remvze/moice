@@ -79,6 +79,10 @@ const createTasks = () =>
 
       return prev?.id || null;
     },
+
+    reorder(tasks) {
+      set(() => ({ tasks }));
+    },
   }));
 
 export default createTasks;

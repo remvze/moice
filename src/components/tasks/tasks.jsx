@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import Task from '@/components/task';
 import { useTasks } from '@/store';
@@ -12,6 +12,11 @@ const Tasks = () => {
   const write = useTasks(state => state.write);
   const add = useTasks(state => state.add);
   const remove = useTasks(state => state.remove);
+  const reorder = useTasks(state => state.reorder);
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   const refs = useRef({});
 
@@ -45,11 +50,13 @@ const Tasks = () => {
   };
 
   return (
-    <S.List>
+    <S.List axis="y" values={tasks} onReorder={reorder}>
       {tasks.map(task => (
         <Task
+          mounted={mounted}
           text={task.text}
           done={task.done}
+          task={task}
           onCheck={handleCheck(task.id)}
           onChange={handleChange(task.id)}
           onAdd={handleAdd(task.id)}

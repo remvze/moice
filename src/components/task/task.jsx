@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import * as S from './task.styles';
 
 const Task = forwardRef(
-  ({ text, done, onCheck, onChange, onAdd, onRemove }, ref) => {
+  ({ mounted, task, text, done, onCheck, onChange, onAdd, onRemove }, ref) => {
     const handleCheck = () => {
       if (text.length !== 0) onCheck();
     };
@@ -20,7 +20,23 @@ const Task = forwardRef(
     };
 
     return (
-      <S.Wrapper>
+      <S.Wrapper
+        value={task}
+        initial={
+          mounted
+            ? { opacity: 0, x: -30 }
+            : {
+                opacity: 1,
+                x: 0,
+              }
+        }
+        animate={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.15, delay: 0.3 },
+        }}
+        whileDrag={{ scale: 1.05 }}
+      >
         <S.Checkbox checked={done} onCheck={handleCheck} />
         <S.Text
           $done={done}
@@ -36,8 +52,10 @@ const Task = forwardRef(
 );
 
 Task.propTypes = {
+  mounted: PropTypes.bool,
   text: PropTypes.string,
   done: PropTypes.bool,
+  task: PropTypes.object,
   onCheck: PropTypes.func,
   onChange: PropTypes.func,
   onAdd: PropTypes.func,
