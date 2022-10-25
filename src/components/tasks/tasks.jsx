@@ -11,6 +11,7 @@ const Tasks = () => {
   const check = useTasks(state => state.check);
   const write = useTasks(state => state.write);
   const add = useTasks(state => state.add);
+  const remove = useTasks(state => state.remove);
 
   const refs = useRef({});
 
@@ -26,6 +27,23 @@ const Tasks = () => {
     refs.current[newID].focus();
   };
 
+  const handleRemove = id => async () => {
+    if (tasks.length === 1) return;
+
+    setTimeout(() => {
+      const prevID = remove(id);
+      delete refs.current[id];
+
+      if (prevID) {
+        const input = refs.current[prevID];
+        const end = input.value.length;
+
+        input.setSelectionRange(end, end);
+        input.focus();
+      }
+    }, 50);
+  };
+
   return (
     <S.List>
       {tasks.map(task => (
@@ -35,6 +53,7 @@ const Tasks = () => {
           onCheck={handleCheck(task.id)}
           onChange={handleChange(task.id)}
           onAdd={handleAdd(task.id)}
+          onRemove={handleRemove(task.id)}
           ref={ref => (refs.current[task.id] = ref)}
           key={task.id}
         />

@@ -62,6 +62,22 @@ const createTasks = () =>
 
       return newID;
     },
+
+    remove(id) {
+      const state = get();
+      const index = state.tasks.findIndex(task => task.id === id);
+      const prev = state.tasks[index - 1];
+
+      set(state => {
+        const tasks = [...state.tasks];
+
+        tasks.splice(index, 1);
+
+        return { tasks };
+      });
+
+      return prev?.id || null;
+    },
   }));
 
 export default createTasks;
