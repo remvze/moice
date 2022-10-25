@@ -12,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text.primary};
+    line-height: 1.6;
+    font-size: 16px;
   }
 
   body {
