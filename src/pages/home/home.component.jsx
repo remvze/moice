@@ -1,6 +1,6 @@
 import Container from '@/components/container';
 import HomeHero from '@/components/home-hero';
-import Todos from '@/components/todos';
+import Tasks from '@/components/tasks';
 import * as S from './home.styles';
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <S.Main>
       <Container>
         <HomeHero />
-        <Todos />
+        <Tasks />
       </Container>
     </S.Main>
   );

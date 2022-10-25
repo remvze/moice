@@ -1,3 +1,3 @@
-import createTodos from './factories/todos';
+import createTasks from './factories/tasks';
 
-export const useTodos = createTodos();
+export const useTasks = createTasks();

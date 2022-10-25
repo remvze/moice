@@ -1,9 +1,9 @@
 import create from 'zustand';
 import { v4 as uuid } from 'uuid';
 
-const createTodos = () =>
+const createTasks = () =>
   create(() => ({
-    todos: [
+    tasks: [
       {
         id: uuid(),
         text: 'Buy some milk',
@@ -17,4 +17,4 @@ const createTodos = () =>
     ],
   }));
 
-export default createTodos;
+export default createTasks;
