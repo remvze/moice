@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/remvze/moice/compare/v0.0.4...v0.0.5) (2022-10-26)
+
+
+### 💄 Styling
+
+* add shadow to checkbox ([9156622](https://github.com/remvze/moice/commit/91566221f3f08279be5536c128587be3f4f4dd88))
+
 ### [0.0.4](https://github.com/remvze/moice/compare/v0.0.3...v0.0.4) (2022-10-26)
 
 
