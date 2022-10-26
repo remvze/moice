@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/remvze/moice/compare/v0.0.7...v0.0.8) (2022-10-26)
+
+
+### ✨ Features
+
+* add footer ([adedfd6](https://github.com/remvze/moice/commit/adedfd6a871a1eec982832e1365190b35eb08f9a))
+
+
+### 🐛 Bug Fixes
+
+* calculate vh ([bf64150](https://github.com/remvze/moice/commit/bf6415036fc81aca32994459de9558eb6fae0b46))
+
 ### [0.0.7](https://github.com/remvze/moice/compare/v0.0.6...v0.0.7) (2022-10-26)
 
 ### [0.0.6](https://github.com/remvze/moice/compare/v0.0.5...v0.0.6) (2022-10-26)
