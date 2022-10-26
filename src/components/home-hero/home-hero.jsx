@@ -4,7 +4,7 @@ const HomeHero = () => {
   return (
     <S.Wrapper>
       <S.Title>Moice 💯</S.Title>
-      <p>Super minimal to-do list app.</p>
+      <p>Super minimal task manager app.</p>
     </S.Wrapper>
   );
 };
