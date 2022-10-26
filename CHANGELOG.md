@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/remvze/moice/compare/v0.0.1...v0.0.2) (2022-10-26)
+
+
+### 💄 Styling
+
+* change title and color ([c1fb137](https://github.com/remvze/moice/commit/c1fb13757cc0c4fc9e622ee22ce9b707604a310d))
+
+
+### 🐛 Bug Fixes
+
+* change to task manager ([07eed67](https://github.com/remvze/moice/commit/07eed674eb2fba6ef7b15f24582d2531b5cb8d0d))
+
+
+### 🚚 Chores
+
+* add Vercel config ([304164c](https://github.com/remvze/moice/commit/304164c38a5805a687717adba2346c6c09b5f71b))
+
 ### [0.0.1](https://github.com/remvze/moice/compare/v0.0.0...v0.0.1) (2022-10-25)
 
 
