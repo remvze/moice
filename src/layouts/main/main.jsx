@@ -10,8 +10,24 @@ const Main = ({ children }) => {
 
       <S.Footer>
         <Container>
-          <S.FooterText>
-            Created by <a href="https://twitter.com/remvze">Maze ✱</a>
+          <S.FooterText
+            initial={{ y: 30, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 2,
+              },
+            }}
+          >
+            Created by{' '}
+            <a
+              href="https://twitter.com/remvze"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Maze ✱
+            </a>
           </S.FooterText>
         </Container>
       </S.Footer>

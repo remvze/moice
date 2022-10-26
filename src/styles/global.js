@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  :root {
+    --vh: 1vh;
+  }
+  
   * {
     margin: 0;
     padding: 0;
