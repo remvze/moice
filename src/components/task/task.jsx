@@ -71,6 +71,7 @@ const Task = forwardRef(
           value={text}
           onChange={handleChange}
           placeholder="I have to do..."
+          spellCheck={false}
           onKeyUp={handleKeyUp}
           onKeyDown={handleKeyDown}
           ref={ref}
