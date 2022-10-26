@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 import Task from '@/components/task';
+import DragMessage from '@/components/drag-message';
 import { useTasks } from '@/store';
 import { until } from '@/helpers/wait';
 
@@ -17,10 +19,15 @@ const Tasks = () => {
   const togglePin = useTasks(state => state.togglePin);
 
   const [mounted, setMounted] = useState(false);
+  const [dragged, setDragged] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
   const refs = useRef({});
+
+  const handleDrag = () => {
+    if (!dragged) setDragged(true);
+  };
 
   const handleCheck =
     (id, pinned = false) =>
@@ -84,6 +91,7 @@ const Tasks = () => {
                 done={task.done}
                 task={task}
                 isPinned
+                onDrag={handleDrag}
                 onTogglePin={handleTogglePin(task.id)}
                 onCheck={handleCheck(task.id, true)}
                 onChange={handleChange(task.id, true)}
@@ -94,6 +102,10 @@ const Tasks = () => {
               />
             ))}
           </S.List>
+
+          <AnimatePresence>
+            {!dragged && !tasks.length && pins.length > 1 && <DragMessage />}
+          </AnimatePresence>
         </S.Section>
       )}
 
@@ -104,6 +116,7 @@ const Tasks = () => {
             text={task.text}
             done={task.done}
             task={task}
+            onDrag={handleDrag}
             onTogglePin={handleTogglePin(task.id)}
             onCheck={handleCheck(task.id)}
             onChange={handleChange(task.id)}
@@ -114,6 +127,10 @@ const Tasks = () => {
           />
         ))}
       </S.List>
+
+      <AnimatePresence>
+        {!dragged && tasks.length > 1 && <DragMessage />}
+      </AnimatePresence>
     </>
   );
 };

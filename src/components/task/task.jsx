@@ -12,6 +12,7 @@ const Task = forwardRef(
       text,
       done,
       isPinned = false,
+      onDrag,
       onTogglePin,
       onCheck,
       onChange,
@@ -51,6 +52,7 @@ const Task = forwardRef(
           transition: { duration: 0.15, delay: 0.3 },
         }}
         whileDrag={{ scale: 1.05 }}
+        onDragStart={onDrag}
       >
         <S.Options>
           <S.Pinned onClick={onTogglePin} className={isPinned ? 'pinned' : ''}>
@@ -78,6 +80,7 @@ Task.propTypes = {
   done: PropTypes.bool,
   task: PropTypes.object,
   isPinned: PropTypes.bool,
+  onDrag: PropTypes.func,
   onTogglePin: PropTypes.func,
   onCheck: PropTypes.func,
   onChange: PropTypes.func,
