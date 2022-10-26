@@ -64,6 +64,7 @@ const Task = forwardRef(
           $done={done}
           value={text}
           onChange={handleChange}
+          placeholder="I have to do..."
           onKeyUp={handleKeyUp}
           onKeyDown={handleKeyDown}
           ref={ref}
