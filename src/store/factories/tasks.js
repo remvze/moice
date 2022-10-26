@@ -80,7 +80,13 @@ const createTasks = () =>
         const index = state[key].findIndex(task => task.id === id);
         const prev = state[key][index - 1];
 
-        if (key === 'tasks' && state.tasks.length === 1) throw new Error();
+        if (
+          (key === 'tasks' && state.tasks.length === 1) ||
+          (key === 'pins' &&
+            state.pins.length === 1 &&
+            state.tasks.length === 0)
+        )
+          throw new Error();
 
         set(state => {
           const tasks = [...state[key]];
