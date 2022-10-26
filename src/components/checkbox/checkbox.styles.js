@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.label`
   position: relative;
+  line-height: 0;
 `;
 
 export const Box = styled.div`

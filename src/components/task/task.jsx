@@ -55,6 +55,12 @@ const Task = forwardRef(
         onDragStart={onDrag}
       >
         <S.Options>
+          <S.Drag>
+            <div />
+            <div />
+            <div />
+          </S.Drag>
+
           <S.Pinned onClick={onTogglePin} className={isPinned ? 'pinned' : ''}>
             <FaStar />
           </S.Pinned>
