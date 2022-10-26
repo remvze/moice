@@ -1,3 +1,4 @@
+import MainLayout from '@/layouts/main';
 import Container from '@/components/container';
 import HomeHero from '@/components/home-hero';
 import Tasks from '@/components/tasks';
@@ -15,12 +16,14 @@ const Home = () => {
   };
 
   return (
-    <S.Main variants={variants} initial="hide" animate="show">
-      <Container>
-        <HomeHero />
-        <Tasks />
-      </Container>
-    </S.Main>
+    <MainLayout>
+      <S.Main variants={variants} initial="hide" animate="show">
+        <Container>
+          <HomeHero />
+          <Tasks />
+        </Container>
+      </S.Main>
+    </MainLayout>
   );
 };
 

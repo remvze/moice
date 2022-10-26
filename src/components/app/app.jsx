@@ -1,6 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { AnimatePresence } from 'framer-motion';
 
 import Router from '@/components/router';
 import GlobalStyles from '@/styles/global';
@@ -13,9 +12,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <GlobalStyles />
-        <AnimatePresence>
-          <Router />
-        </AnimatePresence>
+        <Router />
       </BrowserRouter>
     </ThemeProvider>
   );

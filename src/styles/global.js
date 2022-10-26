@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Space Grotesk', sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyles;
