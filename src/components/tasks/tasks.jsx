@@ -103,7 +103,7 @@ const Tasks = () => {
             ))}
           </S.List>
 
-          <AnimatePresence>
+          <AnimatePresence initial={false}>
             {!dragged && !tasks.length && pins.length > 1 && <DragMessage />}
           </AnimatePresence>
         </S.Section>
@@ -128,7 +128,7 @@ const Tasks = () => {
         ))}
       </S.List>
 
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {!dragged && tasks.length > 1 && <DragMessage />}
       </AnimatePresence>
     </>
