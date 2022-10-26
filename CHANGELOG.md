@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/remvze/moice/compare/v0.0.5...v0.0.6) (2022-10-26)
+
+
+### 🐛 Bug Fixes
+
+* disable spell check ([49a8e25](https://github.com/remvze/moice/commit/49a8e25ed7cce8219f2ee200a9f8003cb6d25dda))
+
 ### [0.0.5](https://github.com/remvze/moice/compare/v0.0.4...v0.0.5) (2022-10-26)
 
 
