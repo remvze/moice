@@ -4,8 +4,18 @@ import Tasks from '@/components/tasks';
 import * as S from './home.styles';
 
 const Home = () => {
+  const variants = {
+    hide: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 1,
+      },
+    },
+  };
+
   return (
-    <S.Main>
+    <S.Main variants={variants} initial="hide" animate="show">
       <Container>
         <HomeHero />
         <Tasks />

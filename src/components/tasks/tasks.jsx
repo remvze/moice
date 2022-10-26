@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import Task from '@/components/task';
 import DragMessage from '@/components/drag-message';
@@ -72,8 +72,13 @@ const Tasks = () => {
       }, 50);
     };
 
+  const variants = {
+    hide: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <>
+    <motion.div variants={variants}>
       {!!pins.length && (
         <S.Section>
           <S.Label>Pinned Tasks</S.Label>
@@ -131,7 +136,7 @@ const Tasks = () => {
       <AnimatePresence initial={false}>
         {!dragged && tasks.length > 1 && <DragMessage />}
       </AnimatePresence>
-    </>
+    </motion.div>
   );
 };
 
