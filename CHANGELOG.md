@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/remvze/moice/compare/v0.0.8...v0.0.9) (2022-10-26)
+
+
+### 🐛 Bug Fixes
+
+* show drag message for pins ([baafa2b](https://github.com/remvze/moice/commit/baafa2bbb41ff21270b9b1485c6714f655a3a47d))
+
 ### [0.0.8](https://github.com/remvze/moice/compare/v0.0.7...v0.0.8) (2022-10-26)
 
 
