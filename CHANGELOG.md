@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/remvze/moice/compare/v0.0.2...v0.0.3) (2022-10-26)
+
+
+### ✨ Features
+
+* add drag message ([aa04b46](https://github.com/remvze/moice/commit/aa04b465ae924afa7771b68427faa1d48047e87c))
+* add grab icon ([37b7f7f](https://github.com/remvze/moice/commit/37b7f7fa5bb1028fe3ac05df4a7aba311286c2d9))
+* add placeholder ([738dc5c](https://github.com/remvze/moice/commit/738dc5ca57f72d475bcd268855c0f089bda3a360))
+
+
+### 🐛 Bug Fixes
+
+* allow removal when more than one task ([a76dfcc](https://github.com/remvze/moice/commit/a76dfccfdb21fa9a5701f99ca64ec14147896c15))
+* disable initial animation ([a3bd9df](https://github.com/remvze/moice/commit/a3bd9df0d1154cd70e2f1b1c2e4e3b796dddedab))
+* prevent removal on one pin ([5ed6a1a](https://github.com/remvze/moice/commit/5ed6a1a0992eb786540a40eb09fbb271a4335227))
+
 ### [0.0.2](https://github.com/remvze/moice/compare/v0.0.1...v0.0.2) (2022-10-26)
 
 
