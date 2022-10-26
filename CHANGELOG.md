@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/remvze/moice/compare/v0.0.3...v0.0.4) (2022-10-26)
+
+
+### ✨ Features
+
+* add animation on load ([69a797e](https://github.com/remvze/moice/commit/69a797ee344d28bbe8635aed12ca1c101c72f1f6))
+
 ### [0.0.3](https://github.com/remvze/moice/compare/v0.0.2...v0.0.3) (2022-10-26)
 
 
