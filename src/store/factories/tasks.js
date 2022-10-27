@@ -16,6 +16,11 @@ const createTasks = () =>
           text: 'Make the world a better place',
           done: false,
         },
+        {
+          id: uuid(),
+          text: '',
+          done: false,
+        },
       ],
       pins: [],
 
