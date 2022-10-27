@@ -9,16 +9,6 @@ export const Wrapper = styled(Reorder.Item)`
   align-items: flex-start;
   margin-bottom: 10px;
   position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50px;
-    height: 100%;
-    background-color: transparent;
-  }
 `;
 
 export const Options = styled.div`
