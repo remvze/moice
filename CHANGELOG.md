@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/remvze/moice/compare/v0.0.9...v0.0.10) (2022-10-27)
+
+
+### 🐛 Bug Fixes
+
+* remove hidden drag area ([dceb2f7](https://github.com/remvze/moice/commit/dceb2f779ce0cdf3146b42ade6eeb759a1496889))
+
 ### [0.0.9](https://github.com/remvze/moice/compare/v0.0.8...v0.0.9) (2022-10-26)
 
 
