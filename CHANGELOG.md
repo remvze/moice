@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/remvze/moice/compare/v0.0.10...v0.0.11) (2022-10-27)
+
+
+### ✨ Features
+
+* add empty task to defaults ([db737fe](https://github.com/remvze/moice/commit/db737fec691ebd8f4ce7a8c2ce587f61b0daa005))
+* add header to the layout ([27bf9e8](https://github.com/remvze/moice/commit/27bf9e8ea619a711d82645758c7511ebb747f330))
+
+
+### ♻️ Code Refactoring
+
+* seperate footer and header ([80e7d26](https://github.com/remvze/moice/commit/80e7d2624c4afd59743a8bd7376a4ee56aca0e61))
+
+
+### 💄 Styling
+
+* align text and icon ([94fdda3](https://github.com/remvze/moice/commit/94fdda344fdf43efa2c3e5020b2ceaade14a59b0))
+* increase the margin ([3c0187a](https://github.com/remvze/moice/commit/3c0187aff771c32eb5c7c553bad27e619df49d5b))
+
 ### [0.0.10](https://github.com/remvze/moice/compare/v0.0.9...v0.0.10) (2022-10-27)
 
 
