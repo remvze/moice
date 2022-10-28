@@ -11,7 +11,7 @@ const Home = ({ animation }) => {
     hide: {},
     show: {
       transition: {
-        staggerChildren: animation === 'opacity' ? 0.25 : 0.15,
+        staggerChildren: animation === 'opacity' ? 0.2 : 0.15,
         delayChildren: 1,
       },
     },
