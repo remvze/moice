@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/remvze/moice/compare/v0.0.12...v0.0.13) (2022-10-28)
+
+
+### ✨ Features
+
+* change the page title ([82ca2c3](https://github.com/remvze/moice/commit/82ca2c30f0ac6fbfdf698f9501cff1d99bed22bc))
+
 ### [0.0.12](https://github.com/remvze/moice/compare/v0.0.11...v0.0.12) (2022-10-28)
 
 
