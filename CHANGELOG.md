@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/remvze/moice/compare/v0.0.13...v0.0.14) (2022-10-28)
+
+
+### ♻️ Code Refactoring
+
+* refactor tasks component ([6573e79](https://github.com/remvze/moice/commit/6573e795ba47a2a236093218c20d885e8f264f46))
+
+
+### 🐛 Bug Fixes
+
+* remove console.log ([097fe16](https://github.com/remvze/moice/commit/097fe166691ab785c5a2be65d83e987dfd9a71a7))
+* typo in file name ([bedc055](https://github.com/remvze/moice/commit/bedc05557092eb182748f8cde0619a89e6d714a6))
+
+
+### ✨ Features
+
+* add animation test ([ce4cedd](https://github.com/remvze/moice/commit/ce4ceddd16323e3d3a33201a011cd264baa7b2de))
+* add animation to not found ([7798233](https://github.com/remvze/moice/commit/7798233fa8bd175c5b0e3a2ec500ebe89396a7cd))
+
 ### [0.0.13](https://github.com/remvze/moice/compare/v0.0.12...v0.0.13) (2022-10-28)
 
 
