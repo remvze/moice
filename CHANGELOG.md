@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/remvze/moice/compare/v0.0.11...v0.0.12) (2022-10-28)
+
+
+### 📝 Documentation
+
+* add jsdoc for function ([2562871](https://github.com/remvze/moice/commit/2562871491554b3f6ffc9cf2a4d8fb23a4181d41))
+
+
+### ♻️ Code Refactoring
+
+* create useVH hook ([456f7b1](https://github.com/remvze/moice/commit/456f7b12c55e7497dd0ff99c1b006c9d18584fdc))
+* tasks store ([7933c05](https://github.com/remvze/moice/commit/7933c05e5e55ad0f279d9ca62e3ecaf1e8f8bd2d))
+
+
+### 💄 Styling
+
+* design the not found page ([28bbf04](https://github.com/remvze/moice/commit/28bbf046cff854a302e3a0037e4a6af620373c9a))
+
 ### [0.0.11](https://github.com/remvze/moice/compare/v0.0.10...v0.0.11) (2022-10-27)
 
 
