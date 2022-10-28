@@ -1,3 +1,3 @@
-import createTasks from './factories/tasks';
+import createTasks from './tasks';
 
 export const useTasks = createTasks();
