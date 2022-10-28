@@ -1,99 +1,50 @@
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { FaStar } from 'react-icons/fa';
 
+import TaskText from '@/components/task-text';
+import TaskOptions from '@/components/task-options';
 import * as S from './task.styles';
 
-const Task = forwardRef(
-  (
-    {
-      mounted,
-      task,
-      text,
-      done,
-      isPinned = false,
-      onDrag,
-      onTogglePin,
-      onCheck,
-      onChange,
-      onAdd,
-      onRemove,
-    },
-    ref
-  ) => {
-    const handleCheck = () => {
-      if (text.length !== 0) onCheck();
-    };
+const Task = forwardRef((props, ref) => {
+  const { mounted, task, isPinned = false, onDrag, focus } = props;
 
-    const handleChange = e => onChange(e.target.value);
-
-    const handleKeyUp = e => {
-      if (e.key === 'Enter') onAdd();
-    };
-
-    const handleKeyDown = e => {
-      if (e.key === 'Backspace' && !text.length) onRemove();
-    };
-
-    return (
-      <S.Wrapper
-        value={task}
-        initial={
-          mounted
-            ? { opacity: 0, x: -30 }
-            : {
-                opacity: 1,
-                x: 0,
-              }
-        }
-        animate={{
+  const variants = {
+    hide: mounted
+      ? { opacity: 0, x: -30 }
+      : {
           opacity: 1,
           x: 0,
-          transition: { duration: 0.15, delay: 0.3 },
-        }}
-        whileDrag={{ scale: 1.05 }}
-        onDragStart={onDrag}
-      >
-        <S.Options>
-          <S.Drag>
-            <div />
-            <div />
-            <div />
-          </S.Drag>
+        },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.15, delay: 0.3 },
+    },
+  };
 
-          <S.Pinned onClick={onTogglePin} className={isPinned ? 'pinned' : ''}>
-            <FaStar />
-          </S.Pinned>
-          <S.Checkbox checked={done} onCheck={handleCheck} />
-        </S.Options>
-        <S.Text
-          $done={done}
-          value={text}
-          onChange={handleChange}
-          placeholder="I have to do..."
-          spellCheck={false}
-          onKeyUp={handleKeyUp}
-          onKeyDown={handleKeyDown}
-          ref={ref}
-        />
-      </S.Wrapper>
-    );
-  }
-);
+  return (
+    <S.Wrapper
+      value={task}
+      variants={variants}
+      initial="hide"
+      animate="show"
+      whileDrag={{ scale: 1.05 }}
+      onDragStart={onDrag}
+    >
+      <TaskOptions task={task} isPinned={isPinned} />
+      <TaskText task={task} isPinned={isPinned} focus={focus} ref={ref} />
+    </S.Wrapper>
+  );
+});
 
 Task.propTypes = {
   mounted: PropTypes.bool,
-  id: PropTypes.string,
   text: PropTypes.string,
   done: PropTypes.bool,
   task: PropTypes.object,
   isPinned: PropTypes.bool,
+  focus: PropTypes.func,
   onDrag: PropTypes.func,
-  onTogglePin: PropTypes.func,
-  onCheck: PropTypes.func,
-  onChange: PropTypes.func,
-  onAdd: PropTypes.func,
-  onRemove: PropTypes.func,
 };
 
 export default Task;

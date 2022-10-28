@@ -11,12 +11,7 @@ import * as S from './tasks.styles';
 const Tasks = () => {
   const tasks = useTasks(state => state.tasks);
   const pins = useTasks(state => state.pins);
-  const check = useTasks(state => state.check);
-  const write = useTasks(state => state.write);
-  const add = useTasks(state => state.add);
-  const remove = useTasks(state => state.remove);
   const reorder = useTasks(state => state.reorder);
-  const togglePin = useTasks(state => state.togglePin);
 
   const [mounted, setMounted] = useState(false);
   const [dragged, setDragged] = useState(false);
@@ -25,52 +20,31 @@ const Tasks = () => {
 
   const refs = useRef({});
 
+  const focus = async id => {
+    await until(() => !!refs.current[id]);
+
+    const input = refs.current[id];
+    const end = input.value.length;
+
+    input.setSelectionRange(end, end);
+    input.focus();
+  };
+
   const handleDrag = () => {
     if (!dragged) setDragged(true);
   };
 
-  const handleCheck =
-    (id, pinned = false) =>
-    () =>
-      check(id, pinned);
-
-  const handleTogglePin = id => () => togglePin(id);
-
-  const handleChange =
-    (id, pinned = false) =>
-    text =>
-      write(id, text.replaceAll('\n', ''), pinned);
-
-  const handleAdd =
-    (id, pinned = false) =>
-    async () => {
-      const newID = add(id, pinned);
-
-      await until(() => !!refs.current[newID]);
-
-      refs.current[newID].focus();
-    };
-
-  const handleRemove =
-    (id, pinned = false) =>
-    async () => {
-      setTimeout(() => {
-        try {
-          const prevID = remove(id, pinned);
-          delete refs.current[id];
-
-          if (prevID) {
-            const input = refs.current[prevID];
-            const end = input.value.length;
-
-            input.setSelectionRange(end, end);
-            input.focus();
-          }
-        } catch (error) {
-          return;
-        }
-      }, 50);
-    };
+  const renderTask = (task, isPinned = false) => (
+    <Task
+      mounted={mounted}
+      task={task}
+      isPinned={isPinned}
+      onDrag={handleDrag}
+      focus={focus}
+      ref={ref => (refs.current[task.id] = ref)}
+      key={task.id}
+    />
+  );
 
   const variants = {
     hide: { opacity: 0 },
@@ -88,24 +62,7 @@ const Tasks = () => {
             values={pins}
             onReorder={tasks => reorder(tasks, true)}
           >
-            {pins.map(task => (
-              <Task
-                mounted={mounted}
-                id={task.id}
-                text={task.text}
-                done={task.done}
-                task={task}
-                isPinned
-                onDrag={handleDrag}
-                onTogglePin={handleTogglePin(task.id)}
-                onCheck={handleCheck(task.id, true)}
-                onChange={handleChange(task.id, true)}
-                onAdd={handleAdd(task.id, true)}
-                onRemove={handleRemove(task.id, true)}
-                ref={ref => (refs.current[task.id] = ref)}
-                key={task.id}
-              />
-            ))}
+            {pins.map(task => renderTask(task, true))}
           </S.List>
 
           <AnimatePresence initial={false}>
@@ -117,22 +74,7 @@ const Tasks = () => {
       )}
 
       <S.List axis="y" values={tasks} onReorder={reorder}>
-        {tasks.map(task => (
-          <Task
-            mounted={mounted}
-            text={task.text}
-            done={task.done}
-            task={task}
-            onDrag={handleDrag}
-            onTogglePin={handleTogglePin(task.id)}
-            onCheck={handleCheck(task.id)}
-            onChange={handleChange(task.id)}
-            onAdd={handleAdd(task.id)}
-            onRemove={handleRemove(task.id)}
-            ref={ref => (refs.current[task.id] = ref)}
-            key={task.id}
-          />
-        ))}
+        {tasks.map(task => renderTask(task))}
       </S.List>
 
       <AnimatePresence initial={false}>
