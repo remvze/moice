@@ -158,8 +158,6 @@ export const createActions = (set, get) => ({
 
       values[to].push(task);
 
-      console.log(values);
-
       return values;
     });
   },
