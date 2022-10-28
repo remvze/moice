@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/remvze/moice/compare/v0.0.14...v0.0.15) (2022-10-28)
+
+
+### 🐛 Bug Fixes
+
+* decrease stagger duration ([d966a69](https://github.com/remvze/moice/commit/d966a69cf35b2d22f2dc72eefde925898bce4fcf))
+
 ### [0.0.14](https://github.com/remvze/moice/compare/v0.0.13...v0.0.14) (2022-10-28)
 
 
