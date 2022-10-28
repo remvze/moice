@@ -2,7 +2,7 @@ import create from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { createState } from './tasks.state';
-import { createActions } from './tasts.actions';
+import { createActions } from './tasks.actions';
 
 const createTasks = () =>
   create(
