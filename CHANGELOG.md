@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/remvze/moice/compare/v0.0.17...v0.1.0) (2022-10-29)
+
+
+### ✨ Features
+
+* add filters ([566d25d](https://github.com/remvze/moice/commit/566d25d1d63fae81d38870ed1f3e91041038906b))
+* add reorder to filtered list ([97001f8](https://github.com/remvze/moice/commit/97001f8240c3216aab1a05030187e475ecde97ae))
+
 ### [0.0.17](https://github.com/remvze/moice/compare/v0.0.16...v0.0.17) (2022-10-29)
 
 
