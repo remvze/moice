@@ -4,6 +4,6 @@ import { Reorder } from 'framer-motion';
 export const Wrapper = styled(Reorder.Item)`
   display: flex;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
 `;

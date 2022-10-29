@@ -11,3 +11,7 @@ export const Title = styled(motion.h1)`
   text-transform: uppercase;
   letter-spacing: 1px;
 `;
+
+export const Desc = styled(motion.p)`
+  color: ${({ theme }) => theme.colors.text.secondary};
+`;

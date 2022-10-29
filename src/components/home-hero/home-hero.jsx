@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { motion } from 'framer-motion';
 
 import * as S from './home-hero.styles';
 
@@ -18,7 +17,7 @@ const HomeHero = ({ animation }) => {
   return (
     <S.Wrapper>
       <S.Title variants={variants}>Moice 💯</S.Title>
-      <motion.p variants={variants}>Super minimal task manager app.</motion.p>
+      <S.Desc variants={variants}>Super minimal task manager app.</S.Desc>
     </S.Wrapper>
   );
 };
