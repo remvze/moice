@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/remvze/moice/compare/v0.0.16...v0.0.17) (2022-10-29)
+
+
+### 🐛 Bug Fixes
+
+* change desc text ([e9e8012](https://github.com/remvze/moice/commit/e9e801226b34dd843a3f754ce5bbc358d6ab64b3))
+
+
+### ✨ Features
+
+* add celebration on done ([810d4da](https://github.com/remvze/moice/commit/810d4da927cb91e421ede3b0d650ca615f7676d5))
+
 ### [0.0.16](https://github.com/remvze/moice/compare/v0.0.15...v0.0.16) (2022-10-29)
 
 
