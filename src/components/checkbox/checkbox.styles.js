@@ -18,8 +18,8 @@ export const Box = styled.div`
   &.checked {
     border: 0;
     background-color: #b6e388;
-    background-image: linear-gradient(45deg, #b6e388, #c7f2a4);
-    box-shadow: 0 4px 10px rgb(182, 227, 136, 0.44);
+    background-image: linear-gradient(45deg, #00c6fb, #005bea);
+    box-shadow: 0 4px 10px rgba(0, 91, 234, 0.5);
   }
 `;
 
