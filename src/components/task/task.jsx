@@ -6,7 +6,14 @@ import TaskOptions from '@/components/task-options';
 import * as S from './task.styles';
 
 const Task = forwardRef((props, ref) => {
-  const { mounted, task, isPinned = false, onDrag, focus } = props;
+  const {
+    mounted,
+    task,
+    isPinned = false,
+    allDone = false,
+    onDrag,
+    focus,
+  } = props;
 
   const variants = {
     hide: mounted
@@ -31,7 +38,7 @@ const Task = forwardRef((props, ref) => {
       whileDrag={{ scale: 1.05 }}
       onDragStart={onDrag}
     >
-      <TaskOptions task={task} isPinned={isPinned} />
+      <TaskOptions task={task} isPinned={isPinned} allDone={allDone} />
       <TaskText task={task} isPinned={isPinned} focus={focus} ref={ref} />
     </S.Wrapper>
   );
@@ -43,6 +50,7 @@ Task.propTypes = {
   done: PropTypes.bool,
   task: PropTypes.object,
   isPinned: PropTypes.bool,
+  allDone: PropTypes.bool,
   focus: PropTypes.func,
   onDrag: PropTypes.func,
 };

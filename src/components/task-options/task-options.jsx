@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa';
 import { useTasks } from '@/store';
 import * as S from './task-options.styles';
 
-const TaskOptions = ({ task, isPinned }) => {
+const TaskOptions = ({ task, isPinned, allDone }) => {
   const { id, text, done } = task;
 
   const check = useTasks(state => state.check);
@@ -27,7 +27,7 @@ const TaskOptions = ({ task, isPinned }) => {
       <S.Pinned onClick={handleTogglePin} className={isPinned ? 'pinned' : ''}>
         <FaStar />
       </S.Pinned>
-      <S.Checkbox checked={done} onCheck={handleCheck} />
+      <S.Checkbox checked={done} onCheck={handleCheck} celebrate={allDone} />
     </S.Options>
   );
 };
@@ -39,6 +39,7 @@ TaskOptions.propTypes = {
     done: PropTypes.bool,
   }),
   isPinned: PropTypes.bool,
+  allDone: PropTypes.bool,
 };
 
 export default TaskOptions;

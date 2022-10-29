@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.label`
   position: relative;
@@ -17,9 +17,20 @@ export const Box = styled.div`
 
   &.checked {
     border: 0;
-    background-color: #b6e388;
-    background-image: linear-gradient(45deg, #00c6fb, #005bea);
-    box-shadow: 0 4px 10px rgba(0, 91, 234, 0.5);
+    transition: 0.4s;
+
+    ${({ $celebrate }) =>
+      $celebrate
+        ? css`
+            background-color: #9be15d;
+            background-image: linear-gradient(45deg, #9be15d, #00e3ae);
+            box-shadow: 0 4px 10px rgba(0, 227, 174, 0.45);
+          `
+        : css`
+            background-color: #00c6fb;
+            background-image: linear-gradient(45deg, #00c6fb, #005bea);
+            box-shadow: 0 4px 10px rgba(0, 91, 234, 0.5);
+          `}
   }
 `;
 

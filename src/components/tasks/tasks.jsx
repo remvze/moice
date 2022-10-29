@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import Task from '@/components/task';
@@ -12,6 +12,13 @@ const Tasks = () => {
   const tasks = useTasks(state => state.tasks);
   const pins = useTasks(state => state.pins);
   const reorder = useTasks(state => state.reorder);
+
+  const allDone = useMemo(() => {
+    const tasksDone = tasks.every(task => task.done);
+    const pinsDone = pins.every(task => task.done);
+
+    return tasksDone && pinsDone;
+  }, [tasks, pins]);
 
   const [mounted, setMounted] = useState(false);
   const [dragged, setDragged] = useState(false);
@@ -39,6 +46,7 @@ const Tasks = () => {
       mounted={mounted}
       task={task}
       isPinned={isPinned}
+      allDone={allDone}
       onDrag={handleDrag}
       focus={focus}
       ref={ref => (refs.current[task.id] = ref)}
