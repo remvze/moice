@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Wrapper = styled.section`
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 `;
 
 export const Title = styled(motion.h1)`

@@ -6,10 +6,16 @@ import { createActions } from './tasks.actions';
 
 const createTasks = () =>
   create(
-    persist((set, get) => ({
-      ...createState(),
-      ...createActions(set, get),
-    }))
+    persist(
+      (set, get) => ({
+        ...createState(),
+        ...createActions(set, get),
+      }),
+      {
+        name: 'moice-tasks',
+        version: '0.0.1',
+      }
+    )
   );
 
 export default createTasks;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useTasks } from '@/store';
 import * as S from './task-text.styles';
 
-const TaskText = forwardRef(({ task, isPinned, focus }, ref) => {
+const TaskText = forwardRef(({ task, focus }, ref) => {
   const { id, text, done } = task;
 
   const write = useTasks(state => state.write);
@@ -14,12 +14,12 @@ const TaskText = forwardRef(({ task, isPinned, focus }, ref) => {
   const handleChange = e => {
     const text = e.target.value;
 
-    write(id, text.replaceAll('\n', ''), isPinned);
+    write(id, text.replaceAll('\n', ''));
   };
 
   const handleKeyUp = e => {
     if (e.key === 'Enter') {
-      const newID = add(id, isPinned);
+      const newID = add(id);
 
       focus(newID);
     }
@@ -29,7 +29,7 @@ const TaskText = forwardRef(({ task, isPinned, focus }, ref) => {
     if (e.key === 'Backspace' && !text.length) {
       setTimeout(() => {
         try {
-          const prevID = remove(id, isPinned);
+          const prevID = remove(id);
 
           if (prevID) focus(prevID);
         } catch (error) {
@@ -54,12 +54,7 @@ const TaskText = forwardRef(({ task, isPinned, focus }, ref) => {
 });
 
 TaskText.propTypes = {
-  task: PropTypes.shape({
-    id: PropTypes.string,
-    text: PropTypes.string,
-    done: PropTypes.bool,
-  }),
-  isPinned: PropTypes.bool,
+  task: PropTypes.object,
   focus: PropTypes.func,
 };
 

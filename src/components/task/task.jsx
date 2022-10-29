@@ -6,26 +6,14 @@ import TaskOptions from '@/components/task-options';
 import * as S from './task.styles';
 
 const Task = forwardRef((props, ref) => {
-  const {
-    mounted,
-    task,
-    isPinned = false,
-    allDone = false,
-    onDrag,
-    focus,
-  } = props;
+  const { mounted, task, allDone = false, onDrag, focus } = props;
 
   const variants = {
-    hide: mounted
-      ? { opacity: 0, x: -30 }
-      : {
-          opacity: 1,
-          x: 0,
-        },
+    hide: mounted ? { opacity: 0, height: 0 } : { opacity: 1, height: 'auto' },
     show: {
       opacity: 1,
-      x: 0,
-      transition: { duration: 0.15, delay: 0.3 },
+      height: 'auto',
+      transition: { duration: 0.15 },
     },
   };
 
@@ -38,8 +26,8 @@ const Task = forwardRef((props, ref) => {
       whileDrag={{ scale: 1.05 }}
       onDragStart={onDrag}
     >
-      <TaskOptions task={task} isPinned={isPinned} allDone={allDone} />
-      <TaskText task={task} isPinned={isPinned} focus={focus} ref={ref} />
+      <TaskOptions task={task} isPinned={task.pinned} allDone={allDone} />
+      <TaskText task={task} isPinned={task.pinned} focus={focus} ref={ref} />
     </S.Wrapper>
   );
 });
@@ -49,7 +37,6 @@ Task.propTypes = {
   text: PropTypes.string,
   done: PropTypes.bool,
   task: PropTypes.object,
-  isPinned: PropTypes.bool,
   allDone: PropTypes.bool,
   focus: PropTypes.func,
   onDrag: PropTypes.func,

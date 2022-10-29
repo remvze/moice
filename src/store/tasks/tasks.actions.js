@@ -23,14 +23,11 @@ export const createActions = (set, get) => ({
    * Toggle done and undone for a task
    *
    * @param {string} id - The ID of the task
-   * @param {boolean} pinned - If the task is pinned
    * @returns {void}
    */
-  check(id, pinned = false) {
-    const key = pinned ? 'pins' : 'tasks';
-
+  check(id) {
     set(state => ({
-      [key]: state[key].map(task => {
+      tasks: state.tasks.map(task => {
         if (task.id !== id) return task;
 
         task.done = !task.done;
@@ -45,14 +42,11 @@ export const createActions = (set, get) => ({
    *
    * @param {string} id - The ID of the task
    * @param {string} text - The task's text
-   * @param {boolean} pinned - If the task is pinned
    * @returns {void}
    */
-  write(id, text, pinned = false) {
-    const key = pinned ? 'pins' : 'tasks';
-
+  write(id, text) {
     set(state => ({
-      [key]: state[key].map(task => {
+      tasks: state.tasks.map(task => {
         if (task.id !== id) return task;
 
         task.text = text;
@@ -67,29 +61,27 @@ export const createActions = (set, get) => ({
    * Add a new task after the given task
    *
    * @param {string} id - The ID of the task
-   * @param {boolean} pinned - If the task is pinned
    * @returns {string} - The ID of the new/next task
    */
-  add(id, pinned = false) {
-    const key = pinned ? 'pins' : 'tasks';
-
+  add(id) {
     const state = get();
-    const index = state[key].findIndex(task => task.id === id);
-    const next = state[key][index + 1];
+    const index = state.tasks.findIndex(task => task.id === id);
+    const next = state.tasks[index + 1];
     const newID = uuid();
 
     if (next?.text?.length === 0) return next.id;
 
     set(state => {
-      const tasks = [...state[key]];
+      const tasks = [...state.tasks];
 
       tasks.splice(index + 1, 0, {
         id: newID,
         text: '',
         done: false,
+        pinned: false,
       });
 
-      return { [key]: tasks };
+      return { tasks };
     });
 
     return newID;
@@ -99,24 +91,21 @@ export const createActions = (set, get) => ({
    * Remove the given task
    *
    * @param {string} id - The ID of the task
-   * @param {boolean} pinned - If the task is pinned
    * @returns {(string | null)} - The ID of the previous task if exists, or null
    */
-  remove(id, pinned = false) {
-    const key = pinned ? 'pins' : 'tasks';
-
+  remove(id) {
     const state = get();
-    const index = state[key].findIndex(task => task.id === id);
-    const prev = state[key][index - 1];
+    const index = state.tasks.findIndex(task => task.id === id);
+    const prev = state.tasks[index - 1];
 
-    if (state.pins.length + state.tasks.length === 1) throw new Error();
+    if (state.tasks.length === 1) throw new Error();
 
     set(state => {
-      const tasks = [...state[key]];
+      const tasks = [...state.tasks];
 
       tasks.splice(index, 1);
 
-      return { [key]: tasks };
+      return { tasks };
     });
 
     return prev?.id || null;
@@ -126,13 +115,10 @@ export const createActions = (set, get) => ({
    * Reorder the given tasks
    *
    * @param {Array<import('./tasks.state').Task>} tasks - Tasks to reorder
-   * @param {boolean} pinned - If the tasks are pinned
    * @returns {void}
    */
-  reorder(tasks, pinned = false) {
-    const key = pinned ? 'pins' : 'tasks';
-
-    set(() => ({ [key]: tasks }));
+  reorder(tasks) {
+    set(() => ({ tasks }));
   },
 
   /**
@@ -142,23 +128,14 @@ export const createActions = (set, get) => ({
    * @returns {void}
    */
   togglePin(id) {
-    const state = get();
-    const isPinned = state.pins.some(task => task.id === id);
-    const from = isPinned ? 'pins' : 'tasks';
-    const to = isPinned ? 'tasks' : 'pins';
+    set(state => ({
+      tasks: state.tasks.map(task => {
+        if (task.id !== id) return task;
 
-    set(state => {
-      const values = {
-        tasks: [...state.tasks],
-        pins: [...state.pins],
-      };
+        task.pinned = !task.pinned;
 
-      const index = values[from].findIndex(task => task.id === id);
-      const [task] = values[from].splice(index, 1);
-
-      values[to].push(task);
-
-      return values;
-    });
+        return task;
+      }),
+    }));
   },
 });

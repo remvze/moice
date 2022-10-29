@@ -12,8 +12,7 @@ import { v4 as uuid } from 'uuid';
  * Generate the initial state for Tasks store
  *
  * @returns {{
- *   tasks: Array<Task>,
- *   pins: Array<Task>
+ *   tasks: Array<Task>
  * }}
  */
 export const createState = () => ({
@@ -22,17 +21,19 @@ export const createState = () => ({
       id: uuid(),
       text: 'Make yourself a better person',
       done: true,
+      pinned: false,
     },
     {
       id: uuid(),
       text: 'Make the world a better place',
       done: false,
+      pinned: true,
     },
     {
       id: uuid(),
       text: '',
       done: false,
+      pinned: false,
     },
   ],
-  pins: [],
 });

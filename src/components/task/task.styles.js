@@ -6,4 +6,5 @@ export const Wrapper = styled(Reorder.Item)`
   align-items: flex-start;
   margin-bottom: 15px;
   position: relative;
+  overflow: hidden;
 `;

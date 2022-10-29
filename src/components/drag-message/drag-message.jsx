@@ -9,7 +9,13 @@ const DragMessage = () => {
   };
 
   return (
-    <S.Message variants={variants} initial="hide" animate="show" exit="hide">
+    <S.Message
+      variants={variants}
+      initial="hide"
+      animate="show"
+      exit="hide"
+      layout
+    >
       <S.Icon>
         <FaInfoCircle />
       </S.Icon>
