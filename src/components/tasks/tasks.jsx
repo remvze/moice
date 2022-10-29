@@ -44,11 +44,33 @@ const Tasks = () => {
     show: { opacity: 1 },
   };
 
+  const reorderTasks = newTasks => {
+    const before = {};
+    const after = {};
+
+    filteredTasks.forEach((task, i) => {
+      const index = tasks.indexOf(task);
+      before[index] = i;
+    });
+
+    filteredTasks.forEach(task => {
+      const index = newTasks.indexOf(task);
+      after[index] = task;
+    });
+
+    const reordered = tasks.map((task, i) => {
+      if (typeof before[i] === 'undefined') return task;
+      return after[before[i]];
+    });
+
+    reorder(reordered);
+  };
+
   return (
     <motion.div variants={variants}>
       <Filters filters={filters} mode={mode} onChange={setMode} />
 
-      <S.List axis="y" values={filteredTasks} onReorder={reorder}>
+      <S.List axis="y" values={filteredTasks} onReorder={reorderTasks}>
         {filteredTasks.map(task => (
           <Task
             mounted={mounted}
