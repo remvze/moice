@@ -17,7 +17,7 @@ const HomeHero = ({ animation }) => {
   return (
     <S.Wrapper>
       <S.Title variants={variants}>Moice 💯</S.Title>
-      <S.Desc variants={variants}>Super minimal task manager app.</S.Desc>
+      <S.Desc variants={variants}>Minimal and intuitive task manager.</S.Desc>
     </S.Wrapper>
   );
 };
