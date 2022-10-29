@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/remvze/moice/compare/v0.0.15...v0.0.16) (2022-10-29)
+
+
+### 💄 Styling
+
+* change checkbox color ([5ffa464](https://github.com/remvze/moice/commit/5ffa46434121d68ded988213090b906be0fcbfca))
+* change some minor styles ([8ed18a1](https://github.com/remvze/moice/commit/8ed18a1adc69987cbeec144b01467f3b6065a5d7))
+* decrease stagger duration ([7b80439](https://github.com/remvze/moice/commit/7b804395bedcbff80844db75e9aac95d4768583b))
+
 ### [0.0.15](https://github.com/remvze/moice/compare/v0.0.14...v0.0.15) (2022-10-28)
 
 
