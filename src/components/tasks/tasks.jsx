@@ -85,7 +85,7 @@ const Tasks = () => {
       </S.List>
 
       <AnimatePresence initial={false}>
-        {!dragged && tasks.length > 1 && <DragMessage />}
+        {!dragged && filteredTasks.length > 1 && <DragMessage />}
       </AnimatePresence>
     </motion.div>
   );
