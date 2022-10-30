@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/remvze/moice/compare/v0.2.0...v0.2.1) (2022-10-30)
+
+
+### 🐛 Bug Fixes
+
+* memoize filters ([50fdf1e](https://github.com/remvze/moice/commit/50fdf1e92866379731284672fd6e3f9f1d3654e8))
+
 ## [0.2.0](https://github.com/remvze/moice/compare/v0.1.0...v0.2.0) (2022-10-30)
 
 
