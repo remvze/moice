@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Wrapper = styled.div`
   margin-bottom: 20px;
@@ -21,6 +22,7 @@ export const Item = styled.li`
 `;
 
 export const Button = styled.button`
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +40,20 @@ export const Button = styled.button`
   transition: 0.4s;
 
   &.active {
+    padding-left: 22px;
     color: ${({ theme }) => theme.colors.text.primary};
     background-color: #222;
   }
+`;
+
+export const Dot = styled(motion.div)`
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ff0844;
+  background-image: linear-gradient(45deg, #ff0844, #ffb199);
 `;
