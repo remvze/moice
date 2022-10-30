@@ -11,9 +11,9 @@ const useFilter = () => {
         filter: () => true,
       },
       {
-        mode: 'done',
-        name: 'Done',
-        filter: task => task.done,
+        mode: 'pinned',
+        name: 'Pinned',
+        filter: task => task.pinned,
       },
       {
         mode: 'active',
@@ -21,9 +21,9 @@ const useFilter = () => {
         filter: task => !task.done,
       },
       {
-        mode: 'pinned',
-        name: 'Pinned',
-        filter: task => task.pinned,
+        mode: 'done',
+        name: 'Done',
+        filter: task => task.done,
       },
     ],
     []
