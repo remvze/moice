@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/remvze/moice/compare/v0.1.0...v0.2.0) (2022-10-30)
+
+
+### 🐛 Bug Fixes
+
+* change filters order ([bfcd369](https://github.com/remvze/moice/commit/bfcd369c2ca6c44c64ae00ed93fe55779471a4d1))
+* drag message based on filtered tasks ([c967ef3](https://github.com/remvze/moice/commit/c967ef3e14c1b5dadd47e4c0c85d4a25545de957))
+
+
+### ✨ Features
+
+* add active dot ([a10fc00](https://github.com/remvze/moice/commit/a10fc00feb8f8969351ed06deceaffb525f5260e))
+* make filter mode persistant ([b8b2cb0](https://github.com/remvze/moice/commit/b8b2cb05db4fea2984dd4f596c8d63647861632d))
+* manage empty state ([e595432](https://github.com/remvze/moice/commit/e595432005ea8fc7c0f0645ecb3b8425f4764fb5))
+* manage task add on filters ([2d0e20a](https://github.com/remvze/moice/commit/2d0e20af6c03a49e8646e7f04aaccba9299c33a6))
+
 ## [0.1.0](https://github.com/remvze/moice/compare/v0.0.17...v0.1.0) (2022-10-29)
 
 
