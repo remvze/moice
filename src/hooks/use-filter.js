@@ -1,7 +1,9 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
+
+import useLocalStorage from '@/hooks/use-local-storage';
 
 const useFilter = () => {
-  const [mode, setMode] = useState('all');
+  const [mode, setMode] = useLocalStorage('moice-filter-mode', 'all');
 
   const filters = useMemo(
     () => [
