@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useTasks } from '@/store';
 import * as S from './task-text.styles';
 
-const TaskText = forwardRef(({ task, focus }, ref) => {
+const TaskText = forwardRef(({ task, focus, mode }, ref) => {
   const { id, text, done } = task;
 
   const write = useTasks(state => state.write);
@@ -18,8 +18,8 @@ const TaskText = forwardRef(({ task, focus }, ref) => {
   };
 
   const handleKeyUp = e => {
-    if (e.key === 'Enter') {
-      const newID = add(id);
+    if (e.key === 'Enter' && ['all', 'active', 'pinned'].includes(mode)) {
+      const newID = add(id, mode === 'pinned');
 
       focus(newID);
     }
@@ -56,6 +56,7 @@ const TaskText = forwardRef(({ task, focus }, ref) => {
 TaskText.propTypes = {
   task: PropTypes.object,
   focus: PropTypes.func,
+  mode: PropTypes.string,
 };
 
 export default TaskText;

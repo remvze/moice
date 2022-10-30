@@ -75,6 +75,7 @@ const Tasks = () => {
           <Task
             mounted={mounted}
             task={task}
+            mode={mode}
             allDone={allDone}
             onDrag={handleDrag}
             focus={focus}

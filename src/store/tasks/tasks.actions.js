@@ -61,12 +61,23 @@ export const createActions = (set, get) => ({
    * Add a new task after the given task
    *
    * @param {string} id - The ID of the task
+   * @param {boolean} pin - If the task should be pinned
    * @returns {string} - The ID of the new/next task
    */
-  add(id) {
+  add(id, pin) {
     const state = get();
     const index = state.tasks.findIndex(task => task.id === id);
-    const next = state.tasks[index + 1];
+    let next;
+
+    if (pin) {
+      const pins = state.tasks.filter(task => task.pinned);
+      const pinIndex = pins.findIndex(task => task.id === id);
+
+      next = pins[pinIndex + 1];
+    } else {
+      next = state.tasks[index + 1];
+    }
+
     const newID = uuid();
 
     if (next?.text?.length === 0) return next.id;
@@ -78,7 +89,7 @@ export const createActions = (set, get) => ({
         id: newID,
         text: '',
         done: false,
-        pinned: false,
+        pinned: !!pin,
       });
 
       return { tasks };
