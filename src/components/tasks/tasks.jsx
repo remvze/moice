@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Task from '@/components/task';
 import DragMessage from '@/components/drag-message';
 import Filters from '@/components/filters';
+import EmptyMessage from '@/components/empty-message';
 import useFilter from '@/hooks/use-filter';
 import { useTasks } from '@/store';
 import { until } from '@/helpers/wait';
@@ -84,6 +85,8 @@ const Tasks = () => {
           />
         ))}
       </S.List>
+
+      {filteredTasks.length === 0 && <EmptyMessage mode={mode} />}
 
       <AnimatePresence initial={false}>
         {!dragged && filteredTasks.length > 1 && <DragMessage />}
