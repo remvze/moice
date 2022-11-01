@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/remvze/moice/compare/v0.2.1...v1.0.0) (2022-11-01)
+
+
+### 🐛 Bug Fixes
+
+* hide checkbox input ([ed784d4](https://github.com/remvze/moice/commit/ed784d4c36f2eeb9c468f9757bbfb2a96612ff19))
+
+
+### 💄 Styling
+
+* change favicon ([afdda3c](https://github.com/remvze/moice/commit/afdda3cf61dd0a6bb0e99c3e718cc508edf9712d))
+
 ### [0.2.1](https://github.com/remvze/moice/compare/v0.2.0...v0.2.1) (2022-10-30)
 
 
