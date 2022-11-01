@@ -41,4 +41,5 @@ export const Input = styled.input`
   overflow: hidden;
   top: 0;
   left: 0;
+  visibility: hidden;
 `;
