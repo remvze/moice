@@ -7,7 +7,6 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/opacity" element={<Home animation="opacity" />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
