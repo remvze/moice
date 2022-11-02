@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/remvze/moice/compare/v1.0.0...v1.0.1) (2022-11-02)
+
+
+### 📝 Documentation
+
+* add README.md ([a2d98da](https://github.com/remvze/moice/commit/a2d98da44ceb91f060ee48165d6091e1713b70cb))
+* add README.md ([4ffa8e8](https://github.com/remvze/moice/commit/4ffa8e8abdb44c5f973a853a5749f6eec129bb5c))
+
+
+### 🐛 Bug Fixes
+
+* ignore empty tasks ([4c7383d](https://github.com/remvze/moice/commit/4c7383db3386599603b80ea74a1eb2f010826868))
+
 ## [1.0.0](https://github.com/remvze/moice/compare/v0.2.1...v1.0.0) (2022-11-01)
 
 
