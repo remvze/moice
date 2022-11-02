@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/remvze/moice/compare/v1.0.1...v1.0.2) (2022-11-02)
+
+
+### 💄 Styling
+
+* finalize the animation ([d4d862e](https://github.com/remvze/moice/commit/d4d862ed00c790c71471a948bc7b115843db61bf))
+
+
+### 🐛 Bug Fixes
+
+* remove animation test ([d5ed4fc](https://github.com/remvze/moice/commit/d5ed4fc89bc51797945cc90ad52c298f280788bd))
+
 ### [1.0.1](https://github.com/remvze/moice/compare/v1.0.0...v1.0.1) (2022-11-02)
 
 
