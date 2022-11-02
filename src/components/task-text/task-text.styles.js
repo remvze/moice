@@ -9,6 +9,7 @@ export const Text = styled(TextareaAutosize)`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.text.primary};
   transition: color 0.4s;
+  overflow: hidden;
 
   ${props =>
     props.$done &&
