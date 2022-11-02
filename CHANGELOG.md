@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/remvze/moice/compare/v1.0.2...v1.0.3) (2022-11-02)
+
+
+### 💄 Styling
+
+* remove scroll bar ([621dd87](https://github.com/remvze/moice/commit/621dd876894e054bb55b778c0956fdae2f611f54))
+
 ### [1.0.2](https://github.com/remvze/moice/compare/v1.0.1...v1.0.2) (2022-11-02)
 
 
