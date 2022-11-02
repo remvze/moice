@@ -1,12 +1,10 @@
-import PropTypes from 'prop-types';
-
 import MainLayout from '@/layouts/main';
 import Container from '@/components/container';
 import HomeHero from '@/components/home-hero';
 import Tasks from '@/components/tasks';
 import * as S from './home.styles';
 
-const Home = ({ animation }) => {
+const Home = () => {
   const variants = {
     hide: {},
     show: {
@@ -21,16 +19,12 @@ const Home = ({ animation }) => {
     <MainLayout>
       <S.Main variants={variants} initial="hide" animate="show">
         <Container>
-          <HomeHero animation={animation} />
+          <HomeHero />
           <Tasks />
         </Container>
       </S.Main>
     </MainLayout>
   );
-};
-
-Home.propTypes = {
-  animation: PropTypes.string,
 };
 
 export default Home;
