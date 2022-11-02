@@ -17,7 +17,10 @@ const Tasks = () => {
 
   const { filter, filters, mode, setMode } = useFilter();
   const filteredTasks = useMemo(() => tasks.filter(filter), [filter, tasks]);
-  const allDone = useMemo(() => tasks.every(task => task.done), [tasks]);
+  const allDone = useMemo(
+    () => tasks.filter(task => task.text.length).every(task => task.done),
+    [tasks]
+  );
 
   const [mounted, setMounted] = useState(false);
   const [dragged, setDragged] = useState(false);
