@@ -123,6 +123,24 @@ export const createActions = (set, get) => ({
   },
 
   /**
+   * Remove all tasks
+   *
+   * @returns {void}
+   */
+  removeAll() {
+    set({
+      tasks: [
+        {
+          id: uuid(),
+          text: '',
+          done: false,
+          pinned: false,
+        },
+      ],
+    });
+  },
+
+  /**
    * Reorder the given tasks
    *
    * @param {Array<import('./tasks.state').Task>} tasks - Tasks to reorder

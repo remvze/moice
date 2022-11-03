@@ -2,18 +2,27 @@ import { useState } from 'react';
 import { IoSettingsOutline, IoTrashOutline } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
-import * as S from './settings.style';
 import Confirm from '@/components/confirm';
+import { useTasks } from '@/store';
+import * as S from './settings.style';
 
 const Settings = () => {
+  const removeAll = useTasks(state => state.removeAll);
+
   const [isOpen, setIsOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const toggle = () => setIsOpen(prev => !prev);
 
   const variants = {
     close: { y: -30, opacity: 0 },
     open: { y: 0, opacity: 1 },
+  };
+
+  const handleConfirm = () => {
+    removeAll();
+    setShowConfirm(false);
+    setIsOpen(false);
   };
 
   return (
@@ -29,7 +38,7 @@ const Settings = () => {
               animate="open"
               exit="close"
             >
-              <S.Item onClick={() => setShowModal(true)}>
+              <S.Item onClick={() => setShowConfirm(true)}>
                 <S.ItemIcon>
                   <IoTrashOutline />
                 </S.ItemIcon>
@@ -46,14 +55,12 @@ const Settings = () => {
       </S.Wrapper>
 
       <Confirm
-        show={showModal}
+        show={showConfirm}
         text="Are you sure you want to delete all your tasks?"
         label="Delete"
-        onConfirm={() => setShowModal(false)}
-        onCancel={() => setShowModal(false)}
-      >
-        <h1>Hello</h1>
-      </Confirm>
+        onConfirm={handleConfirm}
+        onCancel={() => setShowConfirm(false)}
+      />
     </>
   );
 };
