@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/remvze/moice/compare/v1.0.3...v1.1.0) (2022-11-03)
+
+
+### ✨ Features
+
+* add confirm component ([a34f02e](https://github.com/remvze/moice/commit/a34f02e973ca281fa0b4e8666f3697d6dad0f651))
+* add modal component ([69ef5de](https://github.com/remvze/moice/commit/69ef5def9a5384360d22f4d9f7f16bdca7d04988))
+* add settings button ([94e5cfb](https://github.com/remvze/moice/commit/94e5cfb91a4638c0492825496f10b87fa5fea188))
+* implement delete all tasks ([56a483e](https://github.com/remvze/moice/commit/56a483ecf14299649c8e1ef4f0bc5e714ae0ad08))
+
+
+### 💄 Styling
+
+* add animations to settings ([c7fae79](https://github.com/remvze/moice/commit/c7fae79e39aa18a522b092a1e897cc2cf570555b))
+* change buttons ([96a0790](https://github.com/remvze/moice/commit/96a07903c2cc638a1f18fb7a74e2af867e84fd43))
+* darken colors ([0dbc0fa](https://github.com/remvze/moice/commit/0dbc0fa83c30ae089888fe732d8162e133897d14))
+
 ### [1.0.3](https://github.com/remvze/moice/compare/v1.0.2...v1.0.3) (2022-11-02)
 
 
