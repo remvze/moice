@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/remvze/moice/compare/v1.1.0...v1.1.1) (2022-11-03)
+
+
+### 💄 Styling
+
+* change minor styles ([77bda88](https://github.com/remvze/moice/commit/77bda885805424f4cf6b6df3285f52616e7cb4ac))
+
 ## [1.1.0](https://github.com/remvze/moice/compare/v1.0.3...v1.1.0) (2022-11-03)
 
 
