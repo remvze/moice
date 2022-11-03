@@ -4,7 +4,7 @@ import { IoClose } from 'react-icons/io5';
 
 import * as S from './modal.styles';
 
-const Modal = ({ children, isOpen, onClose }) => {
+const Modal = ({ children, show, onClose }) => {
   const overlay = {
     hide: { opacity: 0 },
     show: { opacity: 1 },
@@ -22,7 +22,7 @@ const Modal = ({ children, isOpen, onClose }) => {
 
   return (
     <AnimatePresence>
-      {isOpen && (
+      {show && (
         <>
           <S.Overlay
             variants={overlay}
@@ -62,7 +62,7 @@ const Modal = ({ children, isOpen, onClose }) => {
 
 Modal.propTypes = {
   children: PropTypes.any,
-  isOpen: PropTypes.bool,
+  show: PropTypes.bool,
   onClose: PropTypes.func,
 };
 

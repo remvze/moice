@@ -3,7 +3,7 @@ import { IoSettingsOutline, IoTrashOutline } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
 import * as S from './settings.style';
-import Modal from '@/components/modal';
+import Confirm from '@/components/confirm';
 
 const Settings = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,9 +45,15 @@ const Settings = () => {
         </S.Button>
       </S.Wrapper>
 
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+      <Confirm
+        show={showModal}
+        text="Are you sure you want to delete all your tasks?"
+        label="Delete"
+        onConfirm={() => setShowModal(false)}
+        onCancel={() => setShowModal(false)}
+      >
         <h1>Hello</h1>
-      </Modal>
+      </Confirm>
     </>
   );
 };

@@ -28,7 +28,7 @@ export const Modal = styled(motion.div)`
 
 export const Content = styled(Container).attrs({ small: true })`
   background-color: ${({ theme }) => theme.colors.maxDark};
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
   position: relative;
 `;
