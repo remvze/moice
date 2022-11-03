@@ -23,9 +23,9 @@ const Home = () => {
           <HomeHero />
           <Tasks />
         </Container>
-      </S.Main>
 
-      <Settings />
+        <Settings />
+      </S.Main>
     </MainLayout>
   );
 };

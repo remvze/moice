@@ -14,26 +14,31 @@ const Settings = () => {
 
   const toggle = () => setIsOpen(prev => !prev);
 
-  const variants = {
-    close: { y: -30, opacity: 0 },
-    open: { y: 0, opacity: 1 },
-  };
-
   const handleConfirm = () => {
     removeAll();
     setShowConfirm(false);
     setIsOpen(false);
   };
 
+  const itemsVariants = {
+    close: { y: -30, opacity: 0 },
+    open: { y: 0, opacity: 1 },
+  };
+
+  const wrapperVariants = {
+    hide: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <>
       {isOpen && <S.Overlay onClick={toggle} />}
 
-      <S.Wrapper>
+      <S.Wrapper variants={wrapperVariants}>
         <AnimatePresence>
           {isOpen && (
             <S.Items
-              variants={variants}
+              variants={itemsVariants}
               initial="close"
               animate="open"
               exit="close"
