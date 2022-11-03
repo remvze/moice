@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Header = styled.h3`
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 4px;
 `;
 
 export const Message = styled.p`
@@ -14,15 +15,15 @@ export const Buttons = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 25px;
+  margin-top: 30px;
 `;
 
 export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px 13px;
-  font-size: 13px;
+  padding: 8px 15px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
