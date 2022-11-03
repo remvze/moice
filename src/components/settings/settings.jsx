@@ -54,7 +54,7 @@ const Settings = () => {
           )}
         </AnimatePresence>
 
-        <S.Button onClick={toggle}>
+        <S.Button onClick={toggle} $active={isOpen}>
           <IoSettingsOutline />
         </S.Button>
       </S.Wrapper>

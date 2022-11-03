@@ -31,6 +31,12 @@ export const Button = styled.button`
   cursor: pointer;
   background-color: ${({ theme }) => theme.colors.darker};
   color: ${({ theme }) => theme.colors.text.primary};
+  transition: 0.4s;
+  opacity: ${({ $active }) => ($active ? '1' : '0.5')};
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const Items = styled(motion.div)`
