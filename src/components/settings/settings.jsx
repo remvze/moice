@@ -3,9 +3,11 @@ import { IoSettingsOutline, IoTrashOutline } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
 import * as S from './settings.style';
+import Modal from '@/components/modal';
 
 const Settings = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggle = () => setIsOpen(prev => !prev);
 
@@ -27,7 +29,7 @@ const Settings = () => {
               animate="open"
               exit="close"
             >
-              <S.Item>
+              <S.Item onClick={() => setShowModal(true)}>
                 <S.ItemIcon>
                   <IoTrashOutline />
                 </S.ItemIcon>
@@ -42,6 +44,10 @@ const Settings = () => {
           <IoSettingsOutline />
         </S.Button>
       </S.Wrapper>
+
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <h1>Hello</h1>
+      </Modal>
     </>
   );
 };

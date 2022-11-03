@@ -2,18 +2,21 @@ import PropTypes from 'prop-types';
 
 import * as S from './container.styles';
 
-const Container = ({ children, className, large }) => {
+const Container = ({ children, large, small, motion, ...props }) => {
+  const Component = motion ? S.MotionContainer : S.Container;
+
   return (
-    <S.Container $large={large} className={className}>
+    <Component $large={large} $small={small} {...props}>
       {children}
-    </S.Container>
+    </Component>
   );
 };
 
 Container.propTypes = {
   children: PropTypes.any,
-  className: PropTypes.string,
   large: PropTypes.bool,
+  small: PropTypes.bool,
+  motion: PropTypes.bool,
 };
 
 export default Container;

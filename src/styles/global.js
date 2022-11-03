@@ -6,6 +6,8 @@ const GlobalStyles = createGlobalStyle`
     --z-filters: 10;
     --z-settings-overlay: 13;
     --z-settings: 15;
+    --z-modal-overlay: 20;
+    --z-modal: 25;
   }
   
   * {
