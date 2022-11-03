@@ -39,6 +39,7 @@ const Modal = ({ children, show, onClose }) => {
             initial="hide"
             animate="show"
             exit="hide"
+            onClick={onClose}
           >
             <S.Content
               motion
@@ -46,6 +47,9 @@ const Modal = ({ children, show, onClose }) => {
               initial="hide"
               animate="show"
               exit="hide"
+              onClick={e => {
+                e.stopPropagation();
+              }}
             >
               <S.Close onClick={onClose}>
                 <IoClose />
