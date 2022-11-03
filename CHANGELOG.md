@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/remvze/moice/compare/v1.1.1...v1.1.2) (2022-11-03)
+
+
+### 🐛 Bug Fixes
+
+* add event listener to modal ([ad047ce](https://github.com/remvze/moice/commit/ad047ce7c9b37e2855d62d31423a21c7b52f2d0f))
+
 ### [1.1.1](https://github.com/remvze/moice/compare/v1.1.0...v1.1.1) (2022-11-03)
 
 
