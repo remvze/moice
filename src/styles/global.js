@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   :root {
     --vh: 1vh;
+    --z-filters: 10;
+    --z-settings-overlay: 13;
+    --z-settings: 15;
   }
   
   * {

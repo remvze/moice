@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   margin-bottom: 20px;
   position: sticky;
   top: 20px;
-  z-index: 10;
+  z-index: var(--z-filters);
 `;
 
 export const List = styled.ul`
