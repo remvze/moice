@@ -21,7 +21,6 @@ export const HeaderLink = styled.a`
   font-weight: 600;
   color: ${({ theme }) => theme.colors.text.secondary};
   font-size: 13px;
-  letter-spacing: 1px;
   transition: 0.4s;
   display: inline-flex;
   align-items: center;

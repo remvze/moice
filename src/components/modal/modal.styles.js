@@ -26,7 +26,7 @@ export const Modal = styled(motion.div)`
   overflow-y: auto;
 
   header {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 3px;
   }
