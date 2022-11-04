@@ -167,4 +167,27 @@ export const createActions = (set, get) => ({
       }),
     }));
   },
+
+  /**
+   * Import the given tasks
+   *
+   * @param {Array} tasks - Tasks to be imported
+   * @returns {void}
+   */
+  importTasks(tasks) {
+    const state = get();
+    const newTasks = tasks.map(task => {
+      const idExists = state.tasks.find(t => t.id === task.id);
+
+      if (!idExists) return task;
+
+      task.id = uuid();
+
+      return task;
+    });
+
+    set(state => ({
+      tasks: [...state.tasks, ...newTasks],
+    }));
+  },
 });

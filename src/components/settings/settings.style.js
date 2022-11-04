@@ -54,7 +54,7 @@ export const Item = styled.button`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border: none;
   outline: none;
   background-color: transparent;

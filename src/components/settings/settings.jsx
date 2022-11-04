@@ -1,13 +1,19 @@
 import { useState } from 'react';
-import { IoSettingsOutline, IoArrowUpCircleOutline } from 'react-icons/io5';
+import {
+  IoSettingsOutline,
+  IoArrowUpCircleOutline,
+  IoArrowDownCircleOutline,
+} from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
-import ExportModal from '@//components/export-modal';
+import ExportModal from '@/components/export-modal';
+import ImportModal from '@/components/import-modal';
 import * as S from './settings.style';
 
 const Settings = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showExport, setShowExport] = useState(false);
+  const [showImport, setShowImport] = useState(false);
 
   const toggle = () => setIsOpen(prev => !prev);
 
@@ -41,6 +47,14 @@ const Settings = () => {
 
                 <S.ItemLabel>Export Tasks</S.ItemLabel>
               </S.Item>
+
+              <S.Item onClick={() => setShowImport(true)}>
+                <S.ItemIcon>
+                  <IoArrowDownCircleOutline />
+                </S.ItemIcon>
+
+                <S.ItemLabel>Import Tasks</S.ItemLabel>
+              </S.Item>
             </S.Items>
           )}
         </AnimatePresence>
@@ -51,6 +65,7 @@ const Settings = () => {
       </S.Wrapper>
 
       <ExportModal show={showExport} onClose={() => setShowExport(false)} />
+      <ImportModal show={showImport} onClose={() => setShowImport(false)} />
     </>
   );
 };
