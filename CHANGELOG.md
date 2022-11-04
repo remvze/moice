@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/remvze/moice/compare/v1.2.0...v1.2.1) (2022-11-04)
+
+
+### 💄 Styling
+
+* decrease icon size ([2e7110e](https://github.com/remvze/moice/commit/2e7110ee49483eecd3b7fe715273afff06ab603c))
+* increase font size ([12f7c82](https://github.com/remvze/moice/commit/12f7c828d2ad6f0018e9f62327fa157882c42371))
+
 ## [1.2.0](https://github.com/remvze/moice/compare/v1.1.2...v1.2.0) (2022-11-04)
 
 
