@@ -53,4 +53,5 @@ export const Close = styled.button`
   outline: none;
   background-color: transparent;
   color: ${({ theme }) => theme.colors.text.secondary};
+  font-size: 16px;
 `;
