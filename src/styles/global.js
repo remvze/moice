@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text.primary};
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   body {

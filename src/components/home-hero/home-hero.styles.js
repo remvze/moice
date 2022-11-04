@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled(motion.h1)`
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
