@@ -32,7 +32,7 @@ export const Drag = styled.div`
 
 export const Pinned = styled.div`
   margin-right: 8px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 0;
   color: ${({ theme }) => theme.colors.text.dark};
   cursor: pointer;
