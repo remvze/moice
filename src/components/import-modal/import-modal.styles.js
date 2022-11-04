@@ -6,7 +6,7 @@ export const Textarea = styled.textarea`
   width: 100%;
   height: 150px;
   resize: none;
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: ${({ theme }) => theme.colors.darker};
   color: ${({ theme }) => theme.colors.text.primary};
   font-size: 14px;
@@ -17,7 +17,7 @@ export const Textarea = styled.textarea`
 `;
 
 export const ButtonContainer = styled.div`
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
 `;
