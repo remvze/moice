@@ -24,6 +24,12 @@ export const Modal = styled(motion.div)`
   max-height: 100%;
   padding: 50px 0;
   overflow-y: auto;
+
+  header {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
 `;
 
 export const Content = styled(Container).attrs({ small: true })`

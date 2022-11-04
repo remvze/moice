@@ -1,24 +1,15 @@
 import { useState } from 'react';
-import { IoSettingsOutline, IoTrashOutline } from 'react-icons/io5';
+import { IoSettingsOutline, IoArrowUpCircleOutline } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
-import Confirm from '@/components/confirm';
-import { useTasks } from '@/store';
+import ExportModal from '@//components/export-modal';
 import * as S from './settings.style';
 
 const Settings = () => {
-  const removeAll = useTasks(state => state.removeAll);
-
   const [isOpen, setIsOpen] = useState(false);
-  const [showConfirm, setShowConfirm] = useState(false);
+  const [showExport, setShowExport] = useState(false);
 
   const toggle = () => setIsOpen(prev => !prev);
-
-  const handleConfirm = () => {
-    removeAll();
-    setShowConfirm(false);
-    setIsOpen(false);
-  };
 
   const itemsVariants = {
     close: { y: -30, opacity: 0 },
@@ -43,12 +34,12 @@ const Settings = () => {
               animate="open"
               exit="close"
             >
-              <S.Item onClick={() => setShowConfirm(true)}>
+              <S.Item onClick={() => setShowExport(true)}>
                 <S.ItemIcon>
-                  <IoTrashOutline />
+                  <IoArrowUpCircleOutline />
                 </S.ItemIcon>
 
-                <S.ItemLabel>Delete Tasks</S.ItemLabel>
+                <S.ItemLabel>Export Tasks</S.ItemLabel>
               </S.Item>
             </S.Items>
           )}
@@ -59,13 +50,7 @@ const Settings = () => {
         </S.Button>
       </S.Wrapper>
 
-      <Confirm
-        show={showConfirm}
-        text="Are you sure you want to delete all your tasks?"
-        label="Delete"
-        onConfirm={handleConfirm}
-        onCancel={() => setShowConfirm(false)}
-      />
+      <ExportModal show={showExport} onClose={() => setShowExport(false)} />
     </>
   );
 };
