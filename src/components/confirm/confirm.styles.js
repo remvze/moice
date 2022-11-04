@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Header = styled.h3`
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 `;
 
 export const Message = styled.p`

@@ -5,19 +5,9 @@ import { IoClose } from 'react-icons/io5';
 import * as S from './modal.styles';
 
 const Modal = ({ children, show, onClose }) => {
-  const overlay = {
+  const variants = {
     hide: { opacity: 0 },
     show: { opacity: 1 },
-  };
-
-  const content = {
-    hide: { overflowY: 'hidden' },
-    show: { overflowY: 'auto' },
-  };
-
-  const modal = {
-    hide: { y: 50, opacity: 0 },
-    show: { y: 0, opacity: 1 },
   };
 
   return (
@@ -25,14 +15,14 @@ const Modal = ({ children, show, onClose }) => {
       {show && (
         <>
           <S.Overlay
-            variants={overlay}
+            variants={variants}
             initial="hide"
             animate="show"
             exit="hide"
             onClick={onClose}
           />
           <S.Modal
-            variants={modal}
+            variants={variants}
             transformTemplate={(_, generated) =>
               `translate(-50%, -50%) ${generated}`
             }
@@ -42,11 +32,6 @@ const Modal = ({ children, show, onClose }) => {
             onClick={onClose}
           >
             <S.Content
-              motion
-              variants={content}
-              initial="hide"
-              animate="show"
-              exit="hide"
               onClick={e => {
                 e.stopPropagation();
               }}
