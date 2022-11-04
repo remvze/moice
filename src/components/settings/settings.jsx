@@ -3,17 +3,20 @@ import {
   IoSettingsOutline,
   IoArrowUpCircleOutline,
   IoArrowDownCircleOutline,
+  IoTrashOutline,
 } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
 import ExportModal from '@/components/export-modal';
 import ImportModal from '@/components/import-modal';
+import ClearModal from '@/components/clear-modal';
 import * as S from './settings.style';
 
 const Settings = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showExport, setShowExport] = useState(false);
   const [showImport, setShowImport] = useState(false);
+  const [showClear, setShowClear] = useState(false);
 
   const toggle = () => setIsOpen(prev => !prev);
 
@@ -55,6 +58,14 @@ const Settings = () => {
 
                 <S.ItemLabel>Import Tasks</S.ItemLabel>
               </S.Item>
+
+              <S.Item onClick={() => setShowClear(true)}>
+                <S.ItemIcon>
+                  <IoTrashOutline />
+                </S.ItemIcon>
+
+                <S.ItemLabel>Clear Tasks</S.ItemLabel>
+              </S.Item>
             </S.Items>
           )}
         </AnimatePresence>
@@ -66,6 +77,7 @@ const Settings = () => {
 
       <ExportModal show={showExport} onClose={() => setShowExport(false)} />
       <ImportModal show={showImport} onClose={() => setShowImport(false)} />
+      <ClearModal show={showClear} onClose={() => setShowClear(false)} />
     </>
   );
 };

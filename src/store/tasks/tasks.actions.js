@@ -127,7 +127,7 @@ export const createActions = (set, get) => ({
    *
    * @returns {void}
    */
-  removeAll() {
+  clearAll() {
     set({
       tasks: [
         {
@@ -187,7 +187,7 @@ export const createActions = (set, get) => ({
     });
 
     set(state => ({
-      tasks: [...state.tasks, ...newTasks],
+      tasks: [...state.tasks.filter(task => !!task.text), ...newTasks],
     }));
   },
 });

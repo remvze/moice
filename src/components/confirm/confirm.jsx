@@ -6,7 +6,8 @@ import * as S from './confirm.styles';
 const Confirm = ({ show, onConfirm, onCancel, text, label = 'Yes' }) => {
   return (
     <Modal show={show} onClose={onCancel}>
-      <S.Header>Are you sure?</S.Header>
+      <header>Are you sure?</header>
+
       <S.Message>{text}</S.Message>
       <S.Buttons>
         <S.Button $cancel onClick={onCancel}>

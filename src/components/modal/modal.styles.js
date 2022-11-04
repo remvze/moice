@@ -27,7 +27,7 @@ export const Modal = styled(motion.div)`
 
   header {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 3px;
   }
 `;
