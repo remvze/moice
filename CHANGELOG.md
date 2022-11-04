@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/remvze/moice/compare/v1.1.2...v1.2.0) (2022-11-04)
+
+
+### 💄 Styling
+
+* decrease font size ([44d6d7a](https://github.com/remvze/moice/commit/44d6d7a74c4667eb6092732f1328b5263960f829))
+* fix some minor styles ([7651ed9](https://github.com/remvze/moice/commit/7651ed93e4eb204ffa40a449a94e01fd0f83f6c9))
+* increase icon size ([5cd3d28](https://github.com/remvze/moice/commit/5cd3d28d50755b664cc86e65afe082de5c4341f2))
+
+
+### ✨ Features
+
+* add export modal ([3b15635](https://github.com/remvze/moice/commit/3b15635001a04b72b66f9777d97a59c67340f924))
+* add import functionality ([861e185](https://github.com/remvze/moice/commit/861e1857190d071f3e574437365a649d3cc62fcc))
+* implement clear all functionality ([49e9db0](https://github.com/remvze/moice/commit/49e9db005c27ead67130bbd723a441fb8faab4d3))
+
 ### [1.1.2](https://github.com/remvze/moice/compare/v1.1.1...v1.1.2) (2022-11-03)
 
 
