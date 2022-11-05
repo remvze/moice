@@ -2,6 +2,65 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/remvze/moice/compare/v0.2.1...v1.3.0) (2022-11-05)
+
+
+### 📝 Documentation
+
+* add README.md ([a2d98da](https://github.com/remvze/moice/commit/a2d98da44ceb91f060ee48165d6091e1713b70cb))
+* add README.md ([4ffa8e8](https://github.com/remvze/moice/commit/4ffa8e8abdb44c5f973a853a5749f6eec129bb5c))
+
+
+### 🐛 Bug Fixes
+
+* add event listener to modal ([ad047ce](https://github.com/remvze/moice/commit/ad047ce7c9b37e2855d62d31423a21c7b52f2d0f))
+* hide checkbox input ([ed784d4](https://github.com/remvze/moice/commit/ed784d4c36f2eeb9c468f9757bbfb2a96612ff19))
+* ignore empty tasks ([4c7383d](https://github.com/remvze/moice/commit/4c7383db3386599603b80ea74a1eb2f010826868))
+* remove animation test ([d5ed4fc](https://github.com/remvze/moice/commit/d5ed4fc89bc51797945cc90ad52c298f280788bd))
+
+
+### ✨ Features
+
+* add confirm component ([a34f02e](https://github.com/remvze/moice/commit/a34f02e973ca281fa0b4e8666f3697d6dad0f651))
+* add export modal ([3b15635](https://github.com/remvze/moice/commit/3b15635001a04b72b66f9777d97a59c67340f924))
+* add import functionality ([861e185](https://github.com/remvze/moice/commit/861e1857190d071f3e574437365a649d3cc62fcc))
+* add modal component ([69ef5de](https://github.com/remvze/moice/commit/69ef5def9a5384360d22f4d9f7f16bdca7d04988))
+* add settings button ([94e5cfb](https://github.com/remvze/moice/commit/94e5cfb91a4638c0492825496f10b87fa5fea188))
+* implement clear all functionality ([49e9db0](https://github.com/remvze/moice/commit/49e9db005c27ead67130bbd723a441fb8faab4d3))
+* implement delete all tasks ([56a483e](https://github.com/remvze/moice/commit/56a483ecf14299649c8e1ef4f0bc5e714ae0ad08))
+
+
+### 🚚 Chores
+
+* **release:** 1.0.0 ([4fffdd5](https://github.com/remvze/moice/commit/4fffdd5eb697263750dba8dc328dae334d76f997))
+* **release:** 1.0.1 ([abe34f3](https://github.com/remvze/moice/commit/abe34f3803a04405ad0dc81d2545d494b59798df))
+* **release:** 1.0.2 ([623cb57](https://github.com/remvze/moice/commit/623cb57fcd03205900635c6a32952265ae802d6c))
+* **release:** 1.0.3 ([a641fcb](https://github.com/remvze/moice/commit/a641fcbb3518f0d14f5b44b62e749898cc3e7ab5))
+* **release:** 1.1.0 ([4047f5d](https://github.com/remvze/moice/commit/4047f5df68cbe64d0891209726accf84e36bbe1b))
+* **release:** 1.1.1 ([c5390c5](https://github.com/remvze/moice/commit/c5390c5d917289da9dee4ded04a533a061d97657))
+* **release:** 1.1.2 ([11f6a8d](https://github.com/remvze/moice/commit/11f6a8dd6a1b9f35f09503ada6fbbc1395e29612))
+* **release:** 1.2.0 ([18ac7f4](https://github.com/remvze/moice/commit/18ac7f4b199284fb1b56b2552fca30d038eb7850))
+* **release:** 1.2.1 ([0545165](https://github.com/remvze/moice/commit/054516501bf52419d6f42357f4beac3b0b3cef0d))
+* **release:** 1.2.2 ([b816515](https://github.com/remvze/moice/commit/b816515ec198d1d45d66bfb95c9d39f12dc905b1))
+
+
+### 💄 Styling
+
+* add animations to settings ([c7fae79](https://github.com/remvze/moice/commit/c7fae79e39aa18a522b092a1e897cc2cf570555b))
+* add transition duration ([57fdcdc](https://github.com/remvze/moice/commit/57fdcdc5d7fd8c8120dce16c5ec0f8757d48f837))
+* change buttons ([96a0790](https://github.com/remvze/moice/commit/96a07903c2cc638a1f18fb7a74e2af867e84fd43))
+* change favicon ([afdda3c](https://github.com/remvze/moice/commit/afdda3cf61dd0a6bb0e99c3e718cc508edf9712d))
+* change minor styles ([77bda88](https://github.com/remvze/moice/commit/77bda885805424f4cf6b6df3285f52616e7cb4ac))
+* darken colors ([0dbc0fa](https://github.com/remvze/moice/commit/0dbc0fa83c30ae089888fe732d8162e133897d14))
+* decrease font size ([44d6d7a](https://github.com/remvze/moice/commit/44d6d7a74c4667eb6092732f1328b5263960f829))
+* decrease icon size ([2e7110e](https://github.com/remvze/moice/commit/2e7110ee49483eecd3b7fe715273afff06ab603c))
+* finalize the animation ([d4d862e](https://github.com/remvze/moice/commit/d4d862ed00c790c71471a948bc7b115843db61bf))
+* fix some minor styles ([7651ed9](https://github.com/remvze/moice/commit/7651ed93e4eb204ffa40a449a94e01fd0f83f6c9))
+* increase font size ([12f7c82](https://github.com/remvze/moice/commit/12f7c828d2ad6f0018e9f62327fa157882c42371))
+* increase icon size ([5cd3d28](https://github.com/remvze/moice/commit/5cd3d28d50755b664cc86e65afe082de5c4341f2))
+* minor changes ([1ba9723](https://github.com/remvze/moice/commit/1ba9723b945b026ebddad28c8032d193d11a4157))
+* remove scroll bar ([621dd87](https://github.com/remvze/moice/commit/621dd876894e054bb55b778c0956fdae2f611f54))
+
 ### [1.2.2](https://github.com/remvze/moice/compare/v1.2.1...v1.2.2) (2022-11-04)
 
 
