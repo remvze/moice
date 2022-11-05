@@ -10,8 +10,6 @@ const Modal = ({ children, show, onClose }) => {
     show: { opacity: 1 },
   };
 
-  const transition = { duration: 0.2 };
-
   return (
     <AnimatePresence>
       {show && (
@@ -21,18 +19,13 @@ const Modal = ({ children, show, onClose }) => {
             initial="hide"
             animate="show"
             exit="hide"
-            transition={transition}
             onClick={onClose}
           />
           <S.Modal
             variants={variants}
-            transformTemplate={(_, generated) =>
-              `translate(-50%, -50%) ${generated}`
-            }
             initial="hide"
             animate="show"
             exit="hide"
-            transition={transition}
             onClick={onClose}
           >
             <S.Content
