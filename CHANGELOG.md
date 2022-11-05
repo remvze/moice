@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/remvze/moice/compare/v1.2.2...v1.2.3) (2022-11-05)
+
+
+### 💄 Styling
+
+* add transition duration ([57fdcdc](https://github.com/remvze/moice/commit/57fdcdc5d7fd8c8120dce16c5ec0f8757d48f837))
+
 ### [1.2.2](https://github.com/remvze/moice/compare/v1.2.1...v1.2.2) (2022-11-04)
 
 
