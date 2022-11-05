@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/remvze/moice/compare/v1.2.3...v1.2.4) (2022-11-05)
+
+
+### 🐛 Bug Fixes
+
+* make animation smooth ([4dac0c4](https://github.com/remvze/moice/commit/4dac0c4b1f21f145a48ef7117568e3e23b1d981f))
+
+## [1.3.0](https://github.com/remvze/moice/compare/v1.2.2...v1.3.0) (2022-11-05)
+
+
+### 🚚 Chores
+
+* **release:** 1.3.0 ([debca32](https://github.com/remvze/moice/commit/debca32ac7f5ad886f1aee788e1603687b31b377))
+
 ### [1.2.3](https://github.com/remvze/moice/compare/v1.2.2...v1.2.3) (2022-11-05)
 
 
