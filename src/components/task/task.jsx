@@ -27,10 +27,10 @@ const Task = forwardRef((props, ref) => {
     const taskEl = taskRef.current;
 
     if (taskEl) {
-      taskEl.addEventListener('touchstart', touchHandler, { passive: false });
+      taskEl.addEventListener('touchmove', touchHandler, { passive: false });
 
       return () => {
-        taskEl.removeEventListener('touchstart', touchHandler, {
+        taskEl.removeEventListener('touchmove', touchHandler, {
           passive: false,
         });
       };

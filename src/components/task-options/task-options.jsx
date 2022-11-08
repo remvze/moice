@@ -14,10 +14,6 @@ const TaskOptions = ({ task, isPinned, allDone, dragControls }) => {
     if (text.length !== 0) check(id, isPinned);
   };
 
-  const handleTouch = e => {
-    e.stopPropagation();
-  };
-
   const handleTogglePin = () => togglePin(id);
 
   return (
@@ -28,19 +24,10 @@ const TaskOptions = ({ task, isPinned, allDone, dragControls }) => {
         <div />
       </S.Drag>
 
-      <S.Pinned
-        onClick={handleTogglePin}
-        className={isPinned ? 'pinned' : ''}
-        onTouchStart={handleTouch}
-      >
+      <S.Pinned onClick={handleTogglePin} className={isPinned ? 'pinned' : ''}>
         <FaStar />
       </S.Pinned>
-      <S.Checkbox
-        checked={done}
-        onCheck={handleCheck}
-        celebrate={allDone}
-        onTouchStart={handleTouch}
-      />
+      <S.Checkbox checked={done} onCheck={handleCheck} celebrate={allDone} />
     </S.Options>
   );
 };
