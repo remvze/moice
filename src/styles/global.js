@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --z-settings: 15;
     --z-modal-overlay: 20;
     --z-modal: 25;
+    --z-snackbar: 30;
   }
   
   * {
