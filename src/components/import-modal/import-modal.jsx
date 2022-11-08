@@ -2,12 +2,14 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Modal from '@/components/modal';
+import { useSnackbar } from '@/contexts/snackbar';
 import { useTasks } from '@/store';
 
 import * as S from './import-modal.styles';
 
 const ImportModal = ({ show, onClose }) => {
   const importTasks = useTasks(state => state.importTasks);
+  const snackbar = useSnackbar();
   const [value, setValue] = useState('');
 
   const handleChange = e => setValue(e.target.value);
@@ -25,8 +27,12 @@ const ImportModal = ({ show, onClose }) => {
 
       importTasks(tasks);
       handleClose();
+
+      snackbar('All your tasks are imported.');
     } catch (error) {
       console.error(error.message);
+
+      snackbar('Something went wrong. Try again.');
     }
   };
 

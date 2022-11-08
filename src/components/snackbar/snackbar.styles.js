@@ -10,5 +10,6 @@ export const Snackbar = styled(motion.div)`
   max-width: 450px;
   padding: 10px 15px;
   border-radius: 5px;
+  font-size: 14px;
   background-color: ${({ theme }) => theme.colors.darker};
 `;

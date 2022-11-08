@@ -3,15 +3,21 @@ import PropTypes from 'prop-types';
 import clipboard from 'clipboardy';
 
 import Modal from '@/components/modal';
+import { useSnackbar } from '@/contexts/snackbar';
 import { useTasks } from '@/store';
 
 import * as S from './export-modal.styles';
 
 const ExportModal = ({ show, onClose }) => {
   const tasks = useTasks(state => state.tasks);
+  const snackbar = useSnackbar();
   const string = useMemo(() => JSON.stringify({ tasks }), [tasks]);
 
-  const copy = () => clipboard.write(string);
+  const copy = () => {
+    clipboard.write(string);
+
+    snackbar('Tasks copied to your clipboard.');
+  };
 
   return (
     <Modal show={show} onClose={onClose}>

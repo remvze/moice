@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
 
 import Confirm from '@/components//confirm';
+import { useSnackbar } from '@/contexts/snackbar';
 import { useTasks } from '@/store';
 
 const ClearModal = ({ show, onClose }) => {
   const clearAll = useTasks(state => state.clearAll);
+  const snackbar = useSnackbar();
 
   const handleConfirm = () => {
     clearAll();
     onClose();
+
+    snackbar('All your tasks are cleared.');
   };
 
   return (
