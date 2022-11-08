@@ -15,26 +15,28 @@ const Snackbar = ({ message }) => {
   };
 
   return (
-    <S.Snackbar
+    <S.Wrapper
       variants={snackbar}
       initial="hide"
       animate="show"
       exit="hide"
       transformTemplate={(_, generated) => `translateX(-50%) ${generated}`}
     >
-      <AnimatePresence mode="wait" initial="false">
-        <motion.p
-          variants={msg}
-          initial="hide"
-          animate="show"
-          exit="hide"
-          transition={{ duration: 0.1 }}
-          key={message}
-        >
-          {message}
-        </motion.p>
-      </AnimatePresence>
-    </S.Snackbar>
+      <S.Snackbar>
+        <AnimatePresence mode="wait" initial="false">
+          <motion.p
+            variants={msg}
+            initial="hide"
+            animate="show"
+            exit="hide"
+            transition={{ duration: 0.1 }}
+            key={message}
+          >
+            {message}
+          </motion.p>
+        </AnimatePresence>
+      </S.Snackbar>
+    </S.Wrapper>
   );
 };
 
