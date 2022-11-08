@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/remvze/moice/compare/v1.2.5...v1.3.0) (2022-11-08)
+
+
+### 💄 Styling
+
+* change some fonts ([b3efbf8](https://github.com/remvze/moice/commit/b3efbf86ef30e6491f3d5901c4e1478f4411c6bd))
+
+
+### 🐛 Bug Fixes
+
+* handle touch in mobile ([c6ae21c](https://github.com/remvze/moice/commit/c6ae21cb9a766da1dbe65f75ccf32932ef4e97c1))
+* mobile touch handler ([7ed431c](https://github.com/remvze/moice/commit/7ed431ca63d5d33cd5548fd07dd36c83a7580d66))
+
+
+### ✨ Features
+
+* add snackbar to modals ([472c619](https://github.com/remvze/moice/commit/472c619860fb8cb6fecaa789b28e258ab94a4c66))
+* implement snackbar component ([8038da0](https://github.com/remvze/moice/commit/8038da020e952f2588844f2dbafb8473de553447))
+
 ### [1.2.5](https://github.com/remvze/moice/compare/v1.2.4...v1.2.5) (2022-11-08)
 
 
