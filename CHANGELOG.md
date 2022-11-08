@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.4.0](https://github.com/remvze/moice/compare/v1.2.5...v1.4.0) (2022-11-08)
+## [1.3.0](https://github.com/remvze/moice/compare/v1.2.5...v1.3.0) (2022-11-08)
 
 
 ### 💄 Styling
@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### 🚚 Chores
 
 * **release:** 1.3.0 ([a405860](https://github.com/remvze/moice/commit/a405860e75a03ab147d8c8513aa0cb3b18c0cbb0))
+* **release:** 1.4.0 ([eeedf9a](https://github.com/remvze/moice/commit/eeedf9a59fd214103e09df775b6ca54ed73433f3))
 
 ### [1.2.5](https://github.com/remvze/moice/compare/v1.2.4...v1.2.5) (2022-11-08)
 
