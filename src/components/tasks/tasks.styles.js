@@ -7,15 +7,6 @@ export const Section = styled.section`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
-export const Label = styled.h3`
-  font-size: 14px;
-  font-weight: 700;
-  color: ${({ theme }) => theme.colors.text.secondary};
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-`;
-
 export const List = styled(Reorder.Group)`
   list-style: none;
 `;

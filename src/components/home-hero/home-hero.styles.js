@@ -6,10 +6,15 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled(motion.h1)`
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  margin-bottom: 5px;
+`;
+
+export const Emoji = styled.span`
+  font-size: 22px;
 `;
 
 export const Desc = styled(motion.p)`

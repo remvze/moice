@@ -8,7 +8,9 @@ const HomeHero = () => {
 
   return (
     <S.Wrapper>
-      <S.Title variants={variants}>Moice 💯</S.Title>
+      <S.Title variants={variants}>
+        Moice <S.Emoji>💯</S.Emoji>
+      </S.Title>
       <S.Desc variants={variants}>Minimal and intuitive task manager.</S.Desc>
     </S.Wrapper>
   );

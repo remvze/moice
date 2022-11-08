@@ -12,6 +12,7 @@ export const Wrapper = styled(motion.div)`
 export const Code = styled.h2`
   font-size: 60px;
   font-weight: 700;
+  font-family: 'Inter', sans-serif;
   color: ${({ theme }) => theme.colors.text.primary};
   text-align: center;
   line-height: 1;
