@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/remvze/moice/compare/v1.2.4...v1.2.5) (2022-11-08)
+
+
+### 💄 Styling
+
+* add new fonts ([431fdd9](https://github.com/remvze/moice/commit/431fdd9b82c7bd24dfb99ece898a3aa6585b9062))
+
+
+### 🐛 Bug Fixes
+
+* add drag trigger ([4f668ac](https://github.com/remvze/moice/commit/4f668acab606fe93dfefaa07940d15eab0a61382))
+
+
+### 🚚 Chores
+
+* remove font files ([1fdd765](https://github.com/remvze/moice/commit/1fdd7652de1bdda1201952768944a3e8b646e47d))
+
 ### [1.2.4](https://github.com/remvze/moice/compare/v1.2.3...v1.2.4) (2022-11-05)
 
 
