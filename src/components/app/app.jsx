@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Router from '@/components/router';
 import GlobalStyles from '@/styles/global';
+import { SnackbarProvider } from '@/contexts/snackbar';
 import theme from '@/styles/theme';
 import useVH from '@/hooks/use-vh';
 
@@ -13,10 +14,12 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <GlobalStyles />
-        <Router />
-      </BrowserRouter>
+      <SnackbarProvider>
+        <BrowserRouter>
+          <GlobalStyles />
+          <Router />
+        </BrowserRouter>
+      </SnackbarProvider>
     </ThemeProvider>
   );
 };
