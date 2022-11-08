@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa';
 import { useTasks } from '@/store';
 import * as S from './task-options.styles';
 
-const TaskOptions = ({ task, isPinned, allDone }) => {
+const TaskOptions = ({ task, isPinned, allDone, dragControls }) => {
   const { id, text, done } = task;
 
   const check = useTasks(state => state.check);
@@ -18,7 +18,7 @@ const TaskOptions = ({ task, isPinned, allDone }) => {
 
   return (
     <S.Options>
-      <S.Drag>
+      <S.Drag onPointerDown={e => dragControls.start(e)}>
         <div />
         <div />
         <div />
@@ -40,6 +40,7 @@ TaskOptions.propTypes = {
   }),
   isPinned: PropTypes.bool,
   allDone: PropTypes.bool,
+  dragControls: PropTypes.object,
 };
 
 export default TaskOptions;

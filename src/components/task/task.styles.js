@@ -7,4 +7,5 @@ export const Wrapper = styled(Reorder.Item)`
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
+  user-select: none;
 `;
