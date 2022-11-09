@@ -21,7 +21,7 @@ export const Drag = styled.div`
     content: '';
     width: 100%;
     height: 2px;
-    background-color: ${({ theme }) => theme.colors.darker};
+    background-color: ${({ theme }) => theme.colors.gray500};
     border-radius: 50px;
 
     &:not(:first-child) {
@@ -34,7 +34,7 @@ export const Pinned = styled.div`
   margin-right: 8px;
   font-size: 16px;
   line-height: 0;
-  color: ${({ theme }) => theme.colors.text.dark};
+  color: ${({ theme }) => theme.colors.gray500};
   cursor: pointer;
   transition: color 0.4s;
 

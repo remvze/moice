@@ -9,7 +9,7 @@ export const Box = styled.div`
   display: inline-block;
   width: 17px;
   height: 17px;
-  border: 2px solid #888;
+  border: 2px solid ${({ theme }) => theme.colors.gray300};
   border-radius: 5px;
   cursor: pointer;
   background-color: ${({ theme }) => theme.colors.background};
