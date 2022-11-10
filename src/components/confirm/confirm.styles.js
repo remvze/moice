@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import UnstyledButton from '@/components/button';
 
 export const Message = styled.p`
-  color: ${({ theme }) => theme.colors.text[800]};
+  color: ${({ theme }) => theme.colors.text[2]};
 `;
 
 export const Buttons = styled.div`
@@ -21,7 +21,7 @@ export const Button = styled(UnstyledButton)`
   ${({ $cancel }) =>
     $cancel &&
     css`
-      background-color: ${({ theme }) => theme.colors.background[700]};
+      background-color: ${({ theme }) => theme.colors.background[3]};
     `}
 
   ${({ $confirm }) =>

@@ -40,8 +40,8 @@ const GlobalStyles = createGlobalStyle`
 
   html, body {
     height: 100%;
-    background-color: ${({ theme }) => theme.colors.background[900]};
-    color: ${({ theme }) => theme.colors.text[900]};
+    background-color: ${({ theme }) => theme.colors.background[1]};
+    color: ${({ theme }) => theme.colors.text[1]};
     line-height: 1.6;
     font-size: ${({ theme }) => theme.fontSize.m};
   }

@@ -19,14 +19,14 @@ export const Logo = styled.img`
 
 export const HeaderLink = styled.a`
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.text[800]};
+  color: ${({ theme }) => theme.colors.text[2]};
   font-size: ${({ theme }) => theme.fontSize.xs};
   transition: 0.4s;
   display: inline-flex;
   align-items: center;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.text[900]};
+    color: ${({ theme }) => theme.colors.text[1]};
   }
 
   span {

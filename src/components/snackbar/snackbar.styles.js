@@ -16,5 +16,5 @@ export const Snackbar = styled(motion.div)`
   padding: 10px 15px;
   border-radius: ${({ theme }) => theme.borderRadius.m};
   font-size: ${({ theme }) => theme.fontSize.s};
-  background-color: ${({ theme }) => theme.colors.background[700]};
+  background-color: ${({ theme }) => theme.colors.background[3]};
 `;

@@ -9,10 +9,10 @@ export const Box = styled.div`
   display: inline-block;
   width: 17px;
   height: 17px;
-  border: 2px solid ${({ theme }) => theme.colors.border[900]};
+  border: 2px solid ${({ theme }) => theme.colors.border[1]};
   border-radius: ${({ theme }) => theme.borderRadius.m};
   cursor: pointer;
-  background-color: ${({ theme }) => theme.colors.background[900]};
+  background-color: ${({ theme }) => theme.colors.background[1]};
   transition: box-shadow 0.4s;
 
   &.checked {

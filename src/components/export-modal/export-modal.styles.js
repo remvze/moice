@@ -7,8 +7,8 @@ export const Textarea = styled.textarea.attrs({ readOnly: true })`
   height: 150px;
   resize: none;
   margin-top: 10px;
-  background-color: ${({ theme }) => theme.colors.background[700]};
-  color: ${({ theme }) => theme.colors.text[900]};
+  background-color: ${({ theme }) => theme.colors.background[3]};
+  color: ${({ theme }) => theme.colors.text[1]};
   font-size: ${({ theme }) => theme.fontSize.s};
   padding: 10px;
   border: none;

@@ -1,30 +1,30 @@
 /**
- * Weight Guide:
- * 900 -> Primary
- * 800 -> Secondary
+ * Priority Guide:
+ * 1 -> Primary
+ * 2 -> Secondary
  * ...
  */
 
 const theme = {
   colors: {
     background: {
-      900: 'var(--color-black)',
-      800: 'var(--color-gray-900)',
-      700: 'var(--color-gray-800)',
+      1: 'var(--color-black)',
+      2: 'var(--color-gray-900)',
+      3: 'var(--color-gray-800)',
     },
 
     border: {
-      900: 'var(--color-gray-600)',
+      1: 'var(--color-gray-600)',
     },
 
     neutral: {
-      900: 'var(--color-gray-700)',
+      1: 'var(--color-gray-700)',
     },
 
     text: {
-      900: 'var(--color-white)',
-      800: 'var(--color-gray-100)',
-      700: 'var(--color-gray-600)',
+      1: 'var(--color-white)',
+      2: 'var(--color-gray-100)',
+      3: 'var(--color-gray-600)',
     },
   },
 

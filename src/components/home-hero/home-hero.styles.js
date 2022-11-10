@@ -18,5 +18,5 @@ export const Emoji = styled.span`
 `;
 
 export const Desc = styled(motion.p)`
-  color: ${({ theme }) => theme.colors.text[800]};
+  color: ${({ theme }) => theme.colors.text[2]};
 `;

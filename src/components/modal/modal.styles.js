@@ -33,7 +33,7 @@ export const Modal = styled(motion.div)`
 `;
 
 export const Content = styled(Container).attrs({ small: true })`
-  background-color: ${({ theme }) => theme.colors.background[800]};
+  background-color: ${({ theme }) => theme.colors.background[2]};
   padding: 25px;
   border-radius: ${({ theme }) => theme.borderRadius.m};
   position: relative;
@@ -52,6 +52,6 @@ export const Close = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.text[800]};
+  color: ${({ theme }) => theme.colors.text[2]};
   font-size: 16px;
 `;

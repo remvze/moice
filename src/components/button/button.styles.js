@@ -13,6 +13,6 @@ export const Button = styled.button`
   border-radius: ${({ theme }) => theme.borderRadius.m};
   border: none;
   outline: none;
-  color: ${({ theme }) => theme.colors.text[900]};
-  background-color: ${({ theme }) => theme.colors.background[700]};
+  color: ${({ theme }) => theme.colors.text[1]};
+  background-color: ${({ theme }) => theme.colors.background[3]};
 `;
