@@ -2,6 +2,6 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Message = styled(motion.p)`
-  color: ${({ theme }) => theme.colors.text[800]};
-  font-size: 14px;
+  color: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.s};
 `;

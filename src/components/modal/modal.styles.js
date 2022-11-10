@@ -26,7 +26,7 @@ export const Modal = styled(motion.div)`
   overflow-y: auto;
 
   header {
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSize.l};
     font-weight: 700;
     font-family: 'Inter', sans-serif;
   }

@@ -9,7 +9,7 @@ export const Textarea = styled.textarea`
   margin-top: 10px;
   background-color: ${({ theme }) => theme.colors.background[700]};
   color: ${({ theme }) => theme.colors.text[900]};
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.fontSize.s};
   padding: 10px;
   border: none;
   outline: none;

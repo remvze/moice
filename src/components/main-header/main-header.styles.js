@@ -20,7 +20,7 @@ export const Logo = styled.img`
 export const HeaderLink = styled.a`
   font-weight: 600;
   color: ${({ theme }) => theme.colors.text[800]};
-  font-size: 13px;
+  font-size: ${({ theme }) => theme.fontSize.xs};
   transition: 0.4s;
   display: inline-flex;
   align-items: center;

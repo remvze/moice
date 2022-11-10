@@ -10,10 +10,8 @@ export const Footer = styled.footer`
 export const FooterText = styled(motion.p)`
   color: ${({ theme }) => theme.colors.text[800]};
   text-align: center;
-  font-size: 11px;
-  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.fontSize.xs};
   font-weight: 600;
-  letter-spacing: 1px;
 
   a {
     color: ${({ theme }) => theme.colors.text[900]};

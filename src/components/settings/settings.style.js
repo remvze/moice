@@ -78,6 +78,6 @@ export const ItemIcon = styled.div`
 `;
 
 export const ItemLabel = styled.p`
-  font-size: 13px;
+  font-size: ${({ theme }) => theme.fontSize.xs};
   line-height: 0;
 `;

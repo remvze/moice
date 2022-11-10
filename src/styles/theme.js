@@ -27,6 +27,14 @@ const theme = {
       700: 'var(--color-gray-600)',
     },
   },
+
+  fontSize: {
+    xs: '13px',
+    s: '14px',
+    m: '15px',
+    l: '18px',
+    xl: '24px',
+  },
 };
 
 export default theme;

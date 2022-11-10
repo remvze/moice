@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled(motion.h1)`
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   line-height: 1;
@@ -14,7 +14,7 @@ export const Title = styled(motion.h1)`
 `;
 
 export const Emoji = styled.span`
-  font-size: 22px;
+  font-size: ${({ theme }) => `calc(${theme.fontSize.xl} - 2px)`};
 `;
 
 export const Desc = styled(motion.p)`

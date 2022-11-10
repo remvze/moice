@@ -15,6 +15,6 @@ export const Wrapper = styled(motion.div)`
 export const Snackbar = styled(motion.div)`
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.fontSize.s};
   background-color: ${({ theme }) => theme.colors.background[700]};
 `;
