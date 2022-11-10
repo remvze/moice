@@ -13,7 +13,7 @@ export const Code = styled.h2`
   font-size: 60px;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
-  color: ${({ theme }) => theme.colors.text.primary};
+  color: ${({ theme }) => theme.colors.text[900]};
   text-align: center;
   line-height: 1;
   margin-bottom: 5px;
@@ -21,5 +21,5 @@ export const Code = styled.h2`
 
 export const Message = styled.p`
   text-align: center;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text[800]};
 `;

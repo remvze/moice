@@ -1,21 +1,30 @@
+/**
+ * Weight Guide:
+ * 900 -> Primary
+ * 800 -> Secondary
+ * ...
+ */
+
 const theme = {
   colors: {
-    background: '#080808',
+    background: {
+      900: 'var(--color-black)',
+      800: 'var(--color-gray-900)',
+      700: 'var(--color-gray-800)',
+    },
 
-    gray100: '#585858',
-    gray300: '#484848',
-    gray500: '#383838',
-    gray700: '#282828',
-    gray900: '#181818',
+    border: {
+      900: 'var(--color-gray-600)',
+    },
 
-    dark: '#383838',
-    darker: '#282828',
-    maxDark: '#181818',
-    border: '#444444',
+    neutral: {
+      900: 'var(--color-gray-700)',
+    },
+
     text: {
-      primary: '#FEFEFE',
-      secondary: '#999999',
-      dark: '#444444',
+      900: 'var(--color-white)',
+      800: 'var(--color-gray-100)',
+      700: 'var(--color-gray-600)',
     },
   },
 };

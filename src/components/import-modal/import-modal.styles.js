@@ -7,8 +7,8 @@ export const Textarea = styled.textarea`
   height: 150px;
   resize: none;
   margin-top: 10px;
-  background-color: ${({ theme }) => theme.colors.darker};
-  color: ${({ theme }) => theme.colors.text.primary};
+  background-color: ${({ theme }) => theme.colors.background[700]};
+  color: ${({ theme }) => theme.colors.text[900]};
   font-size: 14px;
   padding: 10px;
   border: none;

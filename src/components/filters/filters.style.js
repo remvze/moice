@@ -35,13 +35,13 @@ export const Button = styled.button`
   border-radius: 100px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text[800]};
   background-color: transparent;
   transition: 0.4s;
 
   &.active {
     padding-left: 22px;
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.text[900]};
     background-color: #222;
   }
 `;

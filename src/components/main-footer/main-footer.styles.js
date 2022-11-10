@@ -8,7 +8,7 @@ export const Footer = styled.footer`
 `;
 
 export const FooterText = styled(motion.p)`
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text[800]};
   text-align: center;
   font-size: 11px;
   text-transform: uppercase;
@@ -16,6 +16,6 @@ export const FooterText = styled(motion.p)`
   letter-spacing: 1px;
 
   a {
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.text[900]};
   }
 `;

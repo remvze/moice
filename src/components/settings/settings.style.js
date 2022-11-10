@@ -29,8 +29,8 @@ export const Button = styled.button`
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  background-color: ${({ theme }) => theme.colors.darker};
-  color: ${({ theme }) => theme.colors.text.primary};
+  background-color: ${({ theme }) => theme.colors.background[700]};
+  color: ${({ theme }) => theme.colors.text[900]};
   transition: 0.4s;
   opacity: ${({ $active }) => ($active ? '1' : '0.5')};
 
@@ -45,7 +45,7 @@ export const Items = styled(motion.div)`
   right: 0;
   min-width: 200px;
   padding: 5px;
-  background-color: ${({ theme }) => theme.colors.maxDark};
+  background-color: ${({ theme }) => theme.colors.background[800]};
   border-radius: 5px;
 `;
 
@@ -61,11 +61,11 @@ export const Item = styled.button`
   cursor: pointer;
   border-radius: 5px;
   transition: 0.4s;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text[800]};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.darker};
-    color: ${({ theme }) => theme.colors.text.primary};
+    background-color: ${({ theme }) => theme.colors.background[700]};
+    color: ${({ theme }) => theme.colors.text[900]};
   }
 `;
 
@@ -74,7 +74,7 @@ export const ItemIcon = styled.div`
   font-size: 16px;
   width: 25px;
   text-align: left;
-  color: ${({ theme }) => theme.colors.text.primary};
+  color: ${({ theme }) => theme.colors.text[900]};
 `;
 
 export const ItemLabel = styled.p`
