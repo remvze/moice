@@ -34,7 +34,7 @@ export const Modal = styled(motion.div)`
 
 export const Content = styled(Container).attrs({ small: true })`
   background-color: ${({ theme }) => theme.colors.background[2]};
-  padding: 25px;
+  padding: 20px;
   border-radius: ${({ theme }) => theme.borderRadius.m};
   position: relative;
 `;
