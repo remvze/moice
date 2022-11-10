@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/remvze/moice/compare/v1.3.2...v1.4.0) (2022-11-10)
+
+
+### 💄 Styling
+
+* change heading font ([2dc1e2a](https://github.com/remvze/moice/commit/2dc1e2aded60a8e007ae89b9f8f68069eb325c2d))
+* different layout for desktop ([9a34192](https://github.com/remvze/moice/commit/9a34192b1b11e3e819284f7a36c5f3644ef1c298))
+* remove margin from the last task ([16eb329](https://github.com/remvze/moice/commit/16eb329240c31e0c23fed16f919ce00f898ff1a8))
+
 ### [1.3.2](https://github.com/remvze/moice/compare/v1.3.1...v1.3.2) (2022-11-10)
 
 
