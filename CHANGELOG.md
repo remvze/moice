@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/remvze/moice/compare/v1.3.0...v1.3.1) (2022-11-10)
+
+
+### 💄 Styling
+
+* add new colors ([4dc606d](https://github.com/remvze/moice/commit/4dc606da819904aa07cded2f429506e500190af2))
+* fix empty state color ([3215570](https://github.com/remvze/moice/commit/3215570c5796018c58acb45f69e697661209a67d))
+* fix snackbar width ([aeed678](https://github.com/remvze/moice/commit/aeed6781e07717dc7fc02ae5dd6e388df446d751))
+* standardize border radius ([810c8cf](https://github.com/remvze/moice/commit/810c8cf97ed57095634fd6e2336d0db6ac26cf51))
+* standardize color names ([2edf528](https://github.com/remvze/moice/commit/2edf528f87d99cf3f8079b4273a34bf388ba1dbf))
+* standardize font sizes ([2c45637](https://github.com/remvze/moice/commit/2c456377cb8106d618bc2847b421b3a6f4f8a4d6))
+
 ## [1.3.0](https://github.com/remvze/moice/compare/v1.2.5...v1.3.0) (2022-11-08)
 
 
