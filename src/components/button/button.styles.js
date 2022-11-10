@@ -10,7 +10,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius.m};
   border: none;
   outline: none;
   color: ${({ theme }) => theme.colors.text[900]};

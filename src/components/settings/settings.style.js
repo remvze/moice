@@ -46,7 +46,7 @@ export const Items = styled(motion.div)`
   min-width: 200px;
   padding: 5px;
   background-color: ${({ theme }) => theme.colors.background[800]};
-  border-radius: 5px;
+  border-radius: ${({ theme }) => theme.borderRadius.m};
 `;
 
 export const Item = styled.button`
@@ -59,7 +59,7 @@ export const Item = styled.button`
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: ${({ theme }) => theme.borderRadius.m};
   transition: 0.4s;
   color: ${({ theme }) => theme.colors.text[800]};
 

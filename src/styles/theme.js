@@ -35,6 +35,10 @@ const theme = {
     l: '18px',
     xl: '24px',
   },
+
+  borderRadius: {
+    m: '4px',
+  },
 };
 
 export default theme;

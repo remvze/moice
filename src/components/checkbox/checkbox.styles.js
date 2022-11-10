@@ -10,7 +10,7 @@ export const Box = styled.div`
   width: 17px;
   height: 17px;
   border: 2px solid ${({ theme }) => theme.colors.border[900]};
-  border-radius: 5px;
+  border-radius: ${({ theme }) => theme.borderRadius.m};
   cursor: pointer;
   background-color: ${({ theme }) => theme.colors.background[900]};
   transition: box-shadow 0.4s;

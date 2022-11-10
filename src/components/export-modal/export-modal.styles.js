@@ -13,7 +13,7 @@ export const Textarea = styled.textarea.attrs({ readOnly: true })`
   padding: 10px;
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: ${({ theme }) => theme.borderRadius.m};
 `;
 
 export const ButtonContainer = styled.div`
