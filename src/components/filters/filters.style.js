@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
   z-index: var(--z-filters);
 
   @media (min-width: 800px) {
-    width: 200px;
+    width: 220px;
     max-width: 200px;
-    padding-right: 20px;
+    padding-right: 30px;
     position: static;
   }
 `;
