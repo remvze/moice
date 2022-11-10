@@ -6,6 +6,13 @@ export const Wrapper = styled.div`
   position: sticky;
   top: 20px;
   z-index: var(--z-filters);
+
+  @media (min-width: 800px) {
+    width: 200px;
+    max-width: 200px;
+    padding-right: 20px;
+    position: static;
+  }
 `;
 
 export const List = styled.ul`
@@ -15,10 +22,21 @@ export const List = styled.ul`
   background-color: rgba(8, 8, 8, 0.4);
   backdrop-filter: blur(5px);
   gap: 5px;
+
+  @media (min-width: 800px) {
+    display: block;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 20px;
+  }
 `;
 
 export const Item = styled.li`
   display: inline-block;
+
+  @media (min-width: 800px) {
+    display: block;
+  }
 `;
 
 export const Button = styled.button`
@@ -42,7 +60,21 @@ export const Button = styled.button`
   &.active {
     padding-left: 22px;
     color: ${({ theme }) => theme.colors.text[1]};
-    background-color: #222;
+    background-color: ${({ theme }) => theme.colors.background[3]};
+  }
+
+  @media (min-width: 800px) {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: ${({ theme }) => theme.borderRadius.m};
+
+    &.active {
+      padding-left: 20px;
+      background-color: ${({ theme }) => theme.colors.background[2]};
+    }
   }
 `;
 
@@ -56,4 +88,13 @@ export const Dot = styled(motion.div)`
   border-radius: 50%;
   background-color: #ff0844;
   background-image: linear-gradient(45deg, #ff0844, #ffb199);
+
+  @media (min-width: 800px) {
+    width: 3px;
+    height: 100%;
+    left: 0;
+    border-radius: 0;
+    background-image: linear-gradient(45deg, #ff0844, #ff693b);
+    z-index: 2;
+  }
 `;

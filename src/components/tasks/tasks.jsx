@@ -72,28 +72,32 @@ const Tasks = () => {
 
   return (
     <motion.div variants={variants}>
-      <Filters filters={filters} mode={mode} onChange={setMode} />
+      <S.Section>
+        <Filters filters={filters} mode={mode} onChange={setMode} />
 
-      <S.List axis="y" values={filteredTasks} onReorder={reorderTasks}>
-        {filteredTasks.map(task => (
-          <Task
-            mounted={mounted}
-            task={task}
-            mode={mode}
-            allDone={allDone}
-            onDrag={handleDrag}
-            focus={focus}
-            ref={ref => (refs.current[task.id] = ref)}
-            key={task.id}
-          />
-        ))}
-      </S.List>
+        <S.Tasks>
+          <S.List axis="y" values={filteredTasks} onReorder={reorderTasks}>
+            {filteredTasks.map(task => (
+              <Task
+                mounted={mounted}
+                task={task}
+                mode={mode}
+                allDone={allDone}
+                onDrag={handleDrag}
+                focus={focus}
+                ref={ref => (refs.current[task.id] = ref)}
+                key={task.id}
+              />
+            ))}
+          </S.List>
 
-      {filteredTasks.length === 0 && <EmptyMessage mode={mode} />}
+          {filteredTasks.length === 0 && <EmptyMessage mode={mode} />}
 
-      <AnimatePresence initial={false}>
-        {!dragged && filteredTasks.length > 1 && <DragMessage />}
-      </AnimatePresence>
+          <AnimatePresence initial={false}>
+            {!dragged && filteredTasks.length > 1 && <DragMessage />}
+          </AnimatePresence>
+        </S.Tasks>
+      </S.Section>
     </motion.div>
   );
 };

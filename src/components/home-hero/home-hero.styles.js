@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 
 export const Wrapper = styled.section`
   margin-bottom: 40px;
+
+  @media (min-width: 800px) {
+    margin-bottom: 60px;
+  }
 `;
 
 export const Title = styled(motion.h1)`
