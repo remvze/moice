@@ -29,6 +29,7 @@ const theme = {
   },
 
   fontSize: {
+    xxs: '12px',
     xs: '13px',
     s: '14px',
     m: '15px',

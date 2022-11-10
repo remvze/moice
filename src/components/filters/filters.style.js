@@ -29,7 +29,7 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: ${({ theme }) => theme.fontSize.xxs};
   text-transform: uppercase;
   padding: 3px 10px;
   border-radius: 100px;
