@@ -11,6 +11,7 @@ const theme = {
       1: 'var(--color-black)',
       2: 'var(--color-gray-900)',
       3: 'var(--color-gray-800)',
+      4: 'var(--color-gray-700)',
     },
 
     border: {

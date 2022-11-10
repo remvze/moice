@@ -5,7 +5,7 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   padding: 8px 15px;
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: ${({ theme }) => theme.fontSize.xxs};
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;

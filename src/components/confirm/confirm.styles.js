@@ -21,7 +21,7 @@ export const Button = styled(UnstyledButton)`
   ${({ $cancel }) =>
     $cancel &&
     css`
-      background-color: ${({ theme }) => theme.colors.background[3]};
+      background-color: ${({ theme }) => theme.colors.background[4]};
     `}
 
   ${({ $confirm }) =>
