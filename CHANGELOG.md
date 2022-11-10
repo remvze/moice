@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/remvze/moice/compare/v1.3.1...v1.3.2) (2022-11-10)
+
+
+### 💄 Styling
+
+* add smaller font size ([c7babf5](https://github.com/remvze/moice/commit/c7babf56d3948f5296dfa4f2fe9e748e2d697621))
+* change color and font size ([03fb221](https://github.com/remvze/moice/commit/03fb2215eb6eb1b59e96bb00d875f17b0638cfae))
+* change priority naming ([de7efa1](https://github.com/remvze/moice/commit/de7efa14474de3df600957deda376c4e88fbc9bb))
+* decrease padding ([01d8565](https://github.com/remvze/moice/commit/01d8565e7307abdb7b5035c3970d40b02537e352))
+
 ### [1.3.1](https://github.com/remvze/moice/compare/v1.3.0...v1.3.1) (2022-11-10)
 
 
