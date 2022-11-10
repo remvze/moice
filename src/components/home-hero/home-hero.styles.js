@@ -7,14 +7,13 @@ export const Wrapper = styled.section`
 
 export const Title = styled(motion.h1)`
   font-size: ${({ theme }) => theme.fontSize.xl};
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-family: 'Newsreader', serif;
   line-height: 1;
-  margin-bottom: 5px;
 `;
 
 export const Emoji = styled.span`
-  font-size: ${({ theme }) => `calc(${theme.fontSize.xl} - 2px)`};
+  font-size: ${({ theme }) => `calc(${theme.fontSize.xl} - 4px)`};
 `;
 
 export const Desc = styled(motion.p)`
