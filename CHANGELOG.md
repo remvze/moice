@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/remvze/moice/compare/v1.4.0...v1.4.1) (2022-11-11)
+
+
+### 💄 Styling
+
+* add more spacing ([1b4c469](https://github.com/remvze/moice/commit/1b4c46999113f8563c9fdf73312cfad541ff5e93))
+* change some colors ([b7eeea2](https://github.com/remvze/moice/commit/b7eeea2d457b99d05844546d010db7de26bd9abe))
+
 ## [1.4.0](https://github.com/remvze/moice/compare/v1.3.2...v1.4.0) (2022-11-10)
 
 
