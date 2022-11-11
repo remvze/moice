@@ -23,6 +23,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled(UnstyledButton)`
-  background-color: #8f94fb;
-  background-image: linear-gradient(45deg, #8f94fb, #4e54c8);
+  background-color: #096bff;
+  background-image: linear-gradient(45deg, #096bff, #35aaff);
+  box-shadow: 0 6px 12px rgba(9, 107, 255, 0.15);
 `;

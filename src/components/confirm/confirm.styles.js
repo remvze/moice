@@ -27,7 +27,8 @@ export const Button = styled(UnstyledButton)`
   ${({ $confirm }) =>
     $confirm &&
     css`
-      background-color: #e35d5b;
-      background-image: linear-gradient(45deg, #e35d5b, #e53935);
+      background-color: #f77062;
+      background-image: linear-gradient(45deg, #f77062, #fe5196);
+      box-shadow: 0 6px 12px rgba(254, 81, 150, 0.15);
     `}
 `;

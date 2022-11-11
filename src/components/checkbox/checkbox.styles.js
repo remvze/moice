@@ -22,14 +22,14 @@ export const Box = styled.div`
     ${({ $celebrate }) =>
       $celebrate
         ? css`
-            background-color: #9be15d;
-            background-image: linear-gradient(45deg, #9be15d, #00e3ae);
-            box-shadow: 0 4px 10px rgba(0, 227, 174, 0.45);
+            background-color: #81fbb8;
+            background-image: linear-gradient(45deg, #81fbb8, #28c76f);
+            box-shadow: 0 4px 10px rgba(129, 251, 184, 0.3);
           `
         : css`
-            background-color: #00c6fb;
-            background-image: linear-gradient(45deg, #00c6fb, #005bea);
-            box-shadow: 0 4px 10px rgba(0, 91, 234, 0.5);
+            background-color: #096bff;
+            background-image: linear-gradient(45deg, #096bff, #35aaff);
+            box-shadow: 0 4px 10px rgba(9, 107, 255, 0.3);
           `}
   }
 `;

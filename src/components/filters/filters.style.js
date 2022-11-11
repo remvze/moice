@@ -86,15 +86,14 @@ export const Dot = styled(motion.div)`
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #ff0844;
-  background-image: linear-gradient(45deg, #ff0844, #ffb199);
+  background-color: #096bff;
+  background-image: linear-gradient(135deg, #096bff, #35aaff);
 
   @media (min-width: 800px) {
     width: 3px;
     height: 100%;
     left: 0;
     border-radius: 0;
-    background-image: linear-gradient(45deg, #ff0844, #ff693b);
     z-index: 2;
   }
 `;
