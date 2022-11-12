@@ -19,6 +19,7 @@ const theme = {
     accent: {
       primary: 'var(--color-blue-500)',
       critical: '#f77062',
+      success: '#81fbb8',
     },
   },
 
@@ -45,6 +46,7 @@ const theme = {
   gradient: {
     primary: 'var(--gradient-blue)',
     critical: 'var(--gradient-red)',
+    success: 'var(--gradient-green)',
   },
 };
 

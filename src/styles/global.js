@@ -48,6 +48,7 @@ const GlobalStyles = createGlobalStyle`
 
     --gradient-blue: #096bff, #35aaff;
     --gradient-red: #f77062, #fe5196;
+    --gradient-green: #81fbb8, #28c76f;
   }
   
   * {

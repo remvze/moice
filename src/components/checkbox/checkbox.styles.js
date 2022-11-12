@@ -22,13 +22,15 @@ export const Box = styled.div`
     ${({ $celebrate }) =>
       $celebrate
         ? css`
-            background-color: #81fbb8;
-            background-image: linear-gradient(45deg, #81fbb8, #28c76f);
+            background-color: ${({ theme }) => theme.bg.accent.success};
+            background-image: ${({ theme }) =>
+              `linear-gradient(45deg, ${theme.gradient.success})`};
             box-shadow: 0 4px 10px rgba(129, 251, 184, 0.3);
           `
         : css`
-            background-color: #096bff;
-            background-image: linear-gradient(45deg, #096bff, #35aaff);
+            background-color: ${({ theme }) => theme.bg.accent.primary};
+            background-image: ${({ theme }) =>
+              `linear-gradient(45deg, ${theme.gradient.primary})`};
             box-shadow: 0 4px 10px rgba(9, 107, 255, 0.3);
           `}
   }
