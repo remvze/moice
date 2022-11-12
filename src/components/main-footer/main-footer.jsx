@@ -17,7 +17,7 @@ const MainFooter = () => {
         >
           Created by{' '}
           <a href="https://twitter.com/remvze" target="_blank" rel="noreferrer">
-            Maze ✱
+            Maze <S.Logo>✱</S.Logo>
           </a>
         </S.FooterText>
       </Container>

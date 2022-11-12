@@ -17,3 +17,14 @@ export const FooterText = styled(motion.p)`
     color: ${({ theme }) => theme.fg.alpha};
   }
 `;
+
+export const Logo = styled.span`
+  background-color: #ffaf7b;
+  background-image: linear-gradient(45deg, #a770ef, #cf8bf3, #ffaf7b);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+`;
