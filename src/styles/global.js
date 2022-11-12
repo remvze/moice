@@ -31,6 +31,8 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-200: #888888;
     --color-gray-100: #989898;
 
+    --color-blue-500: #096bff;
+
     --font-xxs: 12px;
     --font-xs: 13px;
     --font-s: 14px;
@@ -43,6 +45,9 @@ const GlobalStyles = createGlobalStyle`
     --font-body: 'Space Grotesk', sans-serif;
 
     --border-radius-m: 4px;
+
+    --gradient-blue: #096bff, #35aaff;
+    --gradient-red: #f77062, #fe5196;
   }
   
   * {

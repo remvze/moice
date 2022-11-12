@@ -6,15 +6,6 @@
  */
 
 const theme = {
-  fontSize: {
-    xxs: '12px',
-    xs: '13px',
-    s: '14px',
-    m: '15px',
-    l: '18px',
-    xl: '28px',
-  },
-
   bg: {
     alpha: 'var(--color-black)',
     beta: 'var(--color-gray-900)',
@@ -23,6 +14,11 @@ const theme = {
 
     contrast: {
       alpha: 'var(--color-white)',
+    },
+
+    accent: {
+      primary: 'var(--color-blue-500)',
+      critical: '#f77062',
     },
   },
 
@@ -35,10 +31,20 @@ const theme = {
     onContrast: {
       alpha: 'var(--color-black)',
     },
+
+    onAccent: {
+      primary: 'var(--color-white)',
+      critical: 'var(--color-white)',
+    },
   },
 
   border: {
     alpha: 'var(--color-gray-600)',
+  },
+
+  gradient: {
+    primary: 'var(--gradient-blue)',
+    critical: 'var(--gradient-red)',
   },
 };
 

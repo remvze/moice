@@ -23,7 +23,8 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled(UnstyledButton)`
-  background-color: #096bff;
-  background-image: linear-gradient(45deg, #096bff, #35aaff);
+  background-color: ${({ theme }) => theme.bg.accent.primary};
+  background-image: ${({ theme }) =>
+    `linear-gradient(45deg, ${theme.gradient.primary})`};
   box-shadow: 0 6px 12px rgba(9, 107, 255, 0.15);
 `;

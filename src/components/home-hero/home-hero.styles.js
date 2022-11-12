@@ -17,7 +17,7 @@ export const Title = styled(motion.h1)`
 `;
 
 export const Emoji = styled.span`
-  font-size: ${({ theme }) => `calc(${theme.fontSize.xl} - 4px)`};
+  font-size: calc(var(--font-xl) - 4px);
 `;
 
 export const Desc = styled(motion.p)`

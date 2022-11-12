@@ -86,8 +86,9 @@ export const Dot = styled(motion.div)`
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #096bff;
-  background-image: linear-gradient(135deg, #096bff, #35aaff);
+  background-color: ${({ theme }) => theme.bg.accent.primary};
+  background-image: ${({ theme }) =>
+    `linear-gradient(135deg, ${theme.gradient.primary})`};
 
   @media (min-width: 800px) {
     width: 3px;
