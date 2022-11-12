@@ -1,10 +1,3 @@
-/**
- * Priority Guide:
- * 1 -> Primary
- * 2 -> Secondary
- * ...
- */
-
 const theme = {
   bg: {
     alpha: 'var(--color-black)',
