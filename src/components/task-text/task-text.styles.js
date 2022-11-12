@@ -7,14 +7,14 @@ export const Text = styled(TextareaAutosize)`
   flex-grow: 1;
   resize: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.text[1]};
+  color: ${({ theme }) => theme.fg.alpha};
   transition: color 0.4s;
   overflow: hidden;
 
   ${props =>
     props.$done &&
     css`
-      color: ${({ theme }) => theme.colors.text[2]};
+      color: ${({ theme }) => theme.fg.beta};
       text-decoration: line-through;
     `}
 `;

@@ -7,13 +7,13 @@ export const Textarea = styled.textarea`
   height: 150px;
   resize: none;
   margin-top: 10px;
-  background-color: ${({ theme }) => theme.colors.background[3]};
-  color: ${({ theme }) => theme.colors.text[1]};
-  font-size: ${({ theme }) => theme.fontSize.s};
+  background-color: ${({ theme }) => theme.bg.gamma};
+  color: ${({ theme }) => theme.fg.alpha};
+  font-size: var(--font-s);
   padding: 10px;
   border: none;
   outline: none;
-  border-radius: ${({ theme }) => theme.borderRadius.m};
+  border-radius: var(--border-radius-m);
 `;
 
 export const ButtonContainer = styled.div`

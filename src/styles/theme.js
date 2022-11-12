@@ -6,29 +6,6 @@
  */
 
 const theme = {
-  colors: {
-    background: {
-      1: 'var(--color-black)',
-      2: 'var(--color-gray-900)',
-      3: 'var(--color-gray-800)',
-      4: 'var(--color-gray-700)',
-    },
-
-    border: {
-      1: 'var(--color-gray-600)',
-    },
-
-    neutral: {
-      1: 'var(--color-gray-700)',
-    },
-
-    text: {
-      1: 'var(--color-white)',
-      2: 'var(--color-gray-100)',
-      3: 'var(--color-gray-600)',
-    },
-  },
-
   fontSize: {
     xxs: '12px',
     xs: '13px',
@@ -38,8 +15,30 @@ const theme = {
     xl: '28px',
   },
 
-  borderRadius: {
-    m: '4px',
+  bg: {
+    alpha: 'var(--color-black)',
+    beta: 'var(--color-gray-900)',
+    gamma: 'var(--color-gray-800)',
+    delta: 'var(--color-gray-700)',
+
+    contrast: {
+      alpha: 'var(--color-white)',
+    },
+  },
+
+  fg: {
+    alpha: 'var(--color-white)',
+    beta: 'var(--color-gray-100)',
+    gamma: 'var(--color-gray-600)',
+    delta: 'var(--color-gray-700)',
+
+    onContrast: {
+      alpha: 'var(--color-black)',
+    },
+  },
+
+  border: {
+    alpha: 'var(--color-gray-600)',
   },
 };
 

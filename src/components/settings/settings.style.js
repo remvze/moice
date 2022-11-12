@@ -29,8 +29,8 @@ export const Button = styled.button`
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  background-color: ${({ theme }) => theme.colors.background[3]};
-  color: ${({ theme }) => theme.colors.text[1]};
+  background-color: ${({ theme }) => theme.bg.gamma};
+  color: ${({ theme }) => theme.fg.alpha};
   transition: 0.4s;
   opacity: ${({ $active }) => ($active ? '1' : '0.5')};
 
@@ -45,8 +45,8 @@ export const Items = styled(motion.div)`
   right: 0;
   min-width: 200px;
   padding: 5px;
-  background-color: ${({ theme }) => theme.colors.background[2]};
-  border-radius: ${({ theme }) => theme.borderRadius.m};
+  background-color: ${({ theme }) => theme.bg.beta};
+  border-radius: var(--border-radius-m);
 `;
 
 export const Item = styled.button`
@@ -59,13 +59,13 @@ export const Item = styled.button`
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  border-radius: ${({ theme }) => theme.borderRadius.m};
+  border-radius: var(--border-radius-m);
   transition: 0.4s;
-  color: ${({ theme }) => theme.colors.text[2]};
+  color: ${({ theme }) => theme.fg.beta};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.background[3]};
-    color: ${({ theme }) => theme.colors.text[1]};
+    background-color: ${({ theme }) => theme.bg.gamma};
+    color: ${({ theme }) => theme.fg.alpha};
   }
 `;
 
@@ -74,10 +74,10 @@ export const ItemIcon = styled.div`
   font-size: 16px;
   width: 25px;
   text-align: left;
-  color: ${({ theme }) => theme.colors.text[1]};
+  color: ${({ theme }) => theme.fg.alpha};
 `;
 
 export const ItemLabel = styled.p`
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: var(--font-xs);
   line-height: 0;
 `;

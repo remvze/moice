@@ -47,20 +47,20 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: ${({ theme }) => theme.fontSize.xxs};
+  font-size: var(--font-xxs);
   text-transform: uppercase;
   padding: 3px 10px;
   border-radius: 100px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: ${({ theme }) => theme.colors.text[2]};
+  color: ${({ theme }) => theme.fg.beta};
   background-color: transparent;
   transition: 0.4s;
 
   &.active {
     padding-left: 22px;
-    color: ${({ theme }) => theme.colors.text[1]};
-    background-color: ${({ theme }) => theme.colors.background[3]};
+    color: ${({ theme }) => theme.fg.alpha};
+    background-color: ${({ theme }) => theme.bg.gamma};
   }
 
   @media (min-width: 800px) {
@@ -69,11 +69,11 @@ export const Button = styled.button`
     text-align: left;
     justify-content: flex-start;
     padding: 10px;
-    border-radius: ${({ theme }) => theme.borderRadius.m};
+    border-radius: var(--border-radius-m);
 
     &.active {
       padding-left: 20px;
-      background-color: ${({ theme }) => theme.colors.background[2]};
+      background-color: ${({ theme }) => theme.bg.beta};
     }
   }
 `;

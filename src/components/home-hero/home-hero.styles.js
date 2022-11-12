@@ -10,9 +10,9 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled(motion.h1)`
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: var(--font-xl);
   font-weight: 600;
-  font-family: 'Newsreader', serif;
+  font-family: var(--font-display);
   line-height: 1;
 `;
 
@@ -21,5 +21,5 @@ export const Emoji = styled.span`
 `;
 
 export const Desc = styled(motion.p)`
-  color: ${({ theme }) => theme.colors.text[2]};
+  color: ${({ theme }) => theme.fg.beta};
 `;

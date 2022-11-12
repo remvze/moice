@@ -26,16 +26,16 @@ export const Modal = styled(motion.div)`
   overflow-y: auto;
 
   header {
-    font-size: ${({ theme }) => theme.fontSize.l};
+    font-size: var(--font-l);
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-heading);
   }
 `;
 
 export const Content = styled(Container).attrs({ small: true })`
-  background-color: ${({ theme }) => theme.colors.background[2]};
+  background-color: ${({ theme }) => theme.bg.beta};
   padding: 20px;
-  border-radius: ${({ theme }) => theme.borderRadius.m};
+  border-radius: var(--border-radius-m);
   position: relative;
 `;
 
@@ -52,6 +52,6 @@ export const Close = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.text[2]};
+  color: ${({ theme }) => theme.fg.beta};
   font-size: 16px;
 `;

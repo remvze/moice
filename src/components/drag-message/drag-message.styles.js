@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Message = styled(motion.p)`
-  font-size: ${({ theme }) => theme.fontSize.s};
-  color: ${({ theme }) => theme.colors.text[2]};
+  font-size: var(--font-s);
+  color: ${({ theme }) => theme.fg.beta};
   margin-top: 15px;
   display: inline-flex;
   align-items: center;

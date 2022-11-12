@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     /**
      * Weight Guide:
      * 900 -> Darkest
+     * 500 -> Base
      * 50 -> Lightest
      */
 
@@ -29,6 +30,19 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-300: #787878;
     --color-gray-200: #888888;
     --color-gray-100: #989898;
+
+    --font-xxs: 12px;
+    --font-xs: 13px;
+    --font-s: 14px;
+    --font-m: 15px;
+    --font-l: 18px;
+    --font-xl: 28px;
+
+    --font-display: 'Newsreader', serif;
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+
+    --border-radius-m: 4px;
   }
   
   * {
@@ -40,14 +54,14 @@ const GlobalStyles = createGlobalStyle`
 
   html, body {
     height: 100%;
-    background-color: ${({ theme }) => theme.colors.background[1]};
-    color: ${({ theme }) => theme.colors.text[1]};
+    background-color: ${({ theme }) => theme.bg.alpha};
+    color: ${({ theme }) => theme.fg.alpha};
     line-height: 1.6;
-    font-size: ${({ theme }) => theme.fontSize.m};
+    font-size: var(--font-m);
   }
 
   body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font-body);
   }
 
   a {

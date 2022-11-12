@@ -8,12 +8,12 @@ export const Footer = styled.footer`
 `;
 
 export const FooterText = styled(motion.p)`
-  color: ${({ theme }) => theme.colors.text[2]};
+  color: ${({ theme }) => theme.fg.beta};
   text-align: center;
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: var(--font-xs);
   font-weight: 600;
 
   a {
-    color: ${({ theme }) => theme.colors.text[1]};
+    color: ${({ theme }) => theme.fg.alpha};
   }
 `;
