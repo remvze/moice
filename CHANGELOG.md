@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/remvze/moice/compare/v1.4.1...v1.4.2) (2022-11-12)
+
+
+### ♻️ Code Refactoring
+
+* rename design tokens ([f44fb47](https://github.com/remvze/moice/commit/f44fb47d331b32e11ba1a035ab4523e917b1367f))
+
+
+### 💄 Styling
+
+* add gradients to theme ([135ac48](https://github.com/remvze/moice/commit/135ac48fcdb453ef4336a4d061fb6f587253f659))
+
 ### [1.4.1](https://github.com/remvze/moice/compare/v1.4.0...v1.4.1) (2022-11-11)
 
 
