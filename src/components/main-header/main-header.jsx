@@ -21,16 +21,20 @@ const MainHeader = () => {
           <S.Logo src={logo} alt="Moice Logo" />
         </Link>
 
-        <S.HeaderLink
-          href="https://github.com/remvze/moice"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub{' '}
-          <span>
-            <FaGithub />
-          </span>
-        </S.HeaderLink>
+        <S.HeaderLinks>
+          <S.HeaderLink to="/about">About</S.HeaderLink>
+
+          <S.HeaderExternalLink
+            href="https://github.com/remvze/moice"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub{' '}
+            <span>
+              <FaGithub />
+            </span>
+          </S.HeaderExternalLink>
+        </S.HeaderLinks>
       </S.HeaderContainer>
     </S.Header>
   );
