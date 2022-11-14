@@ -30,7 +30,7 @@ export const About = styled(motion(Link))`
   align-items: center;
   line-height: 0;
   color: ${({ theme }) => theme.fg.alpha};
-  font-size: var(--font-xxs);
+  font-size: var(--font-xs);
   margin-top: 10px;
 
   span {
