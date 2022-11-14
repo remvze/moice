@@ -80,6 +80,9 @@ export const CTA = styled.section`
   padding: 50px 20px;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
 
   @media (max-width: 730px) {
     margin-top: 50px;
@@ -94,5 +97,29 @@ export const CTA = styled.section`
   p {
     color: ${({ theme }) => theme.fg.beta};
     font-size: var(--font-s);
+  }
+
+  .dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: radial-gradient(#fff 10%, transparent 10%);
+    background-size: 10px 10px;
+    z-index: -1;
+    opacity: 0.2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: ${({ theme }) =>
+        `linear-gradient(0deg, ${theme.bg.beta}, transparent)`};
+    }
   }
 `;

@@ -68,6 +68,8 @@ const About = () => {
             </S.Features>
 
             <S.CTA>
+              <div className="dots" />
+
               <h3>Sounds Good?</h3>
               <p>Start using Moice for free and boost your productivity.</p>
               <S.HeroCTA to="/">Use Moice</S.HeroCTA>
