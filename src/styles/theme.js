@@ -30,6 +30,12 @@ const theme = {
       primary: 'var(--color-white)',
       critical: 'var(--color-white)',
     },
+
+    accent: {
+      primary: 'var(--color-blue-500)',
+      critical: '#f77062',
+      success: '#81fbb8',
+    },
   },
 
   border: {

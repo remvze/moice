@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     --font-body: 'Space Grotesk', sans-serif;
 
     --border-radius-m: 4px;
+    --border-radius-l: 8px;
 
     --gradient-blue: #096bff, #35aaff;
     --gradient-red: #f77062, #fe5196;
