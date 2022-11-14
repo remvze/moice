@@ -31,7 +31,8 @@ export const About = styled(motion(Link))`
   line-height: 0;
   color: ${({ theme }) => theme.fg.alpha};
   font-size: var(--font-xs);
-  margin-top: 10px;
+  margin-top: 5px;
+  font-weight: 600;
 
   span {
     display: inline-block;
