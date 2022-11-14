@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/remvze/moice/compare/v1.4.2...v1.5.0) (2022-11-14)
+
+
+### ♻️ Code Refactoring
+
+* remove priority guide ([1e2ac6b](https://github.com/remvze/moice/commit/1e2ac6b2c7079ede1c8a68dd1912e0bb15efb458))
+
+
+### 💄 Styling
+
+* add gradient for logo ([b82b666](https://github.com/remvze/moice/commit/b82b666d7bf5db0771156dcb7875a58ed678ace6))
+* add success gradient ([1fb7e26](https://github.com/remvze/moice/commit/1fb7e261e5f64c7ce57cdbd8b24bb6f7a94fc6d9))
+* change font style ([866fd78](https://github.com/remvze/moice/commit/866fd78ddfbb6c69a9d5b8338d049c2899424ef6))
+* change text color ([57f98b7](https://github.com/remvze/moice/commit/57f98b726fda0de0fc38ec228b66adf948a1efac))
+* decrease font size ([773fdb7](https://github.com/remvze/moice/commit/773fdb7407fa874754e521af08259a9e959e21cd))
+* increase font size ([7829dc7](https://github.com/remvze/moice/commit/7829dc7651770964f3f353f8320494e9b91f7faa))
+
+
+### ✨ Features
+
+* add about link to header ([e9a40fd](https://github.com/remvze/moice/commit/e9a40fd78ab0dba79f6c8d6e0d089922c0db5f26))
+* add about page ([597a510](https://github.com/remvze/moice/commit/597a510a3ff4420c3b30d128bc31236311272914))
+* add title to about page ([fdb779d](https://github.com/remvze/moice/commit/fdb779d917ddc1279ae25995271053e1bde2304a))
+
 ### [1.4.2](https://github.com/remvze/moice/compare/v1.4.1...v1.4.2) (2022-11-12)
 
 
