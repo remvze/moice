@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import {
   IoSparklesSharp,
   IoPersonSharp,
@@ -35,40 +36,46 @@ const About = () => {
   };
 
   return (
-    <MainLayout>
-      <motion.div variants={variants} initial="hide" animate="show">
-        <Container>
-          <S.Hero>
-            <h1>
-              Where Productivity <br /> Meets Minimalism.
-            </h1>
-            <p>
-              Moice is nothing but an intuitive to-do list app designed with
-              simplicity in mind, no more fancy but extra feature, no more mess,
-              and no more distraction. All tasks are stored locally in your
-              browser so you won&apos;t need to make yet another account!
-            </p>
-            <S.HeroCTA to="/">Use Moice</S.HeroCTA>
-          </S.Hero>
+    <>
+      <Helmet>
+        <title>Moice: About</title>
+      </Helmet>
 
-          <S.Features>
-            {features.map((feature, index) => (
-              <S.Feature key={index}>
-                <div>{feature.icon}</div>
-                <h2>{feature.title}</h2>
-                <p>{feature.desc}</p>
-              </S.Feature>
-            ))}
-          </S.Features>
+      <MainLayout>
+        <motion.div variants={variants} initial="hide" animate="show">
+          <Container>
+            <S.Hero>
+              <h1>
+                Where Productivity <br /> Meets Minimalism.
+              </h1>
+              <p>
+                Moice is nothing but an intuitive to-do list app designed with
+                simplicity in mind, no more fancy but extra feature, no more
+                mess, and no more distraction. All tasks are stored locally in
+                your browser so you won&apos;t need to make yet another account!
+              </p>
+              <S.HeroCTA to="/">Use Moice</S.HeroCTA>
+            </S.Hero>
 
-          <S.CTA>
-            <h3>Sounds Good?</h3>
-            <p>Start using Moice for free and boost your productivity.</p>
-            <S.HeroCTA to="/">Use Moice</S.HeroCTA>
-          </S.CTA>
-        </Container>
-      </motion.div>
-    </MainLayout>
+            <S.Features>
+              {features.map((feature, index) => (
+                <S.Feature key={index}>
+                  <div>{feature.icon}</div>
+                  <h2>{feature.title}</h2>
+                  <p>{feature.desc}</p>
+                </S.Feature>
+              ))}
+            </S.Features>
+
+            <S.CTA>
+              <h3>Sounds Good?</h3>
+              <p>Start using Moice for free and boost your productivity.</p>
+              <S.HeroCTA to="/">Use Moice</S.HeroCTA>
+            </S.CTA>
+          </Container>
+        </motion.div>
+      </MainLayout>
+    </>
   );
 };
 
