@@ -39,5 +39,10 @@ export const About = styled(motion(Link))`
   span {
     display: inline-block;
     margin-left: 3px;
+    transition: 0.4s;
+  }
+
+  &:hover span {
+    margin-left: 6px;
   }
 `;
