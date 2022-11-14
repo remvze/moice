@@ -45,7 +45,6 @@ export const About = styled(motion(Link))`
   margin-top: 10px;
 
   span {
-    font-size: calc(var(--font-xxs) + 4px);
     color: #35aaff;
   }
 `;
