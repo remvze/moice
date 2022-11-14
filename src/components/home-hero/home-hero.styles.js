@@ -29,22 +29,12 @@ export const About = styled(motion(Link))`
   display: inline-flex;
   align-items: center;
   line-height: 0;
-  background-color: ${({ theme }) => theme.bg.accent.primary};
-  background-image: ${({ theme }) =>
-    `linear-gradient(45deg, ${theme.gradient.primary})`};
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-weight: 600;
-  text-transform: uppercase;
+  color: ${({ theme }) => theme.fg.alpha};
   font-size: var(--font-xxs);
-  letter-spacing: 1px;
   margin-top: 10px;
 
   span {
-    color: #35aaff;
+    display: inline-block;
+    margin-left: 3px;
   }
 `;
