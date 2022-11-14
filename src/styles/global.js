@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
 
     --color-blue-500: #096bff;
 
+    --font-xxxs: 11px;
     --font-xxs: 12px;
     --font-xs: 13px;
     --font-s: 14px;

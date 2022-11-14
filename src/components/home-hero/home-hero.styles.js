@@ -30,9 +30,11 @@ export const About = styled(motion(Link))`
   align-items: center;
   line-height: 0;
   color: ${({ theme }) => theme.fg.alpha};
-  font-size: var(--font-xs);
+  font-size: var(--font-xxxs);
   margin-top: 5px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   span {
     display: inline-block;
