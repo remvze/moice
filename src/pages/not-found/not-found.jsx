@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Moice: Page Not Found</title>
+        <title>Moice • Page Not Found</title>
       </Helmet>
 
       <MainLayout>

@@ -38,7 +38,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Moice: About</title>
+        <title>Moice • About</title>
       </Helmet>
 
       <MainLayout>
