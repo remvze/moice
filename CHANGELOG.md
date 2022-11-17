@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/remvze/moice/compare/v1.5.0...v1.5.1) (2022-11-17)
+
+
+### 💄 Styling
+
+* add dot effect ([ca5c966](https://github.com/remvze/moice/commit/ca5c9669d86ff40fa362053fa11dea3e8e99ef1f))
+* add hover effect ([4a3fe8b](https://github.com/remvze/moice/commit/4a3fe8b218d01cc37d16d0f52bbaac48c1a689c4))
+* change font style ([cf3b55c](https://github.com/remvze/moice/commit/cf3b55c6f204b85f40ef30cfce47896d868db0d8))
+
+
+### 🐛 Bug Fixes
+
+* change landing copy ([2870c58](https://github.com/remvze/moice/commit/2870c5894b8fb3c820a9c7519393ea75fe3d882e))
+* change titles ([0c7dd23](https://github.com/remvze/moice/commit/0c7dd235930384db3235609e7e3fcf6432da6d42))
+
 ## [1.5.0](https://github.com/remvze/moice/compare/v1.4.2...v1.5.0) (2022-11-14)
 
 
