@@ -15,17 +15,17 @@ const About = () => {
   const features = [
     {
       title: 'Minimal',
-      desc: 'Moice is designed and built with simplicity in mind, to stay intuitive and also eliminate any type of extra distraction.',
+      desc: 'Moice is designed and built with simplicity at its core, to bring you an intuitive experience while eliminating every possible distraction.',
       icon: <IoSparklesSharp />,
     },
     {
-      title: 'No Signup',
-      desc: 'All your tasks are stored here locally on your browser. You can export and import your tasks whenever you want.',
+      title: 'No Sign Up',
+      desc: "You shouldn't need to make another account just to manage your daily tasks. With Moice, all your tasks are stored locally in your browser.",
       icon: <IoPersonSharp />,
     },
     {
       title: 'Open-source',
-      desc: 'Moice is 100% open-source, meaning you can clone its source code, modify it and deploy it on your own!',
+      desc: "We believe in open-source, that's why Moice is 100% open-source. You can clone it, modify it as you like, and deploy it for yourself.",
       icon: <IoCodeSlashSharp />,
     },
   ];
@@ -49,10 +49,9 @@ const About = () => {
                 Where Productivity <br /> Meets Minimalism.
               </h1>
               <p>
-                Moice is nothing but an intuitive to-do list app designed with
-                simplicity in mind, no more fancy but extra feature, no more
-                mess, and no more distraction. All tasks are stored locally in
-                your browser so you won&apos;t need to make yet another account!
+                Moice is built to bring you back the good old to-do lists which
+                were meant to be just a to-do list. No more fancy but extra
+                feature, no more confusion, and no more distraction.
               </p>
               <S.HeroCTA to="/">Use Moice</S.HeroCTA>
             </S.Hero>
@@ -71,7 +70,7 @@ const About = () => {
               <div className="dots" />
 
               <h3>Sounds Good?</h3>
-              <p>Start using Moice for free and boost your productivity.</p>
+              <p>Boost your productivity with Moice.</p>
               <S.HeroCTA to="/">Use Moice</S.HeroCTA>
             </S.CTA>
           </Container>
