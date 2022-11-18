@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/remvze/moice/compare/v1.5.1...v1.5.2) (2022-11-18)
+
+
+### ⚡️ Performance Improvements
+
+* add lazy load to deps ([03ef638](https://github.com/remvze/moice/commit/03ef6388b4924a567a896ac8e8b83085b0b69720))
+* lazy load routes ([866d482](https://github.com/remvze/moice/commit/866d482c029b71778ccff5cb75c6815d6b362e71))
+
+
+### ♻️ Code Refactoring
+
+* seperate identical styles ([e01429a](https://github.com/remvze/moice/commit/e01429ab0d4b645033e6a07f62e2591ae85c6e3f))
+
+
+### 🚚 Chores
+
+* remove react-helmet ([e13d615](https://github.com/remvze/moice/commit/e13d615090dcf1bf64868e3031eae7134ad480aa))
+
 ### [1.5.1](https://github.com/remvze/moice/compare/v1.5.0...v1.5.1) (2022-11-17)
 
 
