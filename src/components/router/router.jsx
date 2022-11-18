@@ -1,16 +1,19 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Home from '@/pages/home';
-import About from '@/pages/about';
-import NotFound from '@/pages/not-found';
+const Home = lazy(() => import('@/pages/home'));
+const About = lazy(() => import('@/pages/about'));
+const NotFound = lazy(() => import('@/pages/not-found'));
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <Suspense>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
   );
 };
 
