@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
     --border-radius-l: 8px;
 
     --gradient-blue: #096bff, #35aaff;
-    --gradient-red: #f77062, #fe5196;
+    --gradient-red: #fe5196, #f77062;
     --gradient-green: #81fbb8, #28c76f;
   }
   
