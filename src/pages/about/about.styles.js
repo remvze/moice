@@ -33,6 +33,7 @@ export const Features = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -10px;
 `;
 
 export const Feature = styled.div`
