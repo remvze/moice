@@ -1,9 +1,28 @@
 import PropTypes from 'prop-types';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
+import {
+  IoInformationCircleSharp,
+  IoWarningSharp,
+  IoCheckmarkCircleSharp,
+} from 'react-icons/io5';
 
 import * as S from './snackbar.styles';
 
-const Snackbar = ({ message }) => {
+const Snackbar = ({ message, type }) => {
+  const icons = {
+    success: <IoCheckmarkCircleSharp />,
+    info: <IoInformationCircleSharp />,
+    critical: <IoWarningSharp />,
+    warning: <IoWarningSharp />,
+  };
+
+  const colors = {
+    critical: 'var(--color-critical-500)',
+    success: 'var(--color-success-500)',
+    warning: 'var(--color-warning-500)',
+    info: 'var(--color-info-500)',
+  };
+
   const snackbar = {
     hide: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
@@ -24,7 +43,7 @@ const Snackbar = ({ message }) => {
     >
       <S.Snackbar>
         <AnimatePresence mode="wait" initial="false">
-          <motion.p
+          <S.SnackbarContent
             variants={msg}
             initial="hide"
             animate="show"
@@ -32,8 +51,11 @@ const Snackbar = ({ message }) => {
             transition={{ duration: 0.1 }}
             key={message}
           >
-            {message}
-          </motion.p>
+            {type && (
+              <S.Icon $color={colors[type] || null}>{icons[type] || ''}</S.Icon>
+            )}
+            <S.Text>{message}</S.Text>
+          </S.SnackbarContent>
         </AnimatePresence>
       </S.Snackbar>
     </S.Wrapper>
@@ -42,6 +64,7 @@ const Snackbar = ({ message }) => {
 
 Snackbar.propTypes = {
   message: PropTypes.string,
+  type: PropTypes.oneOf(['success', 'info', 'critical', 'warning']),
 };
 
 export default Snackbar;

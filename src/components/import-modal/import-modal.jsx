@@ -27,18 +27,18 @@ const ImportModal = ({ show, onClose }) => {
       const parsedValue = JSON.parse(value);
       const isValid = validateTasks(parsedValue);
 
-      if (!isValid) return snackbar('Tasks format is not valid.');
+      if (!isValid) return snackbar('Tasks format is not valid.', 'critical');
 
       const { tasks } = parsedValue;
 
       importTasks(tasks);
       handleClose();
 
-      snackbar('All your tasks are imported.');
+      snackbar('All your tasks are imported.', 'success');
     } catch (error) {
       console.error(error.message);
 
-      snackbar('Something went wrong. Try again.');
+      snackbar('Something went wrong. Try again.', 'critical');
     }
   };
 

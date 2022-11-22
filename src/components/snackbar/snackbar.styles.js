@@ -18,3 +18,20 @@ export const Snackbar = styled(motion.div)`
   font-size: var(--font-s);
   background-color: ${({ theme }) => theme.bg.gamma};
 `;
+
+export const SnackbarContent = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Icon = styled.div`
+  line-height: 0;
+  margin-right: 5px;
+  color: ${({ $color, theme }) => $color || theme.fg.alpha};
+  font-size: 16px;
+`;
+
+export const Text = styled.p`
+  flex-grow: 1;
+`;

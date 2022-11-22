@@ -17,7 +17,7 @@ const ExportModal = ({ show, onClose }) => {
   const copy = () => {
     clipboard.write(string);
 
-    snackbar('Tasks copied to your clipboard.');
+    snackbar('Tasks copied to your clipboard.', 'success');
   };
 
   return (

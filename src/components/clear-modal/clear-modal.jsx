@@ -12,7 +12,7 @@ const ClearModal = ({ show, onClose }) => {
     clearAll();
     onClose();
 
-    snackbar('All your tasks are cleared.');
+    snackbar('All your tasks are cleared.', 'success');
   };
 
   return (

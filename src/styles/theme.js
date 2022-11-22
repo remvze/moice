@@ -10,9 +10,11 @@ const theme = {
     },
 
     accent: {
-      primary: 'var(--color-blue-500)',
-      critical: '#f77062',
-      success: '#81fbb8',
+      primary: 'var(--color-primary)',
+      critical: 'var(--color-critical-500)',
+      success: 'var(--color-success-500)',
+      warning: 'var(--color-warning-500)',
+      info: 'var(--color-info-500)',
     },
   },
 
@@ -32,9 +34,11 @@ const theme = {
     },
 
     accent: {
-      primary: 'var(--color-blue-500)',
-      critical: '#f77062',
-      success: '#81fbb8',
+      primary: 'var(--color-primary)',
+      critical: 'var(--color-critical-500)',
+      success: 'var(--color-success-500)',
+      warning: 'var(--color-warning-500)',
+      info: 'var(--color-info-500)',
     },
   },
 

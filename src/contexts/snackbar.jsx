@@ -16,6 +16,7 @@ export const useSnackbar = () => useContext(SnackbarContext);
 
 export const SnackbarProvider = ({ children }) => {
   const [message, setMessage] = useState('');
+  const [type, setType] = useState(null);
   const [visible, setVisible] = useState(false);
   const timeout = useRef();
 
@@ -28,12 +29,14 @@ export const SnackbarProvider = ({ children }) => {
   }, []);
 
   const show = useCallback(
-    (msg = '') => {
+    (msg = '', type = null) => {
       setMessage(msg);
+      setType(type);
       setVisible(true);
 
       setTimer(() => {
         setMessage('');
+        setType(null);
         setVisible(false);
       });
     },
@@ -45,7 +48,7 @@ export const SnackbarProvider = ({ children }) => {
       {children}
 
       <AnimatePresence>
-        {visible && <Snackbar message={message} />}
+        {visible && <Snackbar message={message} type={type} />}
       </AnimatePresence>
     </SnackbarContext.Provider>
   );
