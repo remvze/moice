@@ -29,8 +29,8 @@ export const SnackbarProvider = ({ children }) => {
   }, []);
 
   const show = useCallback(
-    (msg = '', type = null) => {
-      setMessage(msg);
+    ({ message = '', type = null }) => {
+      setMessage(message);
       setType(type);
       setVisible(true);
 
