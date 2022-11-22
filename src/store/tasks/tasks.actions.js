@@ -176,18 +176,20 @@ export const createActions = (set, get) => ({
    */
   importTasks(tasks) {
     const state = get();
-    const newTasks = tasks.map(task => {
-      const idExists = state.tasks.find(t => t.id === task.id);
+    const newTasks = tasks
+      .map(task => {
+        const idExists = state.tasks.find(t => t.id === task.id);
 
-      if (!idExists) return task;
+        if (!idExists) return task;
 
-      task.id = uuid();
+        task.id = uuid();
 
-      return task;
-    });
+        return task;
+      })
+      .filter(task => !!task.text);
 
     set(state => ({
-      tasks: [...state.tasks.filter(task => !!task.text), ...newTasks],
+      tasks: [...state.tasks, ...newTasks],
     }));
   },
 });

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Modal from '@/components/modal';
 import { useSnackbar } from '@/contexts/snackbar';
 import { useTasks } from '@/store';
+import { validateTasks } from '@/helpers/validators/tasks';
 
 import * as S from './import-modal.styles';
 
@@ -23,7 +24,12 @@ const ImportModal = ({ show, onClose }) => {
     if (!value) return;
 
     try {
-      const { tasks } = JSON.parse(value);
+      const parsedValue = JSON.parse(value);
+      const isValid = validateTasks(parsedValue);
+
+      if (!isValid) return snackbar('Tasks format is not valid.');
+
+      const { tasks } = parsedValue;
 
       importTasks(tasks);
       handleClose();
