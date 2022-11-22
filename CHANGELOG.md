@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/remvze/moice/compare/v1.5.2...v1.6.0) (2022-11-22)
+
+
+### 💄 Styling
+
+* add margin to the grid ([2da8395](https://github.com/remvze/moice/commit/2da8395440f127ba518cd3287e2591683ba1e3c6))
+* rotate gradient ([c0af5b8](https://github.com/remvze/moice/commit/c0af5b8e26c5416c425ca19c5019ee5223376dc6))
+
+
+### 🐛 Bug Fixes
+
+* don't include empty tasks ([bab99a3](https://github.com/remvze/moice/commit/bab99a374c2a1c1f721b7ab3a00421ffc0bff016))
+
+
+### ♻️ Code Refactoring
+
+* make snackbar option based ([d158032](https://github.com/remvze/moice/commit/d158032fb0cc95c8be822cc0cb510b9e058a9ea8))
+
+
+### ✨ Features
+
+* add data validation to import ([3ae8435](https://github.com/remvze/moice/commit/3ae8435e0372001f6d2c349531d162eb1e1d03ef))
+* add snackbar type ([3649b59](https://github.com/remvze/moice/commit/3649b59a604273a5384820370d2a89f645ac6036))
+* add undo feature ([cce7d34](https://github.com/remvze/moice/commit/cce7d341bed1c2b53f171fb2f0719927aeb9ef1f))
+
 ### [1.5.2](https://github.com/remvze/moice/compare/v1.5.1...v1.5.2) (2022-11-18)
 
 
