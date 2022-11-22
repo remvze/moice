@@ -9,8 +9,9 @@ import { useTasks } from '@/store';
 import * as S from './export-modal.styles';
 
 const ExportModal = ({ show, onClose }) => {
-  const tasks = useTasks(state => state.tasks);
+  const allTasks = useTasks(state => state.tasks);
   const snackbar = useSnackbar();
+  const tasks = useMemo(() => allTasks.filter(task => !!task.text), [allTasks]);
   const string = useMemo(() => JSON.stringify({ tasks }), [tasks]);
 
   const copy = () => {
