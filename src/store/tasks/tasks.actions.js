@@ -171,7 +171,7 @@ export const createActions = (set, get) => ({
   /**
    * Import the given tasks
    *
-   * @param {Array} tasks - Tasks to be imported
+   * @param {Array<import('./tasks.state').Task>} tasks - Tasks to be imported
    * @returns {void}
    */
   importTasks(tasks) {
@@ -191,5 +191,17 @@ export const createActions = (set, get) => ({
     set(state => ({
       tasks: [...state.tasks, ...newTasks],
     }));
+  },
+
+  /**
+   * Unsafely replace all tasks
+   *
+   * @param {Array<import('./tasks.state').Task>} tasks - Tasks to be replaced
+   * @returns {void}
+   */
+  replace(tasks) {
+    set({
+      tasks: [...tasks],
+    });
   },
 });

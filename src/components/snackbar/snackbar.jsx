@@ -8,7 +8,7 @@ import {
 
 import * as S from './snackbar.styles';
 
-const Snackbar = ({ message, type }) => {
+const Snackbar = ({ message, type, onUndo }) => {
   const icons = {
     success: <IoCheckmarkCircleSharp />,
     info: <IoInformationCircleSharp />,
@@ -54,7 +54,12 @@ const Snackbar = ({ message, type }) => {
             {type && (
               <S.Icon $color={colors[type] || null}>{icons[type] || ''}</S.Icon>
             )}
-            <S.Text>{message}</S.Text>
+            <S.Text $withButton={typeof onUndo === 'function'}>
+              {message}
+            </S.Text>
+            {typeof onUndo === 'function' && (
+              <S.Button onClick={onUndo}>Undo</S.Button>
+            )}
           </S.SnackbarContent>
         </AnimatePresence>
       </S.Snackbar>
@@ -65,6 +70,7 @@ const Snackbar = ({ message, type }) => {
 Snackbar.propTypes = {
   message: PropTypes.string,
   type: PropTypes.oneOf(['success', 'info', 'critical', 'warning']),
+  onUndo: PropTypes.func,
 };
 
 export default Snackbar;
