@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Modal from '@/components/modal';
 import { useSnackbar } from '@/contexts/snackbar';
 import { useTasks } from '@/store';
-import { validateTasks } from '@/helpers/validators/tasks';
+import { validateTasks } from '@/utils/validators/tasks';
 
 import * as S from './import-modal.styles';
 

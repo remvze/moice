@@ -7,7 +7,7 @@ import Filters from '@/components/filters';
 import EmptyMessage from '@/components/empty-message';
 import useFilter from '@/hooks/use-filter';
 import { useTasks } from '@/store';
-import { until } from '@/helpers/wait';
+import { until } from '@/utils/wait';
 
 import * as S from './tasks.styles';
 
