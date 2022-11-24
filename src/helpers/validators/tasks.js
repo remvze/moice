@@ -20,7 +20,5 @@ export const validateTasks = tasks => {
 
   const result = schema.validate(tasks);
 
-  console.log({ result });
-
   return !result.error;
 };
