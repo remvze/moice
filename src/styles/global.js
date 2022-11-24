@@ -46,6 +46,10 @@ const GlobalStyles = createGlobalStyle`
     --font-l: 18px;
     --font-xl: 28px;
 
+    @media (max-width: 450px) {
+      --font-xl: 23px;
+    }
+
     --font-display: 'Inter', sans-serif;
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
