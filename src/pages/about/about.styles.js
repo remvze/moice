@@ -54,6 +54,7 @@ export const Feature = styled.div`
     font-size: var(--font-l);
     color: ${({ theme }) => theme.fg.alpha};
     font-weight: 700;
+    margin-bottom: 3px;
   }
 
   p {
