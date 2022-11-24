@@ -8,8 +8,6 @@ import { SnackbarProvider } from '@/contexts/snackbar';
 import theme from '@/styles/theme';
 import useVH from '@/hooks/use-vh';
 
-import '@/styles/imports.css';
-
 const App = () => {
   useVH();
 

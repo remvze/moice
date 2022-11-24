@@ -18,7 +18,7 @@ const MainHeader = () => {
     >
       <S.HeaderContainer large>
         <Link to="/">
-          <S.Logo src={logo} alt="Moice Logo" />
+          <S.Logo src={logo} alt="Moice Logo" width="33" height="20" />
         </Link>
 
         <S.HeaderLinks>
