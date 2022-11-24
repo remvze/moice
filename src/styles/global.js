@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
     --font-l: 18px;
     --font-xl: 28px;
 
-    --font-display: 'Newsreader', serif;
+    --font-display: 'Inter', sans-serif;
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
 

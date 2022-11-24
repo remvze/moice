@@ -7,7 +7,7 @@ export const Hero = styled.section`
 
   h1 {
     font-size: var(--font-xl);
-    font-weight: 600;
+    font-weight: 800;
     font-family: var(--font-display);
     line-height: 1.4;
   }

@@ -12,9 +12,10 @@ export const Wrapper = styled.section`
 
 export const Title = styled(motion.h1)`
   font-size: var(--font-xl);
-  font-weight: 600;
+  font-weight: 800;
   font-family: var(--font-display);
   line-height: 1;
+  margin-bottom: 5px;
 `;
 
 export const Emoji = styled.span`
