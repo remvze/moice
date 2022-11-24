@@ -70,7 +70,7 @@ const Settings = () => {
           )}
         </AnimatePresence>
 
-        <S.Button onClick={toggle} $active={isOpen}>
+        <S.Button onClick={toggle} $active={isOpen} aria-label="Settings">
           <IoSettingsOutline />
         </S.Button>
       </S.Wrapper>
