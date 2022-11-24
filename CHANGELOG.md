@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/remvze/moice/compare/v1.6.0...v1.6.1) (2022-11-24)
+
+
+### 🐛 Bug Fixes
+
+* remove log ([0fcc667](https://github.com/remvze/moice/commit/0fcc6676fd740288029fde18dff16b2d8aed9816))
+
+
+### ♻️ Code Refactoring
+
+* change helpers to utils ([e8d91a9](https://github.com/remvze/moice/commit/e8d91a9f446e37d8efe38ff3dd978490dd77cde9))
+
+
+### 💄 Styling
+
+* add more margin ([625a6a2](https://github.com/remvze/moice/commit/625a6a2bee252d1b4d95db94d73f4060ab7651b2))
+* change fonts ([c6e555e](https://github.com/remvze/moice/commit/c6e555ecb74a79fe2697379e3e29286722c8e210))
+
 ## [1.6.0](https://github.com/remvze/moice/compare/v1.5.2...v1.6.0) (2022-11-22)
 
 
