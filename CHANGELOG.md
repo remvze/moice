@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/remvze/moice/compare/v1.6.1...v1.7.0) (2022-11-24)
+
+
+### 🐛 Bug Fixes
+
+* improve accessibility ([772f18e](https://github.com/remvze/moice/commit/772f18e60e39171723f96776cad951a1a9a824b3))
+
+
+### ⚡️ Performance Improvements
+
+* improve font load ([9518d6b](https://github.com/remvze/moice/commit/9518d6b665f2f517d51e51b457e3c617a442cec9))
+
+
+### ✨ Features
+
+* improve SEO ([dc6f3a7](https://github.com/remvze/moice/commit/dc6f3a73ffde7f56ef52d5e34343f66a4dfc0b57))
+
+
+### 💄 Styling
+
+* change favicon ([ad10c82](https://github.com/remvze/moice/commit/ad10c82c1c5bc27c7f7918b558bef14b63a2d129))
+* increase font size ([2bd2669](https://github.com/remvze/moice/commit/2bd266998441a231bbe67c23893bab3226f555a9))
+* make display font responsive ([9bae1ae](https://github.com/remvze/moice/commit/9bae1aeeedbc12d7c2d3f2ce304b847fd2f53209))
+
 ### [1.6.1](https://github.com/remvze/moice/compare/v1.6.0...v1.6.1) (2022-11-24)
 
 
