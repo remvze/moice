@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
     --font-xl: 28px;
 
     @media (max-width: 450px) {
-      --font-xl: 23px;
+      --font-xl: 25px;
     }
 
     --font-display: 'Inter', sans-serif;
