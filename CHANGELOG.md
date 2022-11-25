@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/remvze/moice/compare/v1.7.0...v1.7.1) (2022-11-25)
+
+
+### ✨ Features
+
+* implement basic pwa ([7ab1e05](https://github.com/remvze/moice/commit/7ab1e05dcf476ed75edb1fd42833a7ab5b9eed8b))
+
 ## [1.7.0](https://github.com/remvze/moice/compare/v1.6.1...v1.7.0) (2022-11-24)
 
 
