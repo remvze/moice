@@ -1,7 +1,7 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="32" height="32" rx="5" fill="#080808"/>
-<path d="M15.3265 21.9993V13.3395L10.8367 9V17.6599L15.3265 21.9993Z" fill="white"/>
-<path d="M5 22V13.3401L9.4898 9.00066V17.6605L5 22Z" fill="white"/>
-<path d="M16.6735 13.3401V22L21.1633 17.6605V9.00066L16.6735 13.3401Z" fill="white"/>
-<path d="M27 21.9993V13.3395L22.5102 9V17.6599L27 21.9993Z" fill="white"/>
+<path d="M14.7959 21.9993V13.3395L10.102 9V17.6599L14.7959 21.9993Z" fill="white"/>
+<path d="M4 22V13.3401L8.69388 9.00066V17.6605L4 22Z" fill="white"/>
+<path d="M16.2041 13.3401V22L20.898 17.6605V9.00066L16.2041 13.3401Z" fill="white"/>
+<path d="M27 21.9993V13.3395L22.3061 9V17.6599L27 21.9993Z" fill="white"/>
 </svg>
