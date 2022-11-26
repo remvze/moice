@@ -24,11 +24,6 @@ const App = () => {
   const { setBadge, clearBadge } = useBadge();
 
   useEffect(() => {
-    if (!('setAppBadge' in navigator))
-      alert('Your browser does not support badges');
-  });
-
-  useEffect(() => {
     if (activeTasks === 0) clearBadge();
     else setBadge(activeTasks);
   }, [activeTasks, setBadge, clearBadge]);

@@ -2,15 +2,13 @@ import { useCallback } from 'react';
 
 const useBadge = () => {
   const setBadge = useCallback(count => {
-    if (!('setAppBadge' in navigator)) return;
-
-    return navigator.setAppBadge(count);
+    if (navigator.setAppBadge) navigator.setAppBadge(count);
+    else if (navigator.setClientBadge) navigator.setClientBadge(count);
   }, []);
 
   const clearBadge = useCallback(() => {
-    if (!('clearAppBadge' in navigator)) return;
-
-    return navigator.clearAppBadge();
+    if (navigator.clearAppBadge) navigator.clearAppBadge();
+    else if (navigator.clearClientBadge) navigator.clearClientBadge();
   }, []);
 
   return { setBadge, clearBadge };
