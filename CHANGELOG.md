@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/remvze/moice/compare/v1.7.1...v1.7.2) (2022-11-28)
+
+
+### 💄 Styling
+
+* increase margin ([fd272f4](https://github.com/remvze/moice/commit/fd272f436c82ea53e6d601a5bb75bfbf7f86553c))
+* resize favicons ([276298e](https://github.com/remvze/moice/commit/276298ea110cc651dc52b48298c2619e2bd3ec71))
+
+
+### ✨ Features
+
+* add app badges ([218c106](https://github.com/remvze/moice/commit/218c106bbee7e5902a66a3e8f02f01ce6a91c9a5))
+
+
+### 🐛 Bug Fixes
+
+* add alert if not supported (temp) ([fe95dbd](https://github.com/remvze/moice/commit/fe95dbd60485256dcbe93ce8261b844f095b7786))
+* add client badge ([82ad485](https://github.com/remvze/moice/commit/82ad485a525422c997c0c0775871c81e75203f25))
+
+
+### ♻️ Code Refactoring
+
+* rewrite badge hook ([e6e9214](https://github.com/remvze/moice/commit/e6e92144a4da09fee86ddaf21a315a87a71f7da1))
+
+
+### 🚚 Chores
+
+* add specific release scripts ([8474ebf](https://github.com/remvze/moice/commit/8474ebfb829e578d25172a83fe7c22a42b607f46))
+
 ### [1.7.1](https://github.com/remvze/moice/compare/v1.7.0...v1.7.1) (2022-11-25)
 
 
