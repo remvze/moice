@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/remvze/moice/compare/v1.8.0...v1.8.1) (2022-11-29)
+
+
+### 💄 Styling
+
+* increase bar height ([4da426d](https://github.com/remvze/moice/commit/4da426d5d53cb9b6b70dc6055cd20508a7a09d69))
+
+
+### ✨ Features
+
+* add reload prompt ([5d0afed](https://github.com/remvze/moice/commit/5d0afede5eb16037c81fa3b55384c1bcdad4705f))
+
+
+### 🐛 Bug Fixes
+
+* manage progress empty state ([529d2c9](https://github.com/remvze/moice/commit/529d2c9003253470accba80729f479b09a3565fa))
+* remove console log ([63e859c](https://github.com/remvze/moice/commit/63e859c263c09a2eb63f28d2caf0f556be67ec3b))
+
 ## [1.8.0](https://github.com/remvze/moice/compare/v1.7.3...v1.8.0) (2022-11-29)
 
 
