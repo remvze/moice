@@ -19,7 +19,7 @@ const NotFound = () => {
         <S.Wrapper variants={variants} initial="hide" animate="show">
           <div>
             <S.Code>404</S.Code>
-            <S.Message>Ops! Page not found.</S.Message>
+            <S.Message>Ops! Page not found!</S.Message>
           </div>
         </S.Wrapper>
       </MainLayout>
