@@ -9,7 +9,7 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Bar = styled.div`
-  height: 2px;
+  height: 4px;
   width: 100vw;
   background-color: ${({ theme }) => theme.bg.gamma};
   overflow: hidden;
