@@ -32,4 +32,13 @@ export const Button = styled(UnstyledButton)`
         `linear-gradient(45deg, ${theme.gradient.critical})`};
       box-shadow: 0 6px 12px rgba(254, 81, 150, 0.15);
     `}
+
+  ${({ $neutral }) =>
+    $neutral &&
+    css`
+      background-color: ${({ theme }) => theme.bg.accent.primary};
+      background-image: ${({ theme }) =>
+        `linear-gradient(45deg, ${theme.gradient.primary})`};
+      box-shadow: 0 6px 12px rgba(9, 107, 255, 0.15);
+    `}
 `;

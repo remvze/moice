@@ -6,6 +6,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Router from '@/components/router';
 import GlobalStyles from '@/styles/global';
 import { SnackbarProvider } from '@/contexts/snackbar';
+import ReloadPrompt from '@/components/reload-prompt';
 import theme from '@/styles/theme';
 import useVH from '@/hooks/use-vh';
 import useBadge from '@/hooks/use-badge';
@@ -28,6 +29,8 @@ const App = () => {
     else setBadge(activeTasks);
   }, [activeTasks, setBadge, clearBadge]);
 
+  console.log('hi');
+
   return (
     <HelmetProvider>
       <ThemeProvider theme={theme}>
@@ -36,6 +39,8 @@ const App = () => {
             <GlobalStyles />
             <Router />
           </BrowserRouter>
+
+          <ReloadPrompt />
         </SnackbarProvider>
       </ThemeProvider>
     </HelmetProvider>
