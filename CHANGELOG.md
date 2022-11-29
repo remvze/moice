@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/remvze/moice/compare/v1.7.3...v1.8.0) (2022-11-29)
+
+
+### ✨ Features
+
+* add progress bar ([e4ad093](https://github.com/remvze/moice/commit/e4ad093a15fd7976c47170be60d969ba8d81a4e7))
+
+
+### 💄 Styling
+
+* add animation to progress bar ([b31dc72](https://github.com/remvze/moice/commit/b31dc72cafdc463bf6beab111117170c4862fca0))
+* decrease padding ([01ee34a](https://github.com/remvze/moice/commit/01ee34a7355337b75d487835ee1255535968a2d8))
+
 ### [1.7.3](https://github.com/remvze/moice/compare/v1.7.2...v1.7.3) (2022-11-29)
 
 
