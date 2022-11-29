@@ -17,6 +17,7 @@ export const PWAProvider = ({ children }) => {
   const deferredPrompt = useRef(null);
 
   const [isInstallable, setIsInstallable] = useState(false);
+  const [isStandalone, setIsStandalone] = useState(false);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = e => {
@@ -36,6 +37,20 @@ export const PWAProvider = ({ children }) => {
       );
   }, []);
 
+  useEffect(() => {
+    const matchMedia = window.matchMedia('(display-mode: standalone)');
+
+    setIsStandalone(matchMedia.matches);
+
+    const handleChange = e => {
+      if (e.matches) setIsStandalone(true);
+    };
+
+    matchMedia.addEventListener('change', handleChange);
+
+    return () => matchMedia.removeEventListener('change', handleChange);
+  }, []);
+
   const install = useCallback(async () => {
     if (deferredPrompt.current !== null) {
       deferredPrompt.current.prompt();
@@ -51,10 +66,11 @@ export const PWAProvider = ({ children }) => {
 
   const value = useMemo(
     () => ({
+      isStandalone,
       isInstallable,
       install,
     }),
-    [isInstallable, install]
+    [isStandalone, isInstallable, install]
   );
 
   return <PWAContext.Provider value={value}>{children}</PWAContext.Provider>;

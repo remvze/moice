@@ -2,16 +2,19 @@ import PropTypes from 'prop-types';
 
 import MainHeader from '@/components/main-header';
 import MainFooter from '@/components/main-footer';
+import { usePWA } from '@/contexts/pwa';
 import * as S from './main.styles';
 
 const Main = ({ children }) => {
+  const { isStandalone } = usePWA();
+
   return (
     <S.Wrapper>
-      <MainHeader />
+      {!isStandalone && <MainHeader />}
 
       {children}
 
-      <MainFooter />
+      {!isStandalone && <MainFooter />}
     </S.Wrapper>
   );
 };
