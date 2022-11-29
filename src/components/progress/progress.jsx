@@ -16,9 +16,10 @@ const Progress = () => {
 
   return (
     <S.Wrapper variants={variants}>
-      <S.Percent>{percent}%</S.Percent>
+      {!!all && <S.Percent>{percent}%</S.Percent>}
+
       <S.Bar>
-        <div className="done" style={{ width: `${percent}%` }} />
+        {all && <div className="done" style={{ width: `${percent}%` }} />}
       </S.Bar>
     </S.Wrapper>
   );
