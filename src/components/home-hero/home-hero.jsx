@@ -1,8 +1,11 @@
 import { IoChevronForwardOutline } from 'react-icons/io5';
 
+import { usePWA } from '@/contexts/pwa';
 import * as S from './home-hero.styles';
 
 const HomeHero = () => {
+  const { isStandalone } = usePWA();
+
   const variants = {
     hide: { x: -30, opacity: 0 },
     show: { x: 0, opacity: 1 },
@@ -14,12 +17,15 @@ const HomeHero = () => {
         Moice <S.Emoji>💯</S.Emoji>
       </S.Title>
       <S.Desc variants={variants}>Minimal and intuitive task manager.</S.Desc>
-      <S.About variants={variants} to="/about">
-        Learn More{' '}
-        <span>
-          <IoChevronForwardOutline />
-        </span>
-      </S.About>
+
+      {!isStandalone && (
+        <S.About variants={variants} to="/about">
+          Learn More{' '}
+          <span>
+            <IoChevronForwardOutline />
+          </span>
+        </S.About>
+      )}
     </S.Wrapper>
   );
 };
