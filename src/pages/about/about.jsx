@@ -19,7 +19,7 @@ const About = () => {
       icon: <IoSparklesSharp />,
     },
     {
-      title: 'No Sign Up!',
+      title: 'No Sign Up',
       desc: "You shouldn't need to make another account just to manage your daily tasks. With Moice, all your tasks are stored locally in your browser.",
       icon: <IoPersonSharp />,
     },
