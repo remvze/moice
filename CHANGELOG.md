@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.2](https://github.com/remvze/moice/compare/v1.8.1...v1.8.2) (2022-11-29)
+
+
+### 💄 Styling
+
+* remove initial animation for PWA ([89c89ef](https://github.com/remvze/moice/commit/89c89ef2ec3ba3d21fb787f7fdb9d65cda8e01a4))
+
+
+### 🚚 Chores
+
+* add test text (temp) ([c3b4b79](https://github.com/remvze/moice/commit/c3b4b79a3ce98889b1b0a38bd18e7509db30d1b3))
+
+
+### ✨ Features
+
+* add periodic updates ([eb5e76f](https://github.com/remvze/moice/commit/eb5e76f50b0170fc60730c51e9c88975ec28b10c))
+
+
+### 🐛 Bug Fixes
+
+* add alert for debugging (temp) ([17f6396](https://github.com/remvze/moice/commit/17f6396cc2691c49358e41f908589caa18277161))
+* add debug character (temp) ([84044c3](https://github.com/remvze/moice/commit/84044c3feadf419be8c00ea29c31c2cff9964620))
+* add debug character (temp) ([c371d2d](https://github.com/remvze/moice/commit/c371d2de099f98a1bb977099357eb0dd39f9c14b))
+* add loggers for service worker ([f42d6f4](https://github.com/remvze/moice/commit/f42d6f42afa268aec05ec6a34daba906640d4c21))
+* configure auto update ([a650389](https://github.com/remvze/moice/commit/a650389c101e44674a170b8b427bf4a7621aa204))
+* relocate reload prompt ([3afaa12](https://github.com/remvze/moice/commit/3afaa124284a8f206a956720bb07aa34e2d761e4))
+* remove debugging character ([b0d1e43](https://github.com/remvze/moice/commit/b0d1e43e472612c5df5d6bf25e1291472fee5300))
+* remove debugging character ([dadf429](https://github.com/remvze/moice/commit/dadf429f424620e592467fec00bde48693133c03))
+* remove reload prompt ([26a00eb](https://github.com/remvze/moice/commit/26a00ebec1aa96197b96a4b06b2a075aeec44b43))
+* remove testing character ([aea451d](https://github.com/remvze/moice/commit/aea451d9b73fd5726098b3614696f4390d819699))
+* remove testing text ([5a2c9c7](https://github.com/remvze/moice/commit/5a2c9c729421677560c333410f8eef4d1eebec61))
+
 ### [1.8.1](https://github.com/remvze/moice/compare/v1.8.0...v1.8.1) (2022-11-29)
 
 
