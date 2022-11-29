@@ -7,9 +7,15 @@ const ReloadPrompt = () => {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
   } = useRegisterSW({
-    onRegisteredSW(swUrl) {
+    onRegisteredSW(swUrl, r) {
       alert(swUrl);
       console.log(`Service Worker at: ${swUrl}`);
+
+      r &&
+        setInterval(() => {
+          console.log('Checking for sw update');
+          r.update();
+        }, 20000);
     },
     onRegisterError(error) {
       alert('error', error);
