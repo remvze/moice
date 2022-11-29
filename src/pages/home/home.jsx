@@ -3,17 +3,24 @@ import Container from '@/components/container';
 import HomeHero from '@/components/home-hero';
 import Tasks from '@/components/tasks';
 import Settings from '@/components/settings';
+import { usePWA } from '@/contexts/pwa';
 import * as S from './home.styles';
 
 const Home = () => {
+  const { isStandalone } = usePWA();
+
+  const show = !isStandalone
+    ? {
+        transition: {
+          staggerChildren: 0.15,
+          delayChildren: 1,
+        },
+      }
+    : {};
+
   const variants = {
     hide: {},
-    show: {
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 1,
-      },
-    },
+    show,
   };
 
   return (
