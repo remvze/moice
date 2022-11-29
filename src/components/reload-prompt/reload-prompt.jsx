@@ -6,7 +6,14 @@ const ReloadPrompt = () => {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
-  } = useRegisterSW();
+  } = useRegisterSW({
+    onRegisteredSW(swUrl) {
+      console.log(`Service Worker at: ${swUrl}`);
+    },
+    onRegisterError(error) {
+      console.log('SW registration error', error);
+    },
+  });
 
   const handleCancel = () => setNeedRefresh(false);
 
