@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.3](https://github.com/remvze/moice/compare/v1.7.2...v1.7.3) (2022-11-29)
+
+
+### ✨ Features
+
+* add PWA install button ([78de7f3](https://github.com/remvze/moice/commit/78de7f3a4acad87af19e1dfb31bfe4ccabd3f1f1))
+* add PWA standalone detector ([80505f2](https://github.com/remvze/moice/commit/80505f20cd03fa6cd79a2ee89271e59e23567aca))
+* remove about link in standalone ([76ba5a1](https://github.com/remvze/moice/commit/76ba5a163203d3afbce4e4c281a02e3d72ae2ec9))
+
+
+### 💄 Styling
+
+* remove loading animation in standalone ([08376f0](https://github.com/remvze/moice/commit/08376f0e5eda33052acf8363b0f6d06cc3d6e65b))
+
 ### [1.7.2](https://github.com/remvze/moice/compare/v1.7.1...v1.7.2) (2022-11-28)
 
 
