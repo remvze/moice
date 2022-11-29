@@ -21,7 +21,7 @@ export const Bar = styled.div`
 `;
 
 export const Percent = styled.p`
-  margin: 0 0 5px 15px;
+  margin: 0 0 2px 15px;
   font-size: var(--font-xs);
   color: ${({ theme }) => theme.fg.beta};
 `;
