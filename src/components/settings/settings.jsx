@@ -4,12 +4,14 @@ import {
   IoArrowUpCircleOutline,
   IoArrowDownCircleOutline,
   IoTrashOutline,
+  IoDownloadOutline,
 } from 'react-icons/io5';
 import { AnimatePresence } from 'framer-motion';
 
 import ExportModal from '@/components/export-modal';
 import ImportModal from '@/components/import-modal';
 import ClearModal from '@/components/clear-modal';
+import { usePWA } from '@/contexts/pwa';
 import * as S from './settings.style';
 
 const Settings = () => {
@@ -17,6 +19,8 @@ const Settings = () => {
   const [showExport, setShowExport] = useState(false);
   const [showImport, setShowImport] = useState(false);
   const [showClear, setShowClear] = useState(false);
+
+  const { isInstallable, install } = usePWA();
 
   const toggle = () => setIsOpen(prev => !prev);
 
@@ -43,6 +47,16 @@ const Settings = () => {
               animate="open"
               exit="close"
             >
+              {isInstallable && (
+                <S.Item onClick={install}>
+                  <S.ItemIcon>
+                    <IoDownloadOutline />
+                  </S.ItemIcon>
+
+                  <S.ItemLabel>Install PWA</S.ItemLabel>
+                </S.Item>
+              )}
+
               <S.Item onClick={() => setShowExport(true)}>
                 <S.ItemIcon>
                   <IoArrowUpCircleOutline />
