@@ -29,8 +29,6 @@ const App = () => {
     else setBadge(activeTasks);
   }, [activeTasks, setBadge, clearBadge]);
 
-  console.log('hi');
-
   return (
     <HelmetProvider>
       <ThemeProvider theme={theme}>
