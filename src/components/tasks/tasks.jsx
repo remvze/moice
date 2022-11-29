@@ -7,11 +7,13 @@ import Filters from '@/components/filters';
 import EmptyMessage from '@/components/empty-message';
 import useFilter from '@/hooks/use-filter';
 import { useTasks } from '@/store';
+import { usePWA } from '@/contexts/pwa';
 import { until } from '@/utils/wait';
 
 import * as S from './tasks.styles';
 
 const Tasks = () => {
+  const { isStandalone } = usePWA();
   const tasks = useTasks(state => state.tasks);
   const reorder = useTasks(state => state.reorder);
 
@@ -43,10 +45,15 @@ const Tasks = () => {
     if (!dragged) setDragged(true);
   };
 
-  const variants = {
-    hide: { opacity: 0 },
-    show: { opacity: 1 },
-  };
+  const variants = !isStandalone
+    ? {
+        hide: { opacity: 0 },
+        show: { opacity: 1 },
+      }
+    : {
+        hide: { opacity: 1 },
+        show: { opacity: 1 },
+      };
 
   const reorderTasks = newTasks => {
     const before = {};

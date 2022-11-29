@@ -6,10 +6,15 @@ import * as S from './home-hero.styles';
 const HomeHero = () => {
   const { isStandalone } = usePWA();
 
-  const variants = {
-    hide: { x: -30, opacity: 0 },
-    show: { x: 0, opacity: 1 },
-  };
+  const variants = !isStandalone
+    ? {
+        hide: { x: -30, opacity: 0 },
+        show: { x: 0, opacity: 1 },
+      }
+    : {
+        hide: { x: 0, opacity: 1 },
+        show: { x: 0, opacity: 1 },
+      };
 
   return (
     <S.Wrapper>

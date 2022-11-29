@@ -20,7 +20,7 @@ const Settings = () => {
   const [showImport, setShowImport] = useState(false);
   const [showClear, setShowClear] = useState(false);
 
-  const { isInstallable, install } = usePWA();
+  const { isInstallable, install, isStandalone } = usePWA();
 
   const toggle = () => setIsOpen(prev => !prev);
 
@@ -29,10 +29,15 @@ const Settings = () => {
     open: { y: 0, opacity: 1 },
   };
 
-  const wrapperVariants = {
-    hide: { opacity: 0 },
-    show: { opacity: 1 },
-  };
+  const wrapperVariants = !isStandalone
+    ? {
+        hide: { opacity: 0 },
+        show: { opacity: 1 },
+      }
+    : {
+        hide: { opacity: 1 },
+        show: { opacity: 1 },
+      };
 
   return (
     <>
