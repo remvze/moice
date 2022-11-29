@@ -9,8 +9,13 @@ const Progress = () => {
   const all = useMemo(() => tasks.filter(task => task.text).length, [tasks]);
   const percent = useMemo(() => Math.floor((done / all) * 100), [all, done]);
 
+  const variants = {
+    hide: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <S.Wrapper>
+    <S.Wrapper variants={variants}>
       <S.Percent>{percent}%</S.Percent>
       <S.Bar>
         <div className="done" style={{ width: `${percent}%` }} />

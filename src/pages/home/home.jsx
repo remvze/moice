@@ -32,10 +32,9 @@ const Home = () => {
           <Tasks />
         </Container>
 
+        <Progress />
         <Settings />
       </S.Main>
-
-      <Progress />
     </MainLayout>
   );
 };
