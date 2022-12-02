@@ -23,10 +23,9 @@ export const Hero = styled.section`
 export const HeroCTA = styled(Button)`
   margin-top: 20px;
   padding: 11px 22px !important;
-  background-color: ${({ theme }) => theme.bg.accent.primary};
-  background-image: ${({ theme }) =>
-    `linear-gradient(45deg, ${theme.gradient.primary})`};
-  box-shadow: 0 6px 12px rgba(9, 107, 255, 0.15);
+  background-color: rgb(var(--gradient-blue-single));
+  background-image: linear-gradient(45deg, var(--gradient-blue));
+  box-shadow: 0 6px 12px rgba(var(--gradient-blue-single), 0.15);
 `;
 
 export const Features = styled.div`

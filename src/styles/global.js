@@ -31,9 +31,11 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-200: #888888;
     --color-gray-100: #989898;
 
+    --color-blue: 59, 130, 246;
+
     --color-primary: #096bff;
     
-    --color-success-500: #51cf66;
+    --color-success-500: #4ade80;
     --color-critical-500: #fa5252;
     --color-info-500: #339af0;
     --color-warning-500: #fcc419;
@@ -57,9 +59,20 @@ const GlobalStyles = createGlobalStyle`
     --border-radius-m: 4px;
     --border-radius-l: 8px;
 
-    --gradient-blue: #096bff, #35aaff;
-    --gradient-red: #fe5196, #f77062;
-    --gradient-green: #81fbb8, #28c76f;
+    /**
+     * Gradients
+     */
+    --gradient-purple: #6366F1, #A78BFA;
+    --gradient-purple-single: 99, 102, 241;
+
+    --gradient-green: #4ADE80, #6EE7B7;
+    --gradient-green-signle: 74, 222, 128;
+
+    --gradient-blue: #3B82F6, #38bdf8;
+    --gradient-blue-single: 59, 130, 246;
+
+    --gradient-red: #F43F5E, #F472B6;
+    --gradient-red-single: 244, 63, 94;
   }
   
   * {
