@@ -10,8 +10,8 @@ const theme = {
     },
 
     accent: {
-      primary: 'var(--color-primary)',
-      critical: 'var(--color-critical-500)',
+      primary: 'rgb(var(--color-primary))',
+      critical: 'rgb(var(--color-critical-500))',
       success: 'var(--color-success-500)',
       warning: 'var(--color-warning-500)',
       info: 'var(--color-info-500)',
@@ -34,8 +34,8 @@ const theme = {
     },
 
     accent: {
-      primary: 'var(--color-primary)',
-      critical: 'var(--color-critical-500)',
+      primary: 'rgb(var(--color-primary))',
+      critical: 'rgb(var(--color-critical-500))',
       success: 'var(--color-success-500)',
       warning: 'var(--color-warning-500)',
       info: 'var(--color-info-500)',

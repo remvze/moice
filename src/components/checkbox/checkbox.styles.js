@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.label`
   position: relative;
@@ -13,24 +13,12 @@ export const Box = styled.div`
   border-radius: var(--border-radius-m);
   cursor: pointer;
   background-color: ${({ theme }) => theme.bg.alpha};
-  transition: box-shadow 0.4s;
+  transition: 0.4s;
 
   &.checked {
-    border: 0;
-    transition: 0.4s;
-
-    ${({ $celebrate }) =>
-      $celebrate
-        ? css`
-            background-color: rgb(var(--gradient-green-single));
-            background-image: linear-gradient(45deg, var(--gradient-green));
-            box-shadow: 0 4px 10px rgba(var(--gradient-green-single), 0.3);
-          `
-        : css`
-            background-color: rgb(var(--gradient-purple-single));
-            background-image: linear-gradient(45deg, var(--gradient-purple));
-            box-shadow: 0 4px 10px rgba(var(--gradient-purple-single), 0.3);
-          `}
+    border-color: rgb(var(--color-primary));
+    background-color: rgb(var(--color-primary));
+    box-shadow: 0 4px 10px rgba(var(--color-primary), 0.3);
   }
 `;
 

@@ -27,9 +27,8 @@ export const Button = styled(UnstyledButton)`
   ${({ $confirm }) =>
     $confirm &&
     css`
-      background-color: rgb(var(--gradient-red-single));
-      background-image: linear-gradient(45deg, var(--gradient-red));
-      box-shadow: 0 6px 12px rgba(var(--gradient-red-single), 0.15);
+      background-color: rgb(var(--color-critical-500));
+      box-shadow: 0 6px 12px rgba(var(--color-critical-500), 0.15);
     `}
 
   ${({ $neutral }) =>

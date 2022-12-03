@@ -17,8 +17,7 @@ export const Bar = styled.div`
   .done {
     height: 100%;
     transition: 0.4s;
-    background-color: rgb(var(--gradient-green-single));
-    background-image: linear-gradient(-90deg, var(--gradient-green));
+    background-color: rgb(var(--color-secondary));
   }
 `;
 
