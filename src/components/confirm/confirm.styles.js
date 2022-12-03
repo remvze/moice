@@ -34,8 +34,7 @@ export const Button = styled(UnstyledButton)`
   ${({ $neutral }) =>
     $neutral &&
     css`
-      background-color: rgb(var(--gradient-blue-single));
-      background-image: linear-gradient(45deg, var(--gradient-blue));
-      box-shadow: 0 6px 12px rgba(var(--gradient-blue-single), 0.15);
+      background-color: rgb(var(--color-primary));
+      box-shadow: 0 6px 12px rgba(var(--color-primary), 0.15);
     `}
 `;

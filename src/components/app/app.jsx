@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { HelmetProvider } from 'react-helmet-async';
 
 import Router from '@/components/router';
+import ReloadPrompt from '@/components/reload-prompt';
 import GlobalStyles from '@/styles/global';
 import { SnackbarProvider } from '@/contexts/snackbar';
 import theme from '@/styles/theme';
@@ -37,6 +38,8 @@ const App = () => {
             <Router />
           </BrowserRouter>
         </SnackbarProvider>
+
+        <ReloadPrompt />
       </ThemeProvider>
     </HelmetProvider>
   );

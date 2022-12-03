@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
     --color-blue: 59, 130, 246;
 
     --color-primary: 37, 99, 235;
+    --color-primary: 255, 255, 255;
     --color-secondary: 45, 212, 191;
     
     --color-success-500: #4ade80;
