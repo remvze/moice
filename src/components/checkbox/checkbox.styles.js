@@ -6,7 +6,7 @@ export const Container = styled.label`
 `;
 
 export const Box = styled.div`
-  display: inline-block;
+  display: inline-flex;
   width: 17px;
   height: 17px;
   border: 2px solid ${({ theme }) => theme.border.alpha};
@@ -14,11 +14,23 @@ export const Box = styled.div`
   cursor: pointer;
   background-color: ${({ theme }) => theme.bg.alpha};
   transition: 0.4s;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
 
   &.checked {
     border-color: rgb(var(--color-primary));
     background-color: rgb(var(--color-primary));
     box-shadow: 0 4px 10px rgba(var(--color-primary), 0.3);
+  }
+
+  & span {
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  &.checked span {
+    opacity: 1;
   }
 `;
 

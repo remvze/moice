@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { IoCheckmarkSharp } from 'react-icons/io5';
 
 import * as S from './checkbox.styles';
 
@@ -10,7 +11,11 @@ const Checkbox = ({ checked, onCheck, className, celebrate }) => {
   return (
     <S.Container className={className}>
       <S.Input type="checkbox" checked={checked} onChange={handleChange} />
-      <S.Box className={checked ? 'checked' : ''} $celebrate={celebrate} />
+      <S.Box className={checked ? 'checked' : ''} $celebrate={celebrate}>
+        <span>
+          <IoCheckmarkSharp />
+        </span>
+      </S.Box>
     </S.Container>
   );
 };
