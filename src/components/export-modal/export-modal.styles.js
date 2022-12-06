@@ -24,5 +24,5 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled(UnstyledButton)`
   background-color: rgb(var(--color-primary));
-  box-shadow: 0 6px 12px rgba(var(--color-primary), 0.15);
+  box-shadow: 0 6px 12px rgba(var(--color-primary), 0.25);
 `;

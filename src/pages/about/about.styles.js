@@ -24,7 +24,7 @@ export const HeroCTA = styled(Button)`
   margin-top: 20px;
   padding: 11px 22px !important;
   background-color: rgb(var(--color-primary));
-  box-shadow: 0 6px 12px rgba(var(--color-primary), 0.15);
+  box-shadow: 0 6px 12px rgba(var(--color-primary), 0.25);
 `;
 
 export const Features = styled.div`

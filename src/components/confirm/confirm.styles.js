@@ -28,13 +28,13 @@ export const Button = styled(UnstyledButton)`
     $confirm &&
     css`
       background-color: rgb(var(--color-critical-500));
-      box-shadow: 0 6px 12px rgba(var(--color-critical-500), 0.15);
+      box-shadow: 0 6px 12px rgba(var(--color-critical-500), 0.25);
     `}
 
   ${({ $neutral }) =>
     $neutral &&
     css`
       background-color: rgb(var(--color-primary));
-      box-shadow: 0 6px 12px rgba(var(--color-primary), 0.15);
+      box-shadow: 0 6px 12px rgba(var(--color-primary), 0.25);
     `}
 `;
