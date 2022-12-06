@@ -33,11 +33,11 @@ const GlobalStyles = createGlobalStyle`
 
     --color-blue: 59, 130, 246;
 
-    --color-primary: 37, 99, 235;
+    --color-primary: 99, 102, 241;
     --color-secondary: 45, 212, 191;
     
     --color-success-500: #4ade80;
-    --color-critical-500: 244, 63, 94;
+    --color-critical-500: 251, 113, 133;
     --color-info-500: #339af0;
     --color-warning-500: #fcc419;
 

@@ -17,7 +17,7 @@ export const Bar = styled.div`
   .done {
     height: 100%;
     transition: 0.4s;
-    background-color: rgb(var(--color-secondary));
+    background-color: rgb(var(--color-primary));
   }
 `;
 

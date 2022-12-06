@@ -86,7 +86,7 @@ export const Dot = styled(motion.div)`
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgb(var(--color-secondary));
+  background-color: rgb(var(--color-primary));
 
   @media (min-width: 800px) {
     width: 3px;
